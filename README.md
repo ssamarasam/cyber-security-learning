@@ -12,7 +12,7 @@
 
 **3. CISSP Learning - in small bits**
 
----
+
 
 ## Cloud Security
 
@@ -21,19 +21,21 @@
 
 **2. AZ-500 Azure Security Technologies - in progress**
 
----
+
 
 ## Programming and Scripting skills
 **1. BASH Scripting Basics course from cybrary**
 
 **2. Python for Cyber Security from cybrary**
 
----
+
 
 ## SOC Analysis, SIEM Monitoring, Blue team
+
 **1. SOC Analyst Learning path from letsdefend - in progress**
 
----
+
+
 ## Other learnings on cyber security 
 
 **1. Artificial Intelligence for Cyber Security from Linkedin Learning**
