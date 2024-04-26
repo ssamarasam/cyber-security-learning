@@ -3,6 +3,7 @@
 *Below are my learning progress & accomplishements*
 
 **1. Google Cyber Security Professional Certification**
+-  [Concepts | Trainings | Labs from this certification](https://github.com/ssamarasam/cyber-security-learning/blob/177c1078c0ad4a374d1103c3ce13ae6910c5d51d/Google%20Cyber%20Security%20Professional%20Certification.md)
 
 
 **2. BASH Scripting Basics course**
