@@ -9,7 +9,7 @@
 - Best Practices
 
 
-** Real World Breaches **
+**Real World Breaches**
 - Coinbase
 - UPS
 - Peloton
@@ -20,7 +20,7 @@
 - Optus
 - Experian
 
-** OWASP API Security Top 10**
+**OWASP API Security Top 10**
 - *1  Broken Object Level Authorization*
 - *2  Broken Authentication*
 - *3  Broken Object Level Property Authorization*
@@ -46,4 +46,4 @@
 -  Implement Automated, continiour testing
 -  Develop API security metrics and assess progress
 
-* Completed this course on 25-APR-2024 *
+*Completed this course on 25-APR-2024*
