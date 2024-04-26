@@ -9,6 +9,7 @@
 
 
 **3. AZ-900 Azure Fundamentals Certification**
+-  [What are the fundamental concepts I learnt by aquiring this certification?](https://github.com/ssamarasam/cyber-security-learning/blob/87bdd38a203c4e63f443c8e5f9368c7eb8196388/AZ-900%20Azure%20Fundamentals%20Certification.md)
 
 
 **4. Python for Cybersecurity**
