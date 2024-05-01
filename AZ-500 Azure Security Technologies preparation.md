@@ -16,3 +16,7 @@
 - PIM - Previledged Identity Management
   -- technology which allows to manage, control, monitor access to resources in the org
   -- Resources - Microsoft Entra, Micorsoft 365, Microsoft Intune
+    - giving temporary access to someone to performa any action
+    - principle of least rpivilage
+    - just in time access
+    - time bound
