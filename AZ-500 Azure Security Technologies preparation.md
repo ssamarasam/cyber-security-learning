@@ -20,3 +20,5 @@
     - principle of least rpivilage
     - just in time access
     - time bound
+    - *Microsoft Entra Priveledged Identity Management* - assign roles and select time for duration of access - assigned user has to do MFA and activate it to gain access
+      
