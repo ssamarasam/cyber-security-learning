@@ -55,3 +55,20 @@
     - e.g: Get-EventLog -LogName Security -Newest 10
     - e.g: et-EventLog -LogName Security -Newest 10 | Format-List
     - >e.g: Get-EventLog -LogName Security -Newest 10 | Format-List | Out-File c:\Security-log.txt
+    - cd/  --> dir sec*.txt --> notepad .\Security-log.txt
+    - use $ to declare variable
+- *Connecting PowerShell to Azure*
+    - Azure commands from powershell gallery | Get-command -Noun *AZ*
+    - powershell gallery.com
+    - Install-Module -Name Az
+    - NuGet and private repo warning - yes
+    - Get-command -Verb connect
+    - Connect -AzAccount -> provide username and pwd for Azure login in the popup
+- *Working with Azure via PowerShell*
+    - Get-command -Verb get -Noun *user*
+    - Get-AzADUser - to list all ad users
+- *Azure Cloud Shell* -  powershell and azure cli (bash)
+- Azure CLI - install and use it in the powershell
+ 
+**Manage Application access**
+
