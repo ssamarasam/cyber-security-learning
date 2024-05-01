@@ -40,5 +40,18 @@
   - *Passwordless authentication*
       - authenticator, hardware token
   - *Configure Access reviews* (when one user moves to other or left, access must be reviewd to revoke access)
-      - Microsoft Entra id -> Identity Governance -> Access Reviews --> New access review -> select teams, or guest users - select reviewers to take action of access  - select recurrance of review  -> monthly/others to get notifictaion to review the access of users 
-      
+      - Microsoft Entra id -> Identity Governance -> Access Reviews --> New access review -> select teams, or guest users - select reviewers to take action of access  - select recurrance of review  -> monthly/others to get notifictaion to review the access of users
+
+**Command Line tools**
+- *PowerShell*
+    - ISE tool
+    - commands: get, set, remove, start, stop, get-service,
+    - e.g: start-service -name winrm
+    - e.gL to remote into another machie -> Get-service - ComputerName CLIENT68, Enter-PSSession -ComputerName CLIENT68
+    - e.g: Get-process - ComputerName CLIENT1, CLIENT2
+    - Piping -> taking output of one command and input to another command
+    - e.g: Get-process - ComputerName CLIENT1, CLIENT2  | out-file c:\\process\test.txt
+    - e.g: get-help Get-EventLog
+    - e.g: Get-EventLog -LogName Security -Newest 10
+    - e.g: et-EventLog -LogName Security -Newest 10 | Format-List
+    - >e.g: Get-EventLog -LogName Security -Newest 10 | Format-List | Out-File c:\Security-log.txt
