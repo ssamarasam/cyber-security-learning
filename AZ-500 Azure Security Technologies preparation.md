@@ -83,4 +83,18 @@
 - *Configure an authentication method for a service principal*
     - app registration --> select app --> Authentication --> (redirect urls, platform configurations, logout url)
  
-
+**Manage Access Control**
+- *Visualizing role permissions for management groups, subscriptions and more*
+    - Management group(root) can have sub management groups underneath --> Subscriptions(allows to pay for the resources) --> Resource groups(containers to group the resources) --> Resources
+    - each level, each element mentioned abouve has IAM tied to it
+- *Interpret role and resource permissions*
+    - Role
+        - Name (e.g: owner, contributor, blowb owner)
+        - id
+        - actions (list of actions allowed)
+        - NoActions - list of excluded actions
+        - DataActions
+        - NoDataActions
+    - ENtra -> Roles and administrators -> create custom role and can assign i to someone
+    - go to resource group, select it, select IAM and can add roles to it
+    - 
