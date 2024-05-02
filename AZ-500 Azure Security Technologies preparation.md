@@ -71,4 +71,16 @@
 - Azure CLI - install and use it in the powershell
  
 **Manage Application access**
+- *Integrate SSO and Identity providers for authentication*
+    - Microsoft Entra id -> External identities -> All Identity providers  --> setup external identityes(google, fb, saml/wb)
+- *Create an App registration*
+    - Entra id --> App registration --> New (name, who can access this app or api? )
+- Set up permissions for the app to read/access resources
+    - Entra id --> App registration --> select app --> API permissions --> Request permission --> delegate (signed in), application permissions(without a signedin user)
+    - Permission concent --> Enterprise application -> select app > grant Admin consent/user consent
+- *Manage API permissions to Azure Subscriptions and resources*
+    - app registrations - API permissions -> can able to remove perssions / revoke admin concent
+- *Configure an authentication method for a service principal*
+    - app registration --> select app --> Authentication --> (redirect urls, platform configurations, logout url)
+ 
 
