@@ -138,3 +138,28 @@
             - can able to attach to all subnets
             - NSG can have inbound oubound rules
             - but for ASG, we need to apply the rules where we added like VM.. if we go to ASG, there wont be any rules like NSG.
+
+- *Create and Configure Azure Firewall*
+    - go to resource group, search Firewall -> create : you will see a dafualt subnet mentioned AzureFirewallSubnet
+    - so create the subnet under the Virtual network you want in the same name mentioned there
+    - create Firewall -> add new policy(firewallpolicyDemo : later you can configure that) --> public IP address (firewallPIP)
+    - go to resource -> select the firewall - from there select the firewallPolicyDemo(which will have collections of policy and rules)
+    - search Azure firewall policy rule sets in google
+    -  create collection for DNAT, Network , Applicatio
+        - create rule for DNAT  source, (firewall public ip) to convery to differnt ip
+        - create rule for Network .. source ip * ,destination to 10.2.1.0
+        - create rule for Application - source to specific url
+- *Direct traffic thru Azure Firewall*
+    - go to res group
+    - create Route table(myFWroutetable)
+    - go to route table -> select routes -> add route
+          - name: routeThruFW, IPaddressess, destination ip: 10.0.0.0 (all interbal azure networks which starts with 10), hop type: Virtual applicance, next hop address(find the Private IP of firewall to route the internal private traffic  and mention it here)
+    - go to subnets --> associate -> select VN (vNet1), subnet1A, do the same for subnet1B an dfor other VNs and its subnets
+    - This routing table is associated with all these subnets and communicateions to these subnets have to go through our Azure Firewall
+- *Azure Firewall Manager*
+    - its a resouce to centrally manage multiple Azure Firewalls
+    - azure VN and shows whetther they are tied to firwall
+    - virtual hubs
+    - azure firewall policies
+    - security partnets providers - third party providers
+    - 
