@@ -162,4 +162,12 @@
     - virtual hubs
     - azure firewall policies
     - security partnets providers - third party providers
+- *Azure Application Gateway and Azure Front door*
+    - App Gateway - L7
+        - L7
+        - regional load balancer
+    - Front door
+        - L7
+        - global service as a Content Delivery Network(CDN)
+- *Create and configure Azure Application Gateway*
     - 
