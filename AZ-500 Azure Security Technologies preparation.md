@@ -100,10 +100,10 @@
 
 **Implement advanced network security**
 - *Secure the connectivity of hybrid networks*
-    -  Azure boation
+    -  Azure bastion
     -  Azure firewall
-    -  on prem will go via VPN gateway --> Azure fireall --> Spoke (where VMs resides)
-    -  outside on prem will go thru Azure botion --> Azure firewall --> spoke
+    -  on prem will go via VPN gateway --> Azure firewall --> Spoke (where VMs resides)
+    -  outside on prem will go thru Azure bastion --> Azure firewall --> spoke
     -  Azure monitoring gets feed from almost everything even from on-prem
  
 - *Create and configure virtual networks and subnets*
@@ -127,4 +127,14 @@
             - or we can create inbound/outbound rule for specific ip address
         - if we allow RDP it ill throw warning that RDP is allowed for open traffic for testing.. for production we must use VPN gateway or others
         - also we can associate multiple subnets from different virtual networks as part of the same resource group.
-    -  
+    -  **Application Security Group**
+        - go to resource group -> search application security group -> create ASG
+        - go to any VM you created -> select *Networking* blade
+            - click "Application security groups
+            - configure app sec groups
+            - select the ASG we created and Save it
+            - select the Inbound port rules within the VM - networking
+            - in the *source* --> select the *Application security group* -> select the port range 443 protocol any priotoriy number, name -> Add
+            - can able to attach to all subnets
+            - NSG can have inbound oubound rules
+            - but for ASG, we need to apply the rules where we added like VM.. if we go to ASG, there wont be any rules like NSG.
