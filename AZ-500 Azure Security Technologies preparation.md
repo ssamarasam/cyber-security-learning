@@ -97,4 +97,34 @@
         - NoDataActions
     - ENtra -> Roles and administrators -> create custom role and can assign i to someone
     - go to resource group, select it, select IAM and can add roles to it
-    - 
+
+**Implement advanced network security**
+- *Secure the connectivity of hybrid networks*
+    -  Azure boation
+    -  Azure firewall
+    -  on prem will go via VPN gateway --> Azure fireall --> Spoke (where VMs resides)
+    -  outside on prem will go thru Azure botion --> Azure firewall --> spoke
+    -  Azure monitoring gets feed from almost everything even from on-prem
+ 
+- *Create and configure virtual networks and subnets*
+    - Create resource group - vNetGroup
+    - go to Virtual Network -> select the resource group -> new name for VN : vNet1 -> set the ip address 10.1.0.0/16
+        - add one subnet as part of the VN creation -> Add subnet: Subnet1A, 10.1.1.0/24 (0 to 255 are allowed)
+    - go to resource group, select the VN created under it.. it will show the subnet also -> create more subnets : 10.1.2.0/24
+    - Create more Virtual networks and its subnets under them
+    - the subnets within the virtual network can able to talk to each other(10.1.1.0 can communicate to 10.1.2.0), but vNet1 cannot communicate to vNet2
+- *Secure the connectivity of Virtual networks*
+    - Network Security Group - NSG
+    - Application Security Group - ASG
+    - Subnet can have one NSG
+    - VMs can have many vNIC - eeach one can be tied with one NSG
+    - to avoid tying NSG for each vNIC, a VM can be tied with one ASG to solve the issue because of one NSG allows in nic and other NSG also should be same for the other NIC
+    - go to resource group -> create NSG
+    - go to NSG
+        - set the inbound rules
+            - the lower the priority-number, higher the priorority
+            - if higher number has deny rule, if the lower number has allow rule, allow rule will be considered as it is the top priority
+            - or we can create inbound/outbound rule for specific ip address
+        - if we allow RDP it ill throw warning that RDP is allowed for open traffic for testing.. for production we must use VPN gateway or others
+        - also we can associate multiple subnets from different virtual networks as part of the same resource group.
+    -  
