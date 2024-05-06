@@ -116,6 +116,55 @@ Things to consider:
 2. role requirements in zure portal - accoridng to role privileges. in azure portal, onky global admins or priviledged role admins can manage AUs
 3. scope of administrative units - recognize the scope of an AU - members and admins of an AU can exercise theie default user permissions to browse other users, groups, resources outside of their AUs.
 
+## Configure Subscriptions
+
+**Azure Regions**
+- represents a geo area which contain one or more datacenters
+- 60/140 countries
+- flex and scale to bring apps closer to users
+- preserve data residency , comprehensive resiliency options
+
+Region pair:
+- to support always-on-availability of azure resources within same geo
+1. physical isolation - 300 miles seperation
+2. platform provided replication - geo redundant storage - auto replication to region pair
+3. region recovery order - one region is prioritized to recover during a broad outage
+4. sequential updates - rolling updates minimizes downtimes, bugs, logical failures
+5. data residency
+
+things to consider region/region pairs:
+1. resouce and region deployment
+2. service support by region - service availability
+3. services that dont require region
+4. exceptions to region pairing
+5. benefits of data residency
+
+- azure global infrastructure - search by country,regions or product
+
+**Implement azure subscriptions**
+- help you organize access to azure resources, help you control how azure resource usuage is reported, billed and paid
+- eg: dev subscription, test and prod
+- every service belongs to one subscription
+- can have different billing and payment configuration
+- multiple subs can be linked to one azure acct
+- billing for one azure serives is done on a per-subscription basis
+- programmatic operations for a cloud  service ight req a subscription-id
+
+Things to consider:
+1. types of azure acocunts needed - entra/directory or MS account
+2. multiple subscriptions based on project, structure, need
+3. dedicated shared services subscriptions - ensure all common network resources are billed together and isolated from otehr workloads - azure expressroute and virtal WAN
+4. access to resouces - each subs linked to ms entra id and gets authenticated with entra before they access resources
+
+obtain a subscription:
+1. enterprise agreement - upfromt monetary commitment
+2. microsoft reseller - buy azure thru open licensing platform
+3. microsoft partner 
+4. personal free account
+
+Identify azure subscription usage:
+free, pay as you go, enterprise agreement, student
+
 
    
 
