@@ -245,7 +245,57 @@ Things to know:
 - enforcement rules and compliance - enable exiting or create custom policies. evaluation.
 - apply policies at scale - multiple policies - policy initiative - control accross org 
 - perform remediation - real-time remidiation - remediation on exising resources
-- exercise governance - 
+- exercise governance - implement governance ( support multiple teams, manage subs, stdarzie and enfore how cloud resource are configures, manage regu compliance, cost, security, design consistancy)
+
+Things to consider:
+- deployable resources - specify type of resouces to deploy sing azure policy
+- location restrictions - specify locations 
+- rules enforcement - complaince rules, configuration settings, enfore a required tag and define allowed values
+- inventory audits - use azure policy with azure backup service and run inventory audits
+
+**create azure policies**
+- compliance conditions for a resource
+- one or more policyes are comines to intiative definition to control scope of policies and evaluate the compliance of the resources
+
+step1 - create policy definitiion - built in or custom
+- express a condition to evaluate and the action to apply when conditions are met
+- eg: prevent VM to be deployed if they are xposed to public ip address
+
+step2 - create an initiative definition
+- set of policy definitions
+- to ensure resources are compliant with securty regulations
+
+step 3- scope the initiative definition
+- azure policy lets control how the intitiative definitions are applied to resouces in your org
+- can limit the scope of an initiative definition to specific management groups, subscriptions and resources
+
+step4 - determine compliance
+- after assigning, we can evaluate the state of compliance of all our resorces
+- individual resource, resorsce grps, subs within a scope can be excempted from the polices to affect them
+- they cshould be handled individually for each assignment
+
+**Create Policy Definitions**
+
+examples of few built in defs
+- allowed vm machine size SKUs
+- allowed locations
+- configure azure device update for IOT hub accounts to disable public network access access
+
+azure -Policy -> +Policy definition(def location, name, description, category(new/existing)
+
+**Create initiative definition**
+e.g:
+- audit machines with insecure pwd secuity settings
+- configure windows machine to run Azure monitor agent and associate them to a Data collection rule
+- configure Azure defender to be enabled on SQL servers
+
+**Scope the initiative defition**
+policy - Assignments -> Assign Initiative -> select the affacted subs, resource groups
+
+**Determine compliance**
+- Policy -> Compliance (compliant or non-compliant)
+
+
 
 
 
