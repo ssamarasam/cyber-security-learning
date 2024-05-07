@@ -295,6 +295,56 @@ policy - Assignments -> Assign Initiative -> select the affacted subs, resource 
 **Determine compliance**
 - Policy -> Compliance (compliant or non-compliant)
 
+## Configure role based access control - RBAC
+?? discretionary access control
+?? mandatory access control
+
+**Implement role based access control**
+- RBAC determines what operations specific users can do on specific resources
+- Azure RBAC is an authorization system built on ARM - provides fine grained access management of resources in azure
+
+- application, user, group
+
+Azure RBAC concepts:
+- security principal - any object that request access to resources (user, group, service principal, managed identity)
+- role definition - reader, contributor, owner, user access admin
+- scope - the boundary for the requested level of access / how much access is granted - management grop, subscription, resource grp, resource
+- role assignment
+
+Things to consider:
+- requestors
+- roles
+- scope of permissions
+- built-in or custom definitions
+
+**Create a role definition**
+- consists of a set of permissions - defned in a JSON file - has permission sets
+    - actions
+    - notActions
+    - dataActions
+    - assinableScope - list the scopes where a role definition can be applied
+
+  Things to know:
+  - Azure RBAC provides built in- we can create custom
+  - Owner built in role has the highest level of access privileges
+  - AssinableScope permissions for a role can be a management group, subscription, resource group, resource
+
+[ " * " ] , /*/read, /*/delete
+
+Role scopes:
+- / represents a scope as a role available for assignment for all requestors
+- '/subs/lwj0nn97-nbygv-dvb', '/subs/bbbj-jndjdvjbdc' --> two subs are assigned
+- can restrict to network group part of a subscription also - '/subs/sbjbvjd-ksdjbvkjvbhwg-87cbwdbjvjkdwbv/ResourceGroups/NetworkGroup
+
+
+Things to consider when creating roles:
+- using built in roles
+- creating custom roles
+- limiting access scope
+- controlling changes to data
+- applying deny assignments
+
+
 
 
 
