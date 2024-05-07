@@ -165,6 +165,63 @@ obtain a subscription:
 Identify azure subscription usage:
 free, pay as you go, enterprise agreement, student
 
+**Implement MS Cost Management**
+
+MS cost management:
+- support for administrative billing tasks
+- manage billing access to costs
+- monitor and control azure spending and optimize your azure resource usage
+
+
+Things to know:
+1. Microsoft cost management shows org cost with usage patterns with adv analytics. negotiated prices, factor in reservation, azure hybrid discounts, predictive analytics
+2. reports - usuabe based costs - internal, extrenal, azure market place charges, understand spending / resource use, fid anamolities, taxes, reservations cost might not be visible in reports
+3. uses azure management groups, budgets, recommendations - how u might reduce costs
+4. use portal, or  apis for export automation, integrate cos data with ext systems/process. automated billing reports, scheduled reports
+
+Things to consider Microsoft Cost Management:
+1. cost analysis - aggegated costs, accumulates cost over time
+2. budget options - help prevent cost thresholds or limits surpassed
+3. recommendations - idle resource, optimization recommendations
+4. export cost management data to analys with extrenal systems using csv export
+
+
+**Resource Tagging**
+- apply to resources to logically organize into categories
+- sorting, searching, managing and analysing
+- name/value : server: production or test
+- can view consolidated billing based on tags
+
+Things to know:
+- tags applied to resource groups are not inherited by the resources in the resource grp
+- name/value
+- max 50 for each resource group/resources
+
+things to consider:
+- search on tag data  for searcing resources by tag/value
+- finding related resources
+- grouping billing data by tags
+- create tags programattically by using azure powershell/cli
+
+e.g tag:   status: temp -> to store temporary resources so that we will plan to delete the resources by seeing the tag names
+
+**Apply cost savings**
+- reservations - pre paying reservation discounts upto 70% of pay-as-you-go billing without affecting anything
+- azure hybrid benefits - license - software assurance - migrating to azure - azure hybrid benefits saving calculator to determine your savings
+- azure credits - 
+- azure regions
+- budgets
+- pricing calculator
+
+## Azure Policy / Management groups
+
+- ensure resource compliance
+- service enables you to create, assign, manage policies to control or audit the resources
+- enforce different rules, so they are compliant with corporate stds
+
+**Create Management groups**
+- container to manage access, policy, compliance accross subscriptions
+
 
    
 
