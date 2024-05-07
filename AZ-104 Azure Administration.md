@@ -221,6 +221,32 @@ e.g tag:   status: temp -> to store temporary resources so that we will plan to 
 
 **Create Management groups**
 - container to manage access, policy, compliance accross subscriptions
+- provides a level of scope and control over your subscriptions
+
+Things to know:
+- root group / top-level management group
+- subscriptiptions inherit the condisiotns applied to the management group its under
+- six levels of depth
+- RBAC is not enabled for mgmt grp operations by default
+
+Things to consider:
+- custom hierarchies and groups
+- policy inheritance - retrict regions at manag group.. so resouces cant be created in those retricted regions
+- compliance rules
+- cost reporting
+
+create management groups:
+Azure policy -> management groups -> create -> id(can submit commands using mgmt id), display name
+
+
+**Implement Azure Policies**
+
+Things to know:
+- enforcement rules and compliance - enable exiting or create custom policies. evaluation.
+- apply policies at scale - multiple policies - policy initiative - control accross org 
+- perform remediation - real-time remidiation - remediation on exising resources
+- exercise governance - 
+
 
 
    
