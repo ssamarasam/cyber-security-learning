@@ -344,6 +344,16 @@ Things to consider when creating roles:
 - controlling changes to data
 - applying deny assignments
 
+**Create a role assignment**
+- process of scoping  a role definition to limit permisisons for a requestor(user, group, service principal, managed identity
+- e.g: contributor(role definition with actions, notActions) is assigned to Marketing group for a resource group(pharma sales)
+  - so Marketing group can manage only pharma sales with the allowed permissions defined the role defintion
+  - role definition + who + resource group
+
+**Compare Azure roles to Microsoft Entra roles**
+1. classic subscription administrator role
+2. Azure role based access control RBAC roles
+3. Microsoft Entra roles
 
 
 
