@@ -501,7 +501,52 @@ consideration:
 - can have resos from many different regions
 
 Creating resource groups:
-- 
+- all resos in a resos-grp shoudl be in the same life cycle. else move the resos to other resos grp
+- each resos can be in one resos grp
+- can add/remove resos from resos grp anytime
+- can move resos from one resos grp to other
+- can contain resos from different regions
+- can be used to scope access control fro administrative actions
+- a resos can interact with another resos which is in differnt resos group but a different life cycle. for e.,g: web accessing a database
+
+when creating resos-grp, location must be provided for compliance reasons . resos grp stores metat about the resources.
+
+**Create Azure Manager Locks**
+- to prevent accidental deletion of a resource
+- can associate the lock a subs, resorce grp, resource
+- locks are inherited by child resources
+
+type:
+- read-only - prevent any changes to the resources
+- delete - prevent deletion
+
+only the Owner or user access admin can create or delete management locks
+
+**Reorganize Azure Resources**
+- move resos from one resos-grp to another resos-grp within a subs or to new subs
+  - when moving, source and target groups will be locked(cannot add, update, delete resources) but resources will be available to use
+  - check for limitations
+  - when you move the resource, dependancies also should be taken carre. when you move a VN, you must move its gateway resos 
+  - go to resos group --> select *Move* -> choose the option to move
+ 
+**Remove resources and resource groups**
+- when deleting resos grp, all the resos within it will be deleted
+- sometimes resos from other grp might depend the resos - caution
+
+using powershell to delete resos grps: prompts for confirmation, returns no output
+Remove-Az-ResourceGroup -Name "ConstosRg01"
+
+can move individual resosurce or move from delete option of resource
+
+**Determine Resource Limits**
+- azure lets you view resos usage against limits - to track current usage, plan for future use
+- subscription --> usage + quotas -> view the usage
+- limits can be increased
+- if you are maximum limit, it cannot be increased
+
+
+
+
 
 
 
