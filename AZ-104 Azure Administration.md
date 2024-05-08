@@ -355,6 +355,88 @@ Things to consider when creating roles:
 2. Azure role based access control RBAC roles
 3. Microsoft Entra roles
 
+**Apply Role based access control**
+- ENtra admin roles are set at root level
+- Azure RBAC roles provide granural access mgtmt for resources and can be aplied at multiple levels such as root, management, subs, res-grp, res
+
+**Fundamental Azure RBAC roles**
+1. Owner - all acces even to delegate access. sys admin, co-admin are all assigned the owner role at the subs scope
+2. Contributor - can create /manage all res. cannot grant access to others
+3. Reader - can view exising azure res
+4. User Access administrator - can manage user access to azure resources
+
+## Configure Azure resources with tools
+
+using tools, admin can
+- deploy hundres of resources at a time
+- configure indi sevrcies using scripts
+- viewing rich reports acress usage, cost, health and many more
+  
+**use azure portal**
+https://portal.azure.com
+- search reso, svc, docs
+- manage resources
+- customize dashboards
+- acces cloudshell
+- reciev notifications
+- documentations
+
+**Use Azure CloudShell**
+- browser based command line tools for bash and powershell
+
+features:
+- file mounting temporary
+- integrated graphical text editor - base don Monaco editor
+- authenticates automatically to resos
+- temp host per user basis
+- times out after 20 mins of inactive state
+- *requires resource group, storage account and Azure file storage*
+- persists $HOME using a5 gb image held in your file share
+- permissions are set a s regular linux  user in bash
+
+**use Azure PowerShell**
+- can be added to Windows Power shell or powershell core
+- add the azure specific commands
+- e.g: New-AzVM resosurce group name, name, image
+- can be access via azure cloud shell or can be installed in windows, macos, linux
+- two modes - interactive mode or scripting mode (multiple commands)
+
+Az Module:
+- Azure powershell module containg cmdlets to work with azure features
+- resources
+- storage
+- vms
+- entra id
+- containers
+- machine learning
+
+lab:
+1. create resource group
+2. create managed disk
+3. configure managed disk
+
+powershell
+$location = (Get-AzResourceGroup -Name gkbf-whbvbv-wmdndbd).location
+$rgName = 'gkbf-whbvbv-wmdndbd'
+New-AzResourceGroup -name $rgName -location $location
+
+
+diskConfig - location, createOption, disksizeGb, sku
+diskName = 'az104-03c-disk1'
+
+New-AzDisk
+    - ResourcegroupName
+    - diskname $DiskName
+    - Disk $DiskConfig
+
+New-AzDiskUpdateConfig  -disksizegb 64 | update-AzDisk resourcegroupName, diskName
+
+(Get-AzDisk resgrpname, diskname).sku  -> returned StandardLRS
+
+New-AzDiskUpdateConfig  -Sku PremiumLRS| update-AzDisk resourcegroupName, diskName
+
+
+
 
 
 
