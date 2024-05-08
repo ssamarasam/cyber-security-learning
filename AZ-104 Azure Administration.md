@@ -446,6 +446,63 @@ New-AzDiskUpdateConfig  -Sku PremiumLRS| update-AzDisk resourcegroupName, diskNa
   - az find blob
   - az storage blob --help
 
+## Azure Resource Manager
+- to manage resources
+- resource locks
+- move resources from one resource group to another
+- track resource limits
+
+Benefits:
+- enables you to work with all related resources as a group
+- deploy, update, delete all resources for your solution in a single, coordinated operation
+- templates
+- security, auditing, tagging features
+
+1. consistant management layer
+   - to perform tasks thru cli, powershell, portal, REST APi, client SDKs,
+   - Azure Resource manager API
+   - API request -> ARM service(authenticates, authorizes) -> ARM rotes the request to appropriate resource providers
+
+Benefits:
+- deploy, manage, monitor all resos as a grp rather than handling individually
+- repeatedly deloy your solution in a consistent state
+- manage ionfra thru declarative statements rather than scripts
+- can able to define the dependancies between resosuces, so they are deployed in correct order
+- RBAC acces control natively integrated to management platform
+- apply tags to logically organize within the subs
+- view cost by tags
+
+Guidance:
+- define/deploy infra thru delcrative rather than imperative commands
+- define all deployment and config settings in templates. no manual steps
+- run imperative commands to manage .. start/stop app
+- arrange resos with the sam liefcycle in a resos-grp and tags for organizeing resos
+
+**Azure Resource Terminology**
+- resource
+- resource group
+- resource providers
+- template
+- declarative syntax
+
+resource provider:
+- format: {resource provider}/{resource type}
+- e.g: Microsoft.KeyVault/vaults
+
+**Create resource groups**
+- when you deploy thru templates and if it fails, the output of the job will show what failed, why failed
+- we can fix and redeploy the resouces
+- if you want to deploy a third resource, the existing 2 resos will not be affected(incremental approach)
+
+consideration:
+- resos can exist in one resos grp
+- cannot be renamed
+- can have resos of many diff types/svs
+- can have resos from many different regions
+
+Creating resource groups:
+- 
+
 
 
 
