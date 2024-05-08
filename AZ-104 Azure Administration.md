@@ -435,6 +435,17 @@ New-AzDiskUpdateConfig  -disksizegb 64 | update-AzDisk resourcegroupName, diskNa
 
 New-AzDiskUpdateConfig  -Sku PremiumLRS| update-AzDisk resourcegroupName, diskName
 
+**Use Azure CLI**
+- command line tool , bash, administrative tasks
+- e.g: restart a vm:   az vm restart -g myResourceGroup -n MyVM
+- via azure cloudShell or can be locally installed in any os
+- interactive or script
+- supports cm.exe and bash
+- commands in the CLI are structured into groups and subgroups
+- find the commands to manage storage blog
+  - az find blob
+  - az storage blob --help
+
 
 
 
