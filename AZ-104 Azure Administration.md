@@ -603,6 +603,44 @@ e.g:
     }
 }
 
+## Fundamentals of comuputer networking
+- network protocols and standards
+- differences between WAN and LAN
+- TCP/IP
+- IP addresses, Ports
+- how these concepts apply to azure
+
+**Network types and topologies for internet based network**
+- PAN
+- LAN
+- MAN
+- WAN
+
+PAN:
+- networking needs around an indi
+- phone to a bluetooth speaker
+- network standards: bluetooh, IEEE 802.15
+
+LAN:
+- networking needs around a single location
+- office, school, hospital, airpost
+- privately owned and needs authentication/authorization to access
+
+MAN:
+- networking capabilities between two differnt locations within a city/metropolitan area
+- secure connection between each lan joined to MAN
+
+WAN:
+- networking capabilities between two different geographical locations
+- WAN links multiple LAN -> super network
+- use VPN to manage the connect between diff LANs
+
+Network topology - physical composition of a network
+- bus
+- ring
+- mesh
+- star
+
 
 
 
