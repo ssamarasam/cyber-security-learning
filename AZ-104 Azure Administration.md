@@ -544,6 +544,67 @@ can move individual resosurce or move from delete option of resource
 - limits can be increased
 - if you are maximum limit, it cannot be increased
 
+## Configure resources with Azure Resource Manager templates
+
+- azure templates
+- azure templateschema components
+- azure template parameters
+- azure quickstart templates
+
+- ARM templates define the resource manager templates in deployment
+
+Template benefits:
+- templates improve consistency
+- help express complex deployments - dependancy mapping
+- reduce manual error prone tasks
+- are code - IaC
+- promote reuse
+- are linkable with other templates
+- simplify orchestration - deploy all of your resouces and skip multiple manual operations
+
+**Azure Resource Manager Schema**
+below are the json key elements
+- $schema *- locates the version of json schema file- 
+- contentVersion *- describes the version of template
+- parameters - values to customize the deployment
+- variables - json fragments to simplify template language expressions
+- functions - user defined functions that are available within the template
+- resources *- resource types that are dpeloyed/updated in the res-grp
+- outputs - values that are returned after deployment
+
+**ARM template parameters**
+
+"parameters": {
+    "<parameter-name>": {
+    type
+    def-value
+    allowed values
+    minValue
+    maxValue
+    minLen
+    maxLen
+    metedata : {
+        description: "jfn"
+    }
+
+}
+
+e.g: 
+"parameters": {
+    "adminUsername": {
+    "type": "string",
+    metadata: {
+        "description": "bjkbv"
+    },
+     "adminPassword": {
+    "type": "securestring",
+    metadata: {
+        "description": "bjkbv"
+    }
+}
+
+
+
 
 
 
