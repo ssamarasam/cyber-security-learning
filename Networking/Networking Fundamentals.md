@@ -14,4 +14,66 @@ Benefits of networking
 - communication
 - redundancy
 
+Network Addresses:
+- MAC - 48 bits (24 bits for vendor code OUI / remaining 24 bits device id)
+- IP
+  - ipv4 (32 bits, using subnet mask, can identify network porting and host portion
+  - ipv6 (128 bits , using prefix length
+
+Parts and pieces of network:
+- NIC Network interface card
+  - wired nic, wireless nic, extrenal nic
+  - provides a circuitory required for a clinent/device to connect to a network ( it might have rj-45 connectors, LED to show the spped of 100 or 1000 by blinking)
+- SWITCH (max address to port mapping)
+  - multiple ports
+  - receives data and direct the traffic to destined network device
+  - before doing that, it uses MAC address table to identify the devices with their mac address when there is a communication which sends data to all devices and leads to flooding
+  - after learning during floowing and responce back fromt he desitned device, it maps all the mac with itsright device
+  - later all data flows thru destined devices only
+- Router
+  - router takes decison based on IP address. IP routing table
+  - when the IP is not found it its list, it goes to all zeroes meaning it will routed to the rest of the world which is internet
+  - otheriwse it directs it to the most specific route. the rout with the longest prefix
+  - protocol data unit (data) - packets - layer 3
+  - a router connects LAN network to the Internet
+- Wireless access points
+  - extends the internet coverage from wireless modem
+  - single connection back to the wired network
+  - roaming - when a device gets connected to another AP without losing its signal at a different or extended place is called roaming
+- copper cable
+  - twites to prevent electroo magnetic interference, otherwise wires will act as antenna and wil transmist unexpected data
+  - prenum cable - to avoid fume leakage in VAC system 
+  - foil wrapped 
+  - rj-45 connector T568A T568B colo codes to set the wires which will be used rightly in the networks
+    - 100baset, 1000baset (data at high rates, limitations)
+    - the longer it is, data losses might occur
+- fiber optic cable to prevnt electormagenetic interferenec rather than copper cables. lights reperesents the data
+  - Single mode fiber SMF and MMF
+  - two strands .. one to send data, other to receive data
+  - SMF for long distance applications to avoid multi mode distruptions (data in differnt order)
+ 
+Notes:
+- ethernet laer 2
+- data routed by routers later 3
+
+OSI model:
+- to understand how everything works in a network
+
+- physical layer refers to the network cabling or radio waves from wirelss access points  names dat at layer-1  as Bits
+- data link layer - concerned with physical addressing - forwarding decisions based on mac address by Switch -  ethernet swictes operate here to make directing decisions -  name data at layer-2 as Frames
+- network layer - concerned with logical addressing - forwrding decisions based on IP addressing done by routers - routers operate here at the layer 3 of OSI model  - data at this layet is Packets
+- transport layer - concerned with the logical connections
+  - reliable - transmission information was recieved or unreliable wwhen we are nto sure about the successful transmission 
+  - TCP and UDP protocol
+  - TCP - tranmissison control protocol - considred as reliable transport protocol
+  - UDP - user datagram protocol - unreliable
+  - data here at layer 4 is called as Segments
+- Session layer - establishing, monitoring and then tearing down the communication sessions between the hosts
+  - like API calls
+- presentation layer
+  - how data is represented
+  - encryption protocls live here
+  - formatting details live here
+
+
 
