@@ -641,6 +641,66 @@ Network topology - physical composition of a network
 - mesh
 - star
 
+other standards:
+- ethernet
+- fast ethernet
+- gigabit ethernet
+- 10 gigabit ethernet
+- terabit ethernet
+
+Networks in Azure:
+- Auzre Virtual network
+- connectivity services
+  - vpn connection via Azure gateway
+  - dedicated connection thru Azure ExpressRoute(secure point to point service)
+
+**Types of network devices to use when you build a network**
+
+network standards:
+- network protocols  provide a unified method foc communication
+- network standards govern the hardware and software that uses them
+- 802.11 - wireless LAN
+- 802.15 bluetooh
+- 802.3 ethernet
+
+network infra:
+- repeaters
+- hubs
+- bridges
+- switches
+- routers
+
+all devices depend on ip address or mac to deliver data on the network
+
+mac - media access control 
+- unique identifier assigned to every network enabled device at the time of manufacture
+- burned-in, ethernet hardwarre, physical address
+- aa-bb-cc-dd-ee-ff-gg
+- aa-bb-cc -> refers to manufacturers Organizationally unique idenfifies OUI
+- ff-ff-gg -> refers to device id
+
+repeater
+- two port device - repeats the network signal when netw devices are distant from each other
+- it doesnt modify the signals
+
+bridge
+- divides a network into network segments and filter and fwd data packets between these semengs
+- uses mac to identify the destination and reduce unncessary traffic on netw segments
+
+Hub
+- multip port repeater on a netw
+- connestc more than one device structure he layout of netw
+- operate at one speed whci is the speed of the slowest netw deice connected to it
+- types:
+  - fast ethernet - class1 class II
+  - dual speed
+
+Switch:
+- combines the functionality of bridge and hubd
+- segment networks and intereprent/filetr data to send directly to dest netw device
+- full duplex mode - can able to send and revice data to and from a netw devices at the same time
+- features:
+  - 
 
 
 
