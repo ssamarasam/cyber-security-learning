@@ -74,6 +74,59 @@ OSI model:
   - how data is represented
   - encryption protocls live here
   - formatting details live here
+- application layer
+  - users interaction
+  - user interactig the web - then HTTP protocol/https,
+  - DNS server wehn we dono the IP address
+  - DNS protocol lives at layer 7
+
+Please Do Not Throw Sasuage Pizza Away
+All People Seem To Need Data Processing
+
+
+PDNT are called PDUs Protocol Data Units (Bits, Frames, Packets, Sessions)
+Bacon Frying Produces Salvation
+
+TCP/IP Model:
+- combines layet 5 thru 7 as single model called application layer
+- Application Layer
+- Transport Layer
+- Internet Layer
+- Network Access Layer / Network Interface Layer / Link Layer ( Physical layer + Data Link layer)
+
+
+Protocols:
+- HTTP - TCP port 80 when communicating with traditional web serevers
+- HTTPS - TCP port 443
+- DNS - TCP or UDP Port 53
+- NTP - Network Time Protocol - UDP Port 123
+- DHCP - Dynamic host configuration protocol - UDP Port 67
+  - automatically assign IP address to the Network devices
+
+
+DHCP - Dynamic host configuration protocol
+- dhcp server
+- discover, offer, request, acknowledgement  DORA
+- router with DHCP relay agent
+- DHCP v6 server
+  - stateful - dhcp v6 server will retun all the necesary details ipv6 address, prefix length and dns details
+  - stateless - netw device gets the prefix(whats the network we are on) from router using NDP (neighbour discovery protocol- EUI 64)  , remaining details can be recieved from DHCP stateless server
+ 
+DNS:
+- when the IP od any webserver is needed, netw device gets the ip address from DHCP server and then it will communicate with DNS server for the destined ip adress
+- when DNS server responds with ip, it then send packts to the web server it needs
+
+NAT - Network Address Translation:
+- the router translates a client deice's local IP into global IP address and sends packets to global web server
+- and the mappsing are stored in routers mapping table using NAT
+- when the router gets response from web server, it then checks the mappings and pass the request to the local ip address of the client
+- similarly if multiple devices are sending packets, routercreates new global addreess for each client
+- thats the limititaion NAT enabled router cannot acieve all time
+- 
+
+- to solve this, if PAT(Port Address Translation) is configured,it creates only one global address for all local clients, but additionally it will store the Source PORT Number for each client
+- so the source prot number is the mapping for each client
+- 
 
 
 
