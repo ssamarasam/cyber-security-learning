@@ -126,7 +126,103 @@ NAT - Network Address Translation:
 
 - to solve this, if PAT(Port Address Translation) is configured,it creates only one global address for all local clients, but additionally it will store the Source PORT Number for each client
 - so the source prot number is the mapping for each client
-- 
+
+NTP - Network Time Protocol
+- to allow network devices to get Time from time sources Caesium 133 element time from Atomic clock
+- this time can be communicated using NTP which uses UDP port 123
+- stratum number from time sources help netw devices to find the accuracy level of time
+- the lower strutum number, the hight the authority is
+- Atomic clock - stratum number 0 --> Internet based NTP server with stratum number 1
+- and if we have a server in our network which learns time from NTP server then stratum number in our sever is 2
+- increasing stratum number from every hop away from atomic clock
+- 16 or greater is invalid time source (too far away from an atomic clock)
+- stratum number - believability of a network time source
+
+QoS:Quality of Service in network congestion when there is not enough bandwidth
+- if 3 servers sends data which passes thru a switch, but swicth can send one data at a time to outside
+- QoS can help in this issue by prioritizing the signals
+
+QoS features:
+- classification and marking
+- queuing (router interface's buffer to store packets that cannot be sent at that moment)
+- queuing can be divided into sub-queus based on the category like VoIp and other tyraffic. when Voip bucket is not ful, every voip can move faster outside
+- data burst
+
+**Wireless Networks**
+types:
+- Ad Hoc wireless lan
+  - without needing network infrastructure, ad hoc enabled dvices can communicate
+  - convenient for file transfers like Air drop feature in smart phones
+  - typically uses its own bluetooh or its wifi
+- Infrastructure wireless LAN
+  - wireless clients can connect to accesspoints whch is in turn connected to wired connection
+  - scalable by adding more access points wherever needed
+  - moitoring support
+    - no of wireless clients connected
+    - can check bandwith utilization
+    - could configure security lile restrict guests not have access to corporate servers
+- Mesh Wireless LAN
+  - can extend Access ponts to longer distance by placing mesh access points which needs electricity wheich then receive signals and tranmist wireless signals
+
+Bands:
+2.4 Ghz - 1 to 11 channels - 3 non overalaping (5 channels between) - 1, 6, 11 13 and 14 are used only in japan
+5 Ghz - 20 non overlapping channels
+omnidirectional antennas
+directional(parabolic) antennas
+
+**SDN - Software Defined Networking**
+- using SDN controller, we can express our intent so that it can manage all networking devices, siwtches, routers
+
+- Application(NBI northbound API) --> SDN controller -> routers, swicthes(southbound api)
+
+Virtualization:
+
+single physical server and install multiple virtual servers on that single physical server
+for e.g:
+  a MS windows server
+  a linux server
+  an oracle solaris server
+we copuld have a physical server for each of those
+or
+we could have single physical server and install 3 virtual servers as Virtual machines
+
+single physical server hosting 3 virtual servers
+that physical server running a peince of software called hypervisor
+a hypervisor can create, start, stop multiple virtual machines and these VMs are logically seperate from one anoVther and each running their own operating system
+but they are able to share the resources of the underlying physical server
+allocate differnt amounts of space, memory to each vm and if they want, they can share the same connection
+
+type 1 hypervisor
+- installed on physical server without any underlying OS
+- VMwares EXI hypervisor
+
+type 2 hypervisor
+- installed on top of an existing OS
+- install VMware Fusion hypervisor on MAc and run windows from and sue he same machine
+
+Containers:
+if we need to have 3 virtual servers with MS wondows operating system and if we install 2 virtal servers and ms windows seperately, we end up with 
+- in containers, they can share an underlying Operating system
+- these containers could be running differnt applications and have no knowledge of one another, but they could be still sharing one underlying Operating system
+- reducing the storage required on the physical server and making each container smaller and more portable
+- e.g Docker
+- its not os, apps we can virtualize, we can slo virtualize network components such as virtual routers, virtual switches - reducing physical resources we need ona network
+
+Cloud technologies:
+- Saas
+- PasS
+- IaaS
+
+- Public
+- private
+- hybrid
+
+- acess on prem and cloud using internet
+- access using VPN
+
+- 5g
+- wireless LAN 6 
+
 
 
 
