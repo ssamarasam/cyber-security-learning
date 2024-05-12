@@ -10,6 +10,10 @@
 **API Security Fundamentals**
 > [Click here to find what I learned from this course](https://github.com/ssamarasam/cyber-security-learning/blob/9cdc2ec28feda2e387072f0149add26cbbe1defa/API%20Security%20Fundamentals%20Course.md)
 
+**Networking Fundamentals**
+> [Click here to find what I learned from this course](https://github.com/ssamarasam/cyber-security-learning/blob/e10bdc1cb0f84deefce64bc2455a993dae0a0aee/Networking/Networking%20Fundamentals.md)
+
+
 **CISSP Learning - in small bits**
 
 
