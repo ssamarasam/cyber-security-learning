@@ -700,7 +700,189 @@ Switch:
 - segment networks and intereprent/filetr data to send directly to dest netw device
 - full duplex mode - can able to send and revice data to and from a netw devices at the same time
 - features:
-  - 
+  - adjust the speed of inbound packet witht he outbound speed
+  - support power ever ethernet
+  - other moduels can be attached - port mirroting, packet sniffers, ids
+
+Types of ethernet switch:
+- unmanaged
+  - no config capability
+  - switch happens automtaically
+  - small home, small office envs
+- managed
+  - able to configure
+  - thru cli which uses telnet or ssh, remote console, web interface
+  - config options
+    - Qos - priority
+    - Virtual LANs - craete logical grp of devices
+    - STP Spanning tree protocol - build alternate network routes when cable/device fails to build resiliency
+    - port mirroring - use with network analyzer to diagnose netw issues/problems - exports copy of netw traff to single port
+    - bandwidth rate limiting - control bandiwth used by specifc ports
+    - MAC address filtering - control the deicves can be sued to access swicth based on mac address
+    - SNMP client - configure SNMP with your network monitoring tools
+  - sub-types of managed switches
+    - smart - halfay ebtween unmanaged, managed switch - only web interface - only can manage port mirroring, virtual LANs, bandwitth rate limiting
+    - enterprise - fully managed switch service
+
+router:
+- connect mutiple networks together and provide internet access
+- also called gateway
+- fwd decisons based on IP address
+- def gateway IP address
+- Interconnectvity:
+  - routers in interconnected networks maintains routeting table - has he preferred routes
+  - start of authority of all network devices in its network
+  - routing information is shared between routers using  a routing protocl called BGP - Broder Gateway Protocol
+- Types:
+  - Access Routers - simple rotuing - home or small offcie
+  - Distribution routers
+    - compile routing data from multiple routers
+    - more sigifincant memory and power
+    - hold vast quantiies of routing info
+    - usd to manage the QoS scross a WAN
+  - Edge routers
+    - opeatres between local network and other networks
+    - or local netw and internet
+    - come with firewall to improve security
+    - act as gateways and to filter traffic and route it inernally or exte based on packet headers
+    - hanld DHCP and DNS services
+  - Core Routers
+    - enterprise routers for diff geo lcaton
+    - higher bandwidths
+    - fewer features than edge routes
+    - pri focus to minize packet loss and congestion
+    - pkt fwding to edge routers
+
+Wireless Routers:
+- all routing capabilities and provide wirelss acces point fuctions
+- build wiress local area network
+- not same as wireless modem which converts signal from ISP into the one thats usable in the network
+- uslaly wireless modem comes with combine router to craete privatre home or office network
+
+
+Azure options: - to help with routing and managing netwok traffic
+- Azure Hub Spoke
+  - its a reference architecture
+  - the hus is usually a Azure Virtual Network - acts as a connection point between on prem and cloud
+  - each spoke is a virutla network connected via a peer network
+  - connections ebtween on prem and lcoud can be made using VPN gateway or Azure ExpressRoute
+ 
+- Azure ExpressRoute
+  - a dedicate circuit proivded by a third party partner between on-prem and cloud uses higher bandwith than a regular VPN gateway connection - super resilient connection
+ 
+**Network Protocols**
+- set of conditons or rules to specify how netw devices commuicate on a given netw
+
+Network address 
+- mac - identifier on a hardware level
+- ip adresss - on a logical or sftware level
+
+data packet:
+- a unit of data that two devices on a network send eaqch other
+- raw data
+- headers
+  - sender/dest address
+  - size of pkt
+  - protocol used
+  - packent number
+- trailer
+  - deals with error checking
+
+datagram:
+- refers to data packet where the delivery of data cannot be guranteed - data packets of unreliable service
+
+routing:
+- mechanism where the data packets goes form one dive to otehr deive on differnt networks
+
+protocol categories:
+- network communication protocol
+- network security protocols
+- network management protocols
+
+Network communication proocols:
+- establishing and maintaining communication between devices
+- foundational protocols - logincal transmisison of data over the network
+  - Transmission control protocol
+    - send data securely and across ip based network
+    - reliable
+    - communication oriented protocol
+  - Internet protocol
+    - addressing of data packet
+    - adds header
+  - user datagra protocol
+    - connectionless protocol
+    - unreliable
+    - dont verify that the recieptnet device recieved the data
+remaining protocls are type based
+  - HTTP uses TCP/Ip to deliver web page content from server-  handle download /uplod from remote servers
+  - FTP transfe files between diff computers on anwtework
+  - POP3 - Post office protocol3 - used by email client to recive email - uses TCp for the managemnt of emeil delivery
+  - SMTP - Simple Mail Transfer Protocol - send email - uses TCP
+  - IMAP - interactive mail access protocol - more power than pop3 and smtp - used to manage sigle mailbox on and email server
+
+Network Security Protocols:
+- uses enctryption and cryp[tographic principles to secure messages
+
+SSL - secure Socket layer
+ - std encr and security protocol
+ - provides secure conn between your computer and a target comuter or device accessed over internet
+TLS - Transport layer security
+ - sucecssor to SLL- more robust security encr protocol
+ - designed to stop message forgery and eavesdropping
+ - typiclaly used to rotect wbe based, email voip, instant msging
+HTTPS:
+ - secure version of http protoc, by ussing ssl or tls
+Secure Shell SSH
+ - is a cryptographic network security protocol provices a secure connection accross a network
+ - ssh is designed to support command line exeuon of instructions and reote authenticaltion
+ - FTP uses many ssh functions for file transfers
+Kerberos:
+ - validation protocl provides roubst authentication fo clnt serevr based applications using secret key cryptography
+ - it assum all endpoints in network are insecure
+ - constany enforces strog encr for all communications and data
+
+Network management protocol:
+- focus on sutainability of netw by looking at faults and performace
+- monitoring and reporting
+
+1. simple network management protocol - SNMP
+   - internet protocl which allows for the collection of data from devices on our network and mgmt of the dvices
+   - devics has to support snmp protocol - swithes, routers, lapos, desktops, printers
+2. Internet control message protocol - ICMP
+   - protocls included within internet protocol suite ips
+   - allows deivces to send warning/erros mesags with operational details such as sucecs or faily of connection request or if srvice is unreliable
+
+*Ports*:
+- logical construct that allows the routing of incoming messages to specific processes
+- particular port for evey typoe od ips
+- communication protoclos such as tcp or udp assignes these port numbers
+- first 1024 pots are well known ports - reserved for common srvices
+- remainging higher number are ephemeral ports , unresrved, used by dedicated applications
+
+- internet assigned numbers authority IANA manages allocation of ports, regional assignement of ip address and dns root zones
+- well known ports, registered ports, dynamic/private ports
+
+  22 - secure shell ssh
+  25 - smtp pro for email rotung
+  53 - dns
+  80 - http
+  443 - https
+  123 - ntp
+
+
+  Innternet Protocol Suite or TCP/IP suite:
+  - collection of communication protocols
+  - abstract, layerd netwroking ref model
+  - used tosend recive data on internet and similar networks
+  - TCP/IP model and OSI Model
+
+  Monitoring networks in Azure:
+  1. azure network watched - to view data packets
+  2. network performmnce monitor
+  3. perforamnbce monitor
+
+  
+  
 
 
 
