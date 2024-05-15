@@ -9,7 +9,7 @@ For this particular exam and for the unconvered topics from previous course, Im 
 Security controls
 1. technical
 2. managerial
-3. operationa
+3. operational
 4. physical
 
 Technical
@@ -61,11 +61,113 @@ Control types:
   - req additional layers of approvals for finanicla trans whn theire is no automated control sys
   - using seconda authen method when primary fails/not abvilable
   - incresing physical secu when technical controls are failing
-- directive controls - invole proving specifi instructions or guidelines to ensure complaince with policies
-  - clear framefowk for employees to cfollow
+- directive controls - involve providng specifi instructions or guidelines to ensure complaince with policies
+  - clear framework for employees to follow
   - code of conduct
   - ethical gudielines
   - SOPs - std operating rpocedures - stepo by step proces to complete spcific tasks
+ 
+### Summarize fundamental security concepts
+
+CIA triad
+1. confidentiality
+2. integrity
+3. availability
+
+Non repudiation
+- ensuring accountability of actions
+- prevents denial of actions
+
+
+key aspects of non-repudiation:
+- digital signatures
+- audit trials
+- access controls
+  - identification (SID - security identifier), name user id
+  - authentication - pin,biometric
+  - authorization - principle of lease privilege
+
+Authentication, Authoirization and Accounting:
+- aaa server
+
+what do aaa server do and how they keep our digital transactions safe and reliable?
+- Authenticating people
+  - aaa server conatc domain controller when user intiates authentication request
+  - domain controller - a specilized server responsible for managing user acocunts and authentication within a windows domain env
+- Authetincating systems
+  - aaa framework with 802.1x authenticates devices in a network
+  - each dev must have a valid certificate on its end point
+- Authorization models
+  - define the scope of permissbile activites
+  - creates controlled env
+  - mitigates risk associated with unauthorized access
+- Accounting
+  - capture essential details such as username, timestamps, ip addres, accessed resosuces, actions perfoemd
+  - used for real-time monioring, histoical analysi, gerate reports for compliance/trobleshttoing
+- AAA protocols - RADIUS, Diameter and TACACS
+  - access control and accountability
+  - login in uswr/devices are stored in a database
+  - RADIUS - Remote authentication dial-in service
+    - network security -
+    - clients : wireless access points, routers, switches
+    - cleints fwd authentication req to RADIUS server
+    - this secret ebtwween radious clien and server safegards exchange of data
+    - integri of authenication proces
+  - Diameter
+    - succesof or radius
+    - modenr netw tech 4g, 5g infra
+  - Terminal access controller Access control system - tacacs+
+    - cisco
+    - routers, switches, firewalls
+
+Gap Analysis:
+a stratic process to avaluates current secu proactices against established sec standards, regulations and insudtry standards
+identify gaps between current sec posture and desired state of security
+- assessment - current sec measures, policies, procedures and technologies
+- benchmarking - comparing and marking
+- identification - areas where sec measures fall of the desigred or req-level
+- prioritization - rank the gaps based on potential impact and likelihood of exploitation
+- remidation strategy - enhance org sec posture by creating actionalby remdiation strategy to close the identifiyed gaps
+gap analysis is an iterative process
+changing threat landscape
+
+**Zero Trust**
+- imp of data and control planes in networking
+- ZT challges the asusmption of inhert trust within a netw
+- seperation of data and control planes chaglles tradiional assumption of data dn control planes shud be tightly coupled
+- data planes - effient mvement of info
+- control panes - manages the inteligce behind data rotuing, netw health , device configura
+- enhances cyberse by verify access at every step
+- regardless of their location
+  - secure netw demands distinct roles
+
+- policy admin, implicit trust zone - data flows
+  - control plane - uses subject.identity with company policies to decide which user/dev can access the new - this cntralization is needed regulate access, moniotr activ, swiftly repsond to emerging threats
+  - adaptive identity
+    - no static roles/permissions
+    - dynamically adjust access based on various signals such as user behavi,location, dev charactists,
+    - minimize the risk of unauth activ, and seamless user exp
+  - threat scope reduction
+    - minimize exposed attack surface
+    - redicng the attackable code base
+    - emporiwng rigorus patch mgmt
+  - policy driven access control
+    - automate the enforment of these diretcives
+    - sytematic approach of access rights
+    - elemniates the risk of human errro
+  - policy admin
+    - execue decison by policy engine to control access
+  - policy engine
+    - determins who gains access using policy set by org sec team
+    - evalauets all paraments, data collected by siem and then communicates its deciso topolicy administrator
+  - policy enformenet point
+    - sec checkpint follow the tules set by poli admin
+    - ensure only authorized user gets access
+    - prevents protenal breaches
+    - ultimate deci maker
+
+The Data Plane:
+- 
 
 
   
