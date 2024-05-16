@@ -167,7 +167,64 @@ changing threat landscape
     - ultimate deci maker
 
 The Data Plane:
-- 
+- the data plane in cyber security is the operational core responsible for actual movement and forwaridg of data ackets within a netw
+- focuses on executing tasks such as - routing, switching, pkt fwding based on predefined rules/policies
+- ensures secure transmi between devi in netw
+- subjects - entities who initiate data comunica
+- systems - collective infra, devices, resource respon for processing, forwarding data packets
+  - implicit trust zones
+  - internal network zone
+  - demilitarized zone DMZ - neither trused nor fully trusted
+  - external netw zone - internet and otehrs .. WAN
+
+policy engine looks at company polies and threat intelligence data to control access to the newt per user basis
+
+
+Physical security:
+- bollards - formiddable barrier for vehicular threats
+- access control vetibule
+- fencing
+- video surveillance
+- security guard
+- access badhges
+- lighting
+- visitor logs
+- sensor technologies - real time threat detection with minimal human intervention
+  - infrared - heat - identif hman/animal for ditance meausrement and obkct/animal/human detection
+  - pressure - touch - movement - pressure changes, reliable indicator of movement
+  - microwave - moving objects - detect changes i frequency to detect motion 
+  - ultrasonic - sound waves - see aorund all around corners - challenging envs
+
+policy enforcement point sits in the data plance controlling access to resources
+
+_Deception and disruption technology_
+to understand adversaries' evolving tactics - decieve and disrupt
+- honeypot
+  - sec teams trying to find attack methods, set up web with lower sec similar to legitimate web
+  - sec team monitors the attack methods and can prevent future attacks
+  - another reason to set up honeypoyt as decoy so that real web server is not attacked
+  - **attracts attackers and analyze   their attack methods**
+- honeynet
+  - study and analyze malicious activities
+  - a grp of honeypots like a network
+- honeyfile
+  - lure an attackers curiosity - sensitive file name
+  - **bait used to identify when attacker opens the file**
+- honeytoken
+  - decoy data hold no value
+  - **detec and track unautorized access**
+- fake information
+  - dns sinkhole - deliberately send to differnt address instead of desired destination
+  - fake telemtery where we identify and attack, but return fake data
+
+Notes:
+ non repudiation - aymmetic key
+ audit trails - compreenisve record of user ctivities and system actions
+
+ ### Explain the importance of change management process and the impact to security
+ <u>hello</u>
+
+
 
 
   
