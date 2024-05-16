@@ -222,7 +222,7 @@ Notes:
  audit trails - compreenisve record of user ctivities and system actions
 
  ### Explain the importance of change management process and the impact to security
- <u>hello</u>
+ 
 
 
 
