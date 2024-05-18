@@ -148,4 +148,192 @@ Zero trust:
    - policy enforment point
 
 
+**Threat actors**
+
+Motivation:
+- data exfiltration
+- blackmail
+- espionage
+- war
+- philosophical or political beliefs
+- service disruption
+- financial gain
+- ethical reasons
+- revenge
+- disruption or chaos
+
+Threat actor attributes
+based on - origin 
+- internal or extrenal
+- resources or funding
+- level of sophistification and capability
+  - low - lowest skilled - script kiddies
+  - high -
+
+
+unskilled attackers
+- taget small companies
+- initiate DDoD attacks
+- opportunistic
+- tool - use tools like low orbit ion cannon
+- lacks tech knowledge to craete or modify malwares
+- gaining recog or for thrill
+note: APT - advanced persistant threatds
+
+
+hacktivists:
+- indi/grps use their tech knowlege to promota  cause ror dive social chane instead for personal gain
+- techiniques:
+  - web defacement - electorinic graffiti - actr of vandalism
+  - ddos - verwhelming a web to cause service disruption
+  - doxing - public release of private info of an indi or an org
+  - leak of snstive data
+  - ananumus
+  - lulsec - 50 days of lulz
+ 
+Organized crime:
+- sophisticated / well structred enti levegares resos and etch skills for ilicit gain
+- use:
+  - custom malware
+  - ransomware
+  - sophisticated phshing campaings
+  - exploit emerging tech like - crupto, dark web, celluar collection devices
+  - engage in variory o ililict activities like
+    - data breaches
+    - identify threft
+    - ransomware attacks
+    - online fraud
+  - for financial gains but can be hired by anyone - fin7, carbanok
+ 
+Nation-state actors:
+- govt sponsored but kept a s seperate entity so that govt can deny their involment
+- false flag attack - attack orchestrated in a way that it appears to originate from differnt source or group
+- techniuqs
+  - creating custom malware
+  - using zero day exploits
+  - becoming an advanced persistant threat
+  - (nation state ctor - APT due to their long term persistance and stealth)
+  > APT - prolonged and targeted cyber attack - in which inrtuder gets unathu access and remains undetected  for an extended period of time - trying to steal data or monitor netw activities rather than cuase immedite damage
+  - why they attack?
+    - gather inteligence
+    - disrupting critical infra
+    - inflicining political process
+  - they also do cyber esponinage to steal intellectual property or gain competive advantage in competteive industries
+  e.g: stucknet worm
+   - malw used to sabotage iranians nuc pgm
+ 
+insider threats 
+- internal emp , contarctor , or anyoen who has access and knowleg about itrenal infra
+- extensive access - like admin
+- insiedr attacj forms
+  - data theft
+  - sabotage
+  - misuse of access privileges
+- motivations?
+  - financial gain
+  - revenge
+  - carelessness / lack of cyber sec awareness/best rpatices like newbie
+eg. snowden, twiietr attack of 2020
+
+Shadow IT:
+- the use of IT sys, device, apps, svs with the excilt org approval (stealth it, clinet it, shadow it)
+- shadow it:
+  - use of perosnl devices fo waork purposes
+  - installation of unapproved softw
+  - use of cloud servi not pporv by org
+
+eg:
+- usb
+- ext hdd
+- keyboard
+- wired mouse
+- netw adapter
+
+
+They may bring wide range of vulnerabilities as thier life cycl is not managed by an org
+
+potenal data breaches, non compliance with regu and sys disrp
+
+- plusgins
+- extension
+- byod
+
+- use of google drive, dropbox without the knowlge of org is also shadow IT - can lead to data leakage oif not properly managed
+
+Threact vectors and attack surfaces:
+
+Threact vector:
+- the means or pathway by which an attacjer can gain unauth access to netw, compu to deliver mali payload or carry out an unwanted action
+
+Attack surace:
+- encompasses all various  ponts wher an unauth user can enter data or extract data from an env
+- sum of all vuls and entry pooints and attacker could exploit
+
+
+threat vector as how of an attack
+attack surface is the aware of the attack
+
+if atack surce is netw, to sigificant imcrease sec posture of netw
+- restict access
+- removing unne soft
+- disabling unsued protocols
+
+Threat vectros in enterprises:
+- messages
+- images : stegno attack - embeding mali code within pixels
+- files
+- voice calls
+- removable devices - baiting - leaving usb with mali code
+- unsecure netws
+  - wireless - evil twins - mimic the legitimate wireless access points
+  - wired - mac address cloing, VLAN hopping
+  - bluetooth - blueBorne(vul attack pspread malware, on path communi to intercept communi), blueSmack( a type of ddos attack, crash dev and make inoperable)
+
+threat vector - means or pathway by which an attacker can gain unautorized access to a computer or a network to deliver a maicious payload  or carrty out an wunwanetd action
+attack surface - excompasses on al th various points where an attacker can enter data or extract data from an env
+
+Outsmart threat actors:
+
+TTPS - tactics, techniques and procedures
+deception and disruptive techniques - to undertand the TTPS of an attack by attackers
+- deisgned to mislead, consife, divert attackers fromc ritical assesta while similtaneoly detecting and neutralizeing threats
+
+1. honeypots
+   - decoy sys - allow accatakers to understand attackers' methods, motives and TTPs
+   - can be used against insider threats to detech internal fraud, snooping and malpractice
+   - emulation app to simulate actival netw or application
+   - designed to log all inetraction/ transaction to provide values insigtes to the threat landscape
+   - instal in screened subnet or osilated segment - easyf or attackers
+3. honeynets - grp of honeypots to mimic an entire netw including orters, swicthes and other new devices - but can end up a s dowside sward since an attacker can learn the how the newt architure is made in the org
+4. honeyfiles
+   - decoy file placed with a syste m to lure  in potential attackers
+   - shoud, apprea contain valueable information to make attacker to go aftr the data
+   - set us a s trap - IDS inform sec team and some file whic have embedded code allows them to enumurae the attackers network once the file is open
+   - unique embedded file to help track the file if it is stolen or copied
+6. honeytokens
+   - peice of data or resource with no legitimate data to use but can be monitored for access or use
+   - fake user accout, url, a dummy database record,
+   - if honeytoken is used or access - clear indication of potential security breach is likely occuring
+   - particulatrly sueful fodetcing insider threats
+   - any inetarction with them is suspicous
+  
+Other techniques in decpeion/distrptiv tech:
+- using bogus dns entries
+- creaing decoy directories
+- generating dynamic pages  to stop web scraling
+- using port triggering - to hide services
+- spoofing fake telemtry data - during adetcted netw scan
+
+
+
+
+
+
+
+
+
+
+
+
+
 
