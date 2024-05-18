@@ -508,8 +508,25 @@ Frauds and Scams:
 fraud:
 - the worngful or criminal depction to steal infor from user
 
-Identity fraud:
+Identity fraud: identity theft
 - the use of another persons's PI without authorization to commit a crime ro to decive
+
+Scam:
+- a fradulant or deceptive act or operation
+
+Influence campaigns'
+- misinformation:
+  - inaccurate infomation share unintentionally
+  - false info shared without harmful intent
+  - by mistakes
+  - e.g. gagling small amoyt of chlorine water could prevent covid virus spread
+ 
+- disinformation
+  - intentiona spread of fals information to decive or mislead
+  - to manipulate public opinion
+  - spread discord
+  - or undermine trust and isntitutions
+  - e.g. spreading rumours about opposite parties for election campaign
 
 
 
