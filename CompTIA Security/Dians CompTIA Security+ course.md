@@ -148,7 +148,7 @@ Zero trust:
    - policy enforment point
 
 
-**Threat actors**
+### Threat actors
 
 Motivation:
 - data exfiltration
@@ -325,8 +325,99 @@ Other techniques in decpeion/distrptiv tech:
 - spoofing fake telemtry data - during adetcted netw scan
 
 
+### Physical Security
+Fencing - prevent people
+Bollards  - prevent vehicles
+
+Attacking physical security with brute force:
+- forcible entry - breaking
+- tampering with sec devices - tamper deives - soltion: reduct device at multiple places
+- confronting sec professional - 
+- ramming a barrier with vehicle
+
+Surveillance systems
+- a security perosnall or sensors and cameras
+- 1. video
+     - motion detection
+     - night vision
+     - facial recog
+     - remote access thru smartphone/computer
+    wired/wireless
+    CCTV:
+    - indoor/outdoor
+    - Pan Tilt Zoom PTZ - can aletr the direction of camera
+    where?
+    - data center
+    - telemcoom closets
+    - entrance or exit
+   shoudl be acapable of identifiying intrustion using ML
+  
+  3. sec guards
+  4. lighting
+  5. sensors
+     1. infrared - low light, heat identyfy human animal 
+     2. microwave - detetc movemts emiting microwave pulses and meausringt he ferlction of moving objects - large ares - sometimes prone to be false alarms
+     3. pressure - activate whn a specief amt of weight is detected on the sensor that is embetted on a mat or floor - identy unauth entries in spec areas and alert owners
+     4. ultrasonic sensors - meause the refle of ultrso waves of movig objects - aumtomated doors or detectmovement in indoor env
+    
+
+Bypasing surveillance systems
+1. visual obstruction - paint ballon on camera
+2. blidng sensors and cameras - hig h power falsh light, heating up room to damage infrared sens
+3. acoustic interferarance - loud noise, music
+4. elctro magtnei interfe - EMI generatros, jammers to distupt the radio frequencies
+5. physicl env attack
+
+sotuoion:
+- tamper alrms
+- backup powe ups
+- encr frequencies
 
 
+Access control vetibue 
+- two door system - elctronically controlled - only one door can be opend at a given time
+- opens the second door when the first door is open
+- autheic, identy, access
+- prevents piggy backing, tailgating
+- RFID id cards - radio frequency identification
+- NFC - near field communication
+- magnetic strips - legacy (like back on the credit card)
+- action is logged
+- access based on role
+- audit trail to log user actions
+- sec guard at access contro, vesibule as visual detrrent and also to reponse immediate concenrs
+  - visual asistan
+  - assitance
+  - check identity
+  - response
+
+Door Locks:
+- pad locks with key
+- pin locks
+- wireless locks  using nfc
+- biometric
+  - false accecptance rate
+  - false rejection
+  - equal erorr rate ERR
+    - calle as  croosver error rate CER - meaure effectiveness of a biometric system
+  - MFA
+- cipher lock - mechanical locking systems uses push buttons, often numberrd and requris the correct combination to be entered for access
+
+Access Badge Cloning:
+- vulnerability of able to clone access badges to bypass your authentication systems
+- copy of data from an RFID or NFC card to another card or device
+- 1. scanning
+  2. data extraction
+  3. writing to a new card
+  4. using cloned access badge
+
+hw to prevent?
+1. implement advaced encr in card based authen systems
+2. MFA
+3. regularly updated securty protocols
+4. educate the users
+5. implement the use of shielded wallets or sleeves wih rfid access badges
+6. monitor and audit the access logs
 
 
 
