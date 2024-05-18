@@ -420,6 +420,100 @@ hw to prevent?
 6. monitor and audit the access logs
 
 
+### Social Engineering
+- the art of exploiting human psychology to gain unautho acesss to systems, data or physical spaces
+
+Motivational triggers used by scial engineers:
+- social engineers use these below factors to gain trust or achive their intended action
+1. authority
+2. urgency
+3. social proof - if soemthing isused by many or if some page is liked by many and friends, we think thats legitimate  - psychological phenomenon - if a social engg forces one guy to post something, hten it goes to another to anther a slegitimate one by one - e.g signing up a course which has 100,000 reviews and likes of it
+4. scarcity - psychological pressure when they belive a prod is limited or in short supply , poeple act quickly 
+5. likablity - associate with being nice, friendly, socially accepted by others
+   - sexual attraction
+   - pretending to be a friend
+   - common interest
+7. fear - a great motivator like ransomware. if you dont do what i tell you, then this wll happen (Fear and authority)
+
+Impersonation: as a social engg attack
+1. impersonation
+   - adversary assumes the identity of another person to gain unautho access
+   - attacker might intimidate as other and gain trust
+   - 1. unautho acess
+     2. disruption of serv
+     3. complete sytem takeover
+2. Brand impersonation
+   - attacker pretends to represent  a legitimate company or brand
+   - attacker may use brnad logos, legitimate kind of emails, web pages, online rpesence to make people believe whom they clim to be
+3. Typosquatting
+   - attacker registers a domain name similar to popular wbe site but contain typograhical errors
+   - url hijaking or cyber-squatting
+   - user who mispell urls and it might lead to mali websites and become victorms of their typosquatting
+   - companies may register original url and also mispelled url to protect users
+4. watering hole attack
+   - an attacker attacks a commonly used website or service and then wait for users to use those attacked services to capture those user's details
+   - like animals wait near water source for their prey to come and drink water and then attacks the animals
+   - to prevent these, orgs must keep their systems up to date
+  
+
+Pretexing:
+- is way to give some amount of information that seems true so you will give us more information to fill in the gaps
+
+Phising attacks:
+1. phishing
+   - email represnting a legitimate personal to gain trust, or to click mali link, or to download mali attachment
+   - sent to mass group of individuals
+   - spray and prey
+3. vishing
+   - voice phishing
+   - betetr approach than email phsing.. ike a abnk repres call
+5. smishing
+   - SMS phishing
+   - link via sms, urgency
+7. whaling
+   - a form of spear phishing targetting high profile individuals CEOs CFOs - 
+8. spear phishing
+   - targetted form of phishing - specific grp of individuals or orgs - attackers gather info and send personalized emails - higher level of customization - higher success rate
+   - target users
+9. business email compromise
+   - if attacker compromises one email acocunt, then use that account to affect otehr email acocunts or making employees to do their inted action using the trust of compromised account
+
+preventting phishing attacks:
+- anti phishing campaigns - trainings to eployees
+  - generic greetings
+  - spelling and grammer mistakes
+  - spoofed email addresses
+
+  comonly used key indicators:
+  - urgency
+  - unsual reqs
+  - mismatched URLs
+    - word based email
+    - html based email show display text and hides url. hover on it to see real url address
+  - strange email addresses
+    - display email address
+    - real email address by cliking it
+  - poor spelling and grammar
+
+
+techniques:
+- conduct trainig
+- recog phsing attempts
+- report suspicious messages
+
+Conducting an anti-phishing campaign:
+- free program - Trend Micro : phish insights
+
+Frauds and Scams:
+fraud:
+- the worngful or criminal depction to steal infor from user
+
+Identity fraud:
+- the use of another persons's PI without authorization to commit a crime ro to decive
+
+
+
+
 
 
 
