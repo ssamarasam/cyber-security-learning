@@ -806,3 +806,110 @@ Data loss prevention:
 4. cloud based DLP system
    - offered a s SaaS - part of cloud service and storage needs
 
+
+### Cryptography
+- cyrptgraphy
+- encryption
+- hashing
+- pki
+
+Symmetric vs Asymmetric:
+
+Symmetric Algo: private key
+- encr algo, where the sender and reciver must know the same shared private key
+- like a physical key for a lock to open and lock using the same key and same copy of key should be shared to everyone who has access
+- since same share key is used by multiple, non-repudiation cannot be performed and confidentialit is at risk
+
+Asymmetrick algo: public key
+- encr algo wher diff keys are used to encrypt and decrypt the data
+- one key to encr,
+- another key to decr
+- common algo - diffie hellman, RSA, eliptic curve cryptography ECC
+
+Hybrid implementation:
+- utilize asymmet encr to seculy transfer a private key that can be used wth symmertric encr
+
+Stream cipher
+- uses keystream generatro for bit by bit encr sing XOR function to create cipher text
+- suited for securing real time communication data streams - streaming audio or video
+- uses symmetric alog uses same key for both encr and decr
+- hardware based solutions
+
+block cipher:
+- divides data into blocks and encrypts them
+- softe based solution
+- 64, 128, 256
+- if less than the block size, additional data will be attached
+
+Symmetric Alogorithms:
+- DES, 3DES
+- IDEA
+- AES
+- BLOWFISH
+- TWO FISH
+- RIVEST CIPHERS - RC4, RC5, RC6
+
+DES - Data Encryption Standard
+- uses 64 bit key and 8 bit used for parity
+- each msg will be broken down into 64 bit blocks and pushed thru 16 rounds of transpostion
+
+3 DES:
+- uses 3 different keys to encrypt, decrypt and encrypt to generate a stronger cipher text
+
+IDEA - Inetrnational data encr algorithm
+- used in PGP - pretty good privacy suite tools
+
+AES - Adv Encr Standard:
+- symmetric block cipher  uses 128 bit, 192 or 256 bit blocks and matching encr key size to encry plain text to ciphertext
+- rinjdal algo/cipher
+
+Blowfish
+ - uses 64bit blocks and variable length of encr key to encrpt
+
+Twofish:
+- 128 bit block and uses 128, 192, 256 bit key
+
+RC cipher suite:
+- dropped
+
+RC4 - Rivest cipher 4
+- symmetric
+- variable key from 40 to 2048 bits - used in SSL and WEP
+- symmteirc 64bit - 128 bit key
+
+RC5 -symm block cipher -  key size upto 2048 bits
+
+RC6 - stronger than RC5
+
+
+Asymmetric algorithms:
+- does not req a shared key - public key - isnce that is available to all public openly
+- encrypt and decypt data using two different pair of keys - public and private key
+- public key cryptography provides
+  - CIA and non repudiation
+- data encryptted using receiver's public key
+- hash digest - msg encyprted with senders private key as a digital signature to confirm the sender - integrity of the message
+
+diffie hellman:
+- asymmetric
+- used for key exchange inside creating a VPN tunnel establishment as part of IPSec
+- key exchange of any kind over the internet
+
+RSA - mathemeitcl difficlty of factoring large prime numbers
+- used for key echange encr and difital signatures
+- helps to proetct privat, pub key pairs
+- key size between 1026 and 4096
+
+Elliptic curve cryptography:
+- mobile devices - hevily used
+- algebrai strcture of elliptical curves
+- ecc with 256 bit key is equal to RSA with 2048 bit key
+- more ffiecnt than RSA
+- 1. ECDH
+     - ecc version of the popular diffie hellman key exchange protocol
+  2. ECDHE
+     - EPHEMERAL - uses a diff key for each portion of the key establishment process
+  3. ECDSA - EC Digital signature algo
+     - used for public key encr algo for  us giv digital sig
+
+> ECC - mobile devices and low poer computing devices
