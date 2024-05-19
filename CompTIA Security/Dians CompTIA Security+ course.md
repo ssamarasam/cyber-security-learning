@@ -529,12 +529,130 @@ Influence campaigns'
   - e.g. spreading rumours about opposite parties for election campaign
 
 
+### Malwares
+- any software that is designed to infiltrate a system , damage without the user's knowledge or consent
+- Threat vector - a specific method used by an attacker to infilitrate victim's machine (how they are plan to break into the system)
+  - unpacted software
+  - installing code
+  - phishing campaign
+  - other vulnerabilities
+- attack vector - a means by which an attacker gains access to compu to infect the system with malware (how they are break into system and affect the system)
+
+unguarded neighbour hood is thret vector
+walking the home, picking the lock, open the door -> attack vector (vulnerabilities that could be exploited)
+
+unpactched vulnerability is threat vector  
+wannacry malware- scan amchiens to find vulnerabilities
+
+Types:
+- Viruses - damage sys
+- Worms - replicate themselves
+- Trojans - look like legitimate software and gains unauth access once executed
+- ransomware - malware which encrps and locks systems and iut gets a ransom amount to get the encr key
+- zombies - a compromised system
+- botnets - network of compromised system used for varilos mali activities to run phishing campains and many others
+- backdoors
+- logic bombs
+- keylogger - malware that captures all key in activities to capture credentials and sensitive data
+- spyware - resides in systems and sends data to attackers without user's knowledge or consent
+- bloatware
+
+Virus: (req user to perform an action - open a file)
+- boot sector
+- macro
+- program
+- multiparte - boot sector + program
+- encrypted
+- polymorphic - adv version of encr virus - rewrite the virus code each time its executed to avoid detection
+- metamorphic - rewrite its entirely before it infects the system (more adv vs of polym)
+- stealth - its a technique used to prevent the detection of virus - also it prevents the virus's activities like encr of data, paylod execution 
+- armored - layer virus to avoid detection
+- hoax
+
+Worms: 
+- a mali soft like a virus - can replicate itself without any user interaction
+- it scans network, find vuls and spread one netw to another
+- e.g Nimda, confliker
+
+Trojan - 
+- software looks like liegitimate software but comes with mali code and executes once the software is executed
+- and takes oevr the system or get remote access
+- create backdoors to use the victim's system
+
+Remote Access Trojan
+- trojan wich provides remote controlof victim's machine
 
 
+Ransomware:
+
+how to avoid?
+- conduting regular  backups
+- installing regular software updates
+- providing security awareness training
+- MFA
 
 
+Botnets
+- netw of compromised systems(zombies) controlled remotely by mali actors
+- use the processing, memory,. storage, networking capabilities of our system without our concent or knowledge
+- used to perform tasks using remote commands
+
+command and control mode: C2 node
+- responsible for managing an coordinating he activities of other nodes or deivces within a network using one's comuter
+- which will make all activities happens at victims machine
+- attacker uses C2 note to control the botnets
+
+- ddos attack can be performed via botnets(using comproevmized 100000 zombies and attack one's server to cause DDoS - send too much load and the server goes to offline
+- crypto mining as they use processing ower of zombie
+- using zomies and its procesisng power, they break thru differnt encr schemes
+- attackets ypicllly use 20 to 25% of victims processing power to avoid detection
+
+Rootkits:
+- soft deisgned to gain adminitrative level of control over a given comuter without being detected
+- root or adminitrative level of permission
+- differnt ring levels of permisisons
+- ring 0  - kernal - deep - hightest level of permiiosnl which have acces to os, hardwares
+- ring 1  - over leayer of ring zeoro which has admin privileges of ystem
+- rootkit tries to go to ring 0 as well and anyti virus cant detct the rootkits easily as it resides or takes over hightest permisson
+- designed to dig deeply into the OS
+- DLL injection  -  is a technique used to run arbitrary code within the address space of  another process by forcing it to load dynamic link library
+- DLL provides data and code to many process needed by os and loaded up at runtime
+- this DLL works as SHIM
+- SHIm - softw code that si placed by two  components to intercept one process
+
+- to detect rootkit installation, boot the system using external hard drive and scan the system y=using good ani-malware soltion
+
+Backdoors & Logic bombs:
+
+backdoor
+- placed in coputer system to bypass the normal security and authentication functions fo the systems designed by systems original programmers for their own use like miantaing the system
+
+easter egg:
+- insecure coding pratices sued by programemrs to prvide a joke or gag gift to the users
+- thse ara ddiional unnecessary code may bring vuls
+
+Logic bomb - mali code instered into program and will only execute when certain conditons are met
 
 
+Keylogger:
+- software or hardware based - computers and mobiles
+
+
+preventing ideas:
+- updates
+- anitvirus
+- training
+- excr keystringing systems
+- physical check is hardware keylogges is isntalled
+
+spyware & bloaware:
+- listens and send data to maliactors
+- istalled?
+  - bundled with other soft
+  - instaleld thru mali web
+  - when clikcing deceptive pop-up ad
+- slow down sys , perf as ist is continusly using ur system gathering info about you
+- always read EULA - end user licensing aggreement
 
 
 
