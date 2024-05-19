@@ -705,4 +705,90 @@ Inidcations of malware attacks:
 8. misisng logs
 9. published and documented attacks
 
+### Data Protection
 
+- is a process of safe guarding important information from corruption, compromise or loss
+
+Data classification - category based on org's value and the sensitive of data when its disclosed (Data owner decides this)
+- sensitive data - loss of security
+- overclassifyling data leads to protecting all data at high level
+
+1. commercial business
+   - public
+   - sensitive - minimal impact if released - like org' fin data or course content before published
+   - private - data within the org - relates to individual entity
+   - confidential - trade secrest, source codes, intellectual rpoperty that affects org if disclosed - only approved personalls can read or 3rd parties under an NDA
+   - critical - too valuable - credit card numbers
+3. government
+   - unclassified
+   - sensitive but uclassified
+   - confidential -serious effect
+   - secret - serous damage
+   - top secret - data that would damange national security if disclosed, might contain blue prints for variuoys systems
+  
+  life cycle of data - org must have polices for their data - how they store, how long they store - how are you going to destry when not needed
+  - colelct
+  - retain
+  - dispose
+
+consider legal and govement regulaions
+
+Data Ownership:
+- process of identyfing the person resoonsible for the CIA and the privacy of the information assets
+1. data owner - senior exce role - has responsiilty for maintaing the CIA of the information asset - label the asset and ensre it is protected with the appropriat controls
+2. data controller - entiry who controls the purposes, methods of data storage, colelction and usage and for guranteeing the legality of processess - holds acocuntability for any breaches of privacy and cannot delicate this repon to another party
+3. data rpocessor - grp / indiv to hel data controler for collecting, storing, analyze data
+4. data steward - role focused on the qualityf of  data and the associated meta data - working for data owner - make sure data is approper labled an classified
+5. data custodian -   handling the mgnt of sys on which data assets are stored - system admin whoc enforeces acecss control, encry and backup recovery measyres that protect data
+6. data privacy officer - role respo for overisght of any kind of provacy related data like PII, SPI, PHI,
+   - they ensure we follow all the regulaoty legal complaince, frameworks - data sovernity 
+
+Data States:
+1. Data at rest - data stroed in databases, file sys and other sys
+   - encryption of data atrest
+     - full disk encr
+     - partition encr
+     - file encr
+     - volume
+     - database
+     - record
+2. Data in transit/motion
+   - SSL / TLS - cryptographic protocols designed to provide secure commnic over a compu network
+   - VPN - tech that creates secure connection over a less secure network(internet)
+   - IPsec - internet protocol securityprotocl suite used to seucre IP communications by authenticating and encrytping each IP pkt  in a data system
+  
+3. data in use
+   - data in the process of creation, retirved, updated or deleted
+   - security
+     - application ;level
+     - access controls
+     - secure enclaves
+     - intel software guards
+    
+Data Types:
+- regulated data - PI, SPI, PHI   - regulated by laws
+  - GDPR, HIPPA
+- trade secrtes - type of comfidetial business infor rovides a companywith competive advantage
+- intelectual property - creation sof the mind, innovations, designs, symbols - patents, copyrights, trademarks
+- legal information - data related to legal proceedigs, contracts or regu compliance
+- financial information -  data rlated to org's financial transactions  , slaes rec, invices, ban atements - subject to PCI DSS
+- human readble data - texts, spreadhseets
+- non humand readable data -  soft are to interpret - binary code or machine language
+
+Data Sovereignty:
+- conept that digital information is subject to the laws of the country in which it is located
+- GDPR for euroian citicans data proetction
+
+
+Securing Data:
+- geographical restrictions - geofencing - confy with data seoveringty laws - rpeven unauthoaccess form high risk locations
+- encryotion
+- hashing
+- masking
+- tokeniztion - replaces sensitv data with non sensitve substitutes such as tokens
+- obsfucation - making data unclear or uninteligible making ti difult oto understand for unauth users
+- segmentation
+- permission restrictions
+
+Data loss prevention:
+- 
