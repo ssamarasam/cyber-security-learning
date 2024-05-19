@@ -607,7 +607,7 @@ command and control mode: C2 node
 - using zomies and its procesisng power, they break thru differnt encr schemes
 - attackets ypicllly use 20 to 25% of victims processing power to avoid detection
 
-Rootkits:
+Rootkits: - hiding malware activities and maintaining priviledged access to a system
 - soft deisgned to gain adminitrative level of control over a given comuter without being detected
 - root or adminitrative level of permission
 - differnt ring levels of permisisons
@@ -654,6 +654,55 @@ spyware & bloaware:
 - slow down sys , perf as ist is continusly using ur system gathering info about you
 - always read EULA - end user licensing aggreement
 
+Bloatware
+- any softw thats pre isntalled on a new compu or smartphone
+- watstes storage space
+- shopws down perf of devices
+- introuces new vuls to sstems
 
+remove:
+- manually remove it
+- bloatware removal tools
+- perofm clearn OS installation
+
+Malware exploitation techniques:
+1. fileless malware - used to create a procss in system memory without relying on local file systm of infected host
+   - levae limited evidence or traces as it will delete all the items after executing
+   - dificlt to be identified by ani-malware/virsus systems
+   - stage1. dropper or downloader   - when suer cliks/downloads, mali soft is instaleld ( these use light weight shell code)
+  
+dropper - a spcif malware type designed to intiate or run other malware forms within a payload or infgected host
+downloader - retrioves additional tools post the intial infection faciliated by dropper 
+shellcode - emcompasses light weight code meant to execute on a given target
+
+stage2: downloader 
+- download and unstall remote acces strojan to conduct and command control on victim machine
+
+action on objectives phase :
+- threat actors will exuet their primary objectives  - data exfiltration, encryption
+
+concealment:
+- used to help the threat actir for prolonged access  to a sys by hind their tracks, erasing log files, and hiding any evidence of their mali activities
+
+techiques:
+- code injection
+- masquerading
+- dll injection
+- dll slideloading
+- process hollowing
+
+Living of the land
+- try to exploit stad system tools to conduct mali activities or intrusions
+
+Inidcations of malware attacks:
+1. account lockouts
+2. concurrent session utiliztion
+3. blocked content
+4. impossible travel - acocunt is used/accessed in two or more geographical locations which isimporrible to travel in short time
+5. resource consumtpion - crypto mining, cpu utilization
+6. resouec inaccessability
+7. out of cycle logging - logs at odd hours
+8. misisng logs
+9. published and documented attacks
 
 
