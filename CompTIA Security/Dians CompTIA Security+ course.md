@@ -789,6 +789,20 @@ Securing Data:
 - obsfucation - making data unclear or uninteligible making ti difult oto understand for unauth users
 - segmentation
 - permission restrictions
-
+the perimeter of the netw
 Data loss prevention:
-- 
+- set up to monitor data of a system, while in use, transit, at rest in order to detect any attemps to steal data
+- software
+- hardware
+
+1. endpoint DLP system (can be st as prevent or detection mode) similar to IPS or IDS but this is specifically for data
+   - a piece of softw installed on a workstationor laptop to monitor the data thats on that computer
+  
+2. Network DLP system
+   - placed on the perimeter of the netw to detect the data in transit
+3. storage DLP - encryted or watermarked
+   - installed in server of the data center and inspect data on server while it is at rest
+  
+4. cloud based DLP system
+   - offered a s SaaS - part of cloud service and storage needs
+
