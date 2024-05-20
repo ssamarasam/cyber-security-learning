@@ -969,12 +969,58 @@ using web server's public key, a secure SSL/TLS connection is made to transfer t
 
 Digital Certificate:
 - digitally signed electorinc  document tht binds  a public key with user's identity
-- x.509 protocol inse PKI
+- x.509 protocol inside PKI
 - inlcudes the name, email addres, even the public key , all infor abut CA too
 
-wild card certificate vs single user certificate for a full domain
+1. wild card certificate / single user certificate for a full domain
 
-subject altername namr - SAN field
+subject alternate name - SAN field
 - to use one certificate for multiple domains
 
+2. Single sided certificate
+   - only reqs the server to eb validated
   
+3. Dual sided certificate
+   - reqs both the server and user to be validated
+   - twice the processing power
+   - only used in high security envs
+
+4. Self signed cert
+   - certificate signed by the own identity instead of CA
+   - level of truct is low
+  
+5. Third part cert
+   - digital cert issues and signed by a trused certificate authority CA
+  
+6. Root of trust
+   - each cert is validated using the concepot of rrot of trust or chain of trust
+   - e.g: Verisign, Amazon, google, cloudFare
+7. Certificate Authority
+   - trusted third party who is going to issue these digi certs
+  
+8. Registration authority
+   - reqs id info from user and fwds to CA to create digi certs
+9. cert sighing req - CSR
+    - a block of encoded text to requet for digi cert
+    - contains - org name, dmain name, locality, country
+9. cert revocation list
+    - list of certs revoked by CA .. may be due to breaches
+  
+10. OCSP - Online Certificate Status Protocol
+    - allws to determine the revocation status of any digi cert usng its serial number
+    - lacks encr / security
+
+11. OCSP stapling
+    - allows cert holdet to get OCSP record   from server at regular intervals
+    - this happens commonly in SSL/TSL handshake
+
+12. Public key pinning
+    - allws https web to resisis impersonation attacks fro who are tryoing to provide fradulant certs
+   
+13. Key escrow
+    - recomened atleasy 2 admin when a key is taken out of key escrow
+14. key recov agent
+    - soft that allows restoration of lost  or correct key to be performed
+  
+
+
