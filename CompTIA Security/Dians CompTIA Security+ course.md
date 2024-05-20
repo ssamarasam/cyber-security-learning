@@ -1023,4 +1023,106 @@ subject alternate name - SAN field
     - soft that allows restoration of lost  or correct key to be performed
   
 
+Blockchain:
+- a shared immutable ledger for recording transactions, tracking assets and building trust
+- public ledger - a record keeping system that   maintains participants identities in a secure and anonymus format
+- every action is securely logged using hashing
+- smart contracts: self executing contracts where the terms of agreement and conditions are directly written into code
+- provides transperancy, reduces fraud
+- clear and indispute record of all transactions,
 
+- permissioned blockchain(by ibm) - used for busines stransactions - promotes new level of trust and transparency using this immutable public ledger
+
+Encryption tools: - to protect enterprise networks and system
+- TPM
+- HSM
+- SECURE ENCLAVE
+- Key management system
+
+TPM - Trusted platform module ( like a personal vault)
+- dedicated microcontroller designed to secure hardware thru integrated cryptographi keys
+- BitLocker encryption feature in Windows OS
+- securing the cryptograhic keys inside the isolated hardware, we add an additional layer of security agaisnt softare based attacks
+
+HSM - Hardware security Module: ( high security Bank vault)
+- physical device - safegards and amanagees digi keys, pri for mission critical situations, finalnical trans
+- hardwa sec module which performs encr operatiosn withn a tamper profof env
+- reliable choid for sensitive operations
+- not only itgneretaes cryptog keys, provides acceletared cyprograioc functions
+
+Key management system:
+- a machanism to maange the life cycle of keys
+- from creation, storing till deletion
+
+Secure enclave:
+- coprocessor integrated with main processor of some devices deisgned with the sole process of ensuring data rpotection
+- isolates the coprocessor from main processor for protection of data
+- e.g: secure enclave from apple iphones store the face id or finger pirnt id.. even the deice is compromised, these data are not touched and will be available for the authorized sole person
+
+
+Obfuscation:
+- steganography
+- tokenization
+- data masking
+
+steganography - covered writing
+- all about concelling a message within another, so that the very existence of the message is hidden
+- a practice of hiding secret data withn ordinary non-secret files or messagesto avoid detection
+- pri goal is prevent the suspicion that any hiddent data is isnide at all
+- embedding data inside an image
+- frequently used alongside of encr for extra layer of security
+- stylesuxx.github.io/steganography
+- hid inside another message, image or anything
+
+Tokenization:
+- techniq in data protection that involves substituting senstve data elements with non sestitvte equivalents called tokens which have no meaningful value
+- mapping will be stored in org
+
+Data masking:
+- used to proteect data   by ensuring tht it remains recognizable but does not include any senstive info
+- while mainting data authenticity usability
+- aletering customer data for using in test regions without exposing any genuine information
+- e.g. masking first 12 digits of crdit card
+
+Cryptographic attacks:
+- techniques and strategies that adversaries use to exploit vulnerabiulities in cryptographic systems with the intent to compromise CIA of data
+
+- downgrade attacks
+- collision attacks
+- quantum computing
+
+
+Downgrade attacks:
+- version rollback attack - force a system into using weaker or odler cryptographic standard than what its curently utilizing
+- to explout known vulnerabilities and weakness in those older protocols that are addressed in newer or more secure versions
+
+POODLE attack - Padding Oracle on Downgraded Legacy Encrypotion attack - targetted SSL v3.0
+
+Collision attack:
+- aims to find two differnt inputs that produce the same hash output
+- hashing is commonly used for data verification and integrity
+- collision is a vulnerability in hashing
+
+Quantum computing:
+- a computer  that uses quantum mechanics to genrate amnipulate quantum bits qbits in order to access enormous processing power
+- quantum communication -  a communcations network that relies on qbits made of photons(light) to send multiple combinations of ones and zeroes simultaeneously  which resulst in   tamper resistant and extremely faster communications
+- QBIT - a quantum bit composed of elctrons and photos that can represent numerous combinations of ones and zeores  at the same time through superposition
+- cryptoraphy can be taken down by using a quantum computer
+
+- key exchanegs are using asymmettric communications
+- using PKI
+
+Post quantum cryptography:
+- a new kind of cryptographic algo that can be impleted using todays' comuters but can be impervious to attacks from future quantum computers
+
+- increase key size to increase the number of permutaions for brute force  - works well with using symmetric algo like AES
+
+- post quantum resistant algorithms
+  1. lattice based cryptography
+  2. super singular isogeny key exchange
+ 
+  NIST recommends
+  - CRYSTALS Dilithium
+  - FALCON
+  - SPHINGS+
+      
