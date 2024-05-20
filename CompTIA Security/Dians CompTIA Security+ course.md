@@ -1126,3 +1126,50 @@ Post quantum cryptography:
   - FALCON
   - SPHINGS+
       
+### Risk Management
+
+- a fundamental process that involves identifying, analyzing, treating, monitoring and reporting risks
+
+Risk assessment frequency:
+- the regularity with which risk assessments are conducted within an org
+
+1. ad-hoc - conducted as needed often in response to any incident or situation that has the potential to introduce new risks or change the nature of existing risks - natural disaster or incident - may be repeated if similar situations arise 
+2. recurring - conducted at regular intervals, annually, quarterly, monthly - SOPs of an org - to regularly analyze and manage risks effectively
+3. one-time - conduted for specific purposes and not repeated  - often associated with new project or change - new it system, undetraking a major constrction project, or planning significant org changes
+4. continuous - ongoing monitoring and evaluation of risks - enabled by tech to conitnuosly monirot threats and risks
+
+varies depending on the needs of org and types of risks involved within the  organization
+
+Risk identification:
+- recognizing potential risks that cpould negatively impact an org's  ability to operate or acheive its objectives
+
+risk identification -> business impact analysis and determine key metrics
+1.   Recovery time objeective RTO
+2.   Recovery point objective RPO
+3.   mean time to repaid MTR
+4.   mean time between failures MTBF
+
+tECHNIQUES USED IN RISK IDENTIFICATION:
+1. brainstorming
+2. cheklists
+3. interviews
+4. scenario analysis
+
+Business impact analysis  BIA
+- proces that involves evaluating the protential effects of disrption to an org's business functions/processes  
+
+RTO - max acceeptable length of time that can elaps before the lack of a business fuction severly impacts the org
+- target time, it must be restored to avoid unaccecptable consecquences
+- e.g 2 hrs of downtime can be toletared befoe the impact on sales and customer satisfaction becomes severe
+
+ RPO - max acceecptable   amount of data loss measured in time
+ - point of time that data must be restored to resume business operations
+ - e.g: a fin instutation can toetare uptp 15 mins of no data and must be restored within 15 mins to resume its operations
+
+MTR - avg time requried to repair a componet or sys
+- e.g 4 time to repair a machine back to operation
+
+MTBF - avg time between failures
+- its a meausre of reliability of a system or component
+- avg time beet failures
+- higher MTBF - incidactes a system tht failes less frequently - sign of a reliable and well maintained system
