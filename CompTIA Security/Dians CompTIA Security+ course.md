@@ -913,3 +913,35 @@ Elliptic curve cryptography:
      - used for public key encr algo for  us giv digital sig
 
 > ECC - mobile devices and low poer computing devices
+
+Hashing:
+- one way cryptographic function which converts data into a fixed value
+
+MD5:
+- creates a 128 bit hasg value unique to the input file
+
+SHA-221 to SHA512:
+- creates uptp 512 bit hasg value
+
+RIPEMD - RACE integrity Primitive Evaluation Message Digest
+- 160, 256, 320 bit versions
+
+HMAC - Hash based message authentication code
+- used to check the message integrity and authnticity is good
+- usually combined with other algo HMAC-MD5, SHA1, SHA256
+
+Digital Signature
+- creating a hash file and then taking that result hash digest and encrypting it with a private key
+
+DSS Digital security standard
+- relies upon a 160 bit message digest created by digital secuerity algo
+
+code signing - using digital sig for sharing other types
+
+
+Increasing Hash Security:
+two common attacks:
+1. pass the Hash Attack
+   - hashng techniq allws the attacker to  authenticate instead of user's plaintext pwd
+   - since hashes ate stored in database and used for authentication instaed of direct plaintext pwds
+3. Birthday attack
