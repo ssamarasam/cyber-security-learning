@@ -944,4 +944,37 @@ two common attacks:
 1. pass the Hash Attack
    - hashng techniq allws the attacker to  authenticate instead of user's plaintext pwd
    - since hashes ate stored in database and used for authentication instaed of direct plaintext pwds
+   - MIMIKATZ - provides the ability to automate th process of harvesting the hashes and conducting the attack
 3. Birthday attack
+   - occurs when a attacker is able to send 2 diff mesg and results in same identical hash digest - collision
+   - birthday paradox - 2 people n the random grp may have same bday
+   - if another word brings the ame has value as pwd, then attacker can use wrong owd to login your system since the hash value of wrong owd and priginal pwd isame which is used for authenticating
+   - Key Strecthing technique
+     - used to mitigate the weaker key by increasing the time needed to crack it
+   - salting - add random data into one way cyprographic hash to protect against pwd cracking techniques
+     - dictionary attack - attacker tries every word from a predefined list
+     - rainbow tables - precomputed tables for reversing cryptographic hasing - these are rendered ineffective agaunst salted hashing 
+   - Nonce - number used once
+     - often random number is added to pwd based authentication pocess
+  - limting the failed login attempts
+
+Public Key infrastructure
+- uses asymmetric public ey encr
+- involved certificate authority to provide tjey
+- Key escrow to store the cryptographi keys
+- creatses a secure channel between user and web server
+
+when a broswer enters usrl, the server gets a certificate from CA and sends to browser
+using web server's public key, a secure SSL/TLS connection is made to transfer the data 
+
+Digital Certificate:
+- digitally signed electorinc  document tht binds  a public key with user's identity
+- x.509 protocol inse PKI
+- inlcudes the name, email addres, even the public key , all infor abut CA too
+
+wild card certificate vs single user certificate for a full domain
+
+subject altername namr - SAN field
+- to use one certificate for multiple domains
+
+  
