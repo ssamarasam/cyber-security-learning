@@ -1320,3 +1320,15 @@ contracts and aggreeements:
 7. NDA - commitment to privacy - ensures sensit info share reminas confidential between both parties
 8. Business partnetship aggreement BPA - two enties decides to pool their resouces for mutual profit - rofit shareng, exit strategies and more - Joint venture aggreement JV  
 
+
+### Governance and compliance
+
+governance
+- strateic leadership , structures and prcessess that ensure an organization's IT  infra aligns with its business objectives
+- key decison about risk mgmt, resos allocation, perf measurement
+- establishing a stretegic framework that aligns with org's objectives and regulatory requirements
+- this framw includes the rules, resps and proctices that guide an org in achiving its goals and managing its IT resos
+- direcly influces the creation of and implemention of org's guidelienspolicies, std, and procedures
+- shaping the path an org should follow - risk guideleins and reommended approach handling varios situations
+- instrumental in policy development
+- creating high level guideleins - outlines the org commitment and intentions toward certain actions suc as data protection or ethical conduct
