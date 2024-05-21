@@ -1213,10 +1213,39 @@ Quantitative risk analysis -
 - objective and numerical evaluation of risks
 - probablitic analysis of poten future events and typiclaly sued in ficnacial, safety and schedulng decisons
 - performed using it key components
-- 1. singel loss expectancy  SLE
-  2. Annualized rate of occurance ARO
-  3. Annuzlized Loss expectancy ALE
+- 1. singel loss expectancy  SLE = value of asset * exposure factor
+  2. Annualized rate of occurance ARO (once in 5 years is = 1/5 = 0.2)
+  3. Annuzlized Loss expectancy ALE = SLE * ARO
   4. Exposure Factor EF
  
   Exposure factor
   - proportion of an asset that is lost in an event
+
+
+Risk management strategies:
+- transfer - risk sharing  - insurance /  contract indemnity clauses
+- risk acceptance
+  - excemption - certain small busines smight be excempt from certain reporting requirements
+  - exception - provision that permits a party to bypass a rule or req  in certain conditions
+- risk avoidance - strategy of altering plans or approoaches to completely eliminate certain risk - choosing operating a company in a diff country where laws works
+- risk mitigation - implementing measures to decrease the likelihood or impact of a risk
+
+Risk monitoring and reporting:
+- ongoing monitoring
+- 1. residual risk
+     - likelhood or impact after implemeing mitigation, transference or acceptance measures on the initial risk
+  3. control risk
+     - how much less effective a sec-control has become over time
+    
+- risk reporting - a process of communicating imfo abut riskmgmt activities
+  - infomed decison making
+  - compliance
+  - risk mitigation
+  - stakeholder communication
+ 
+  Third party vendor risks:
+  - potential security and operational challenges introduced by external vendors, suppliers/service providers
+
+Supply chain risks:
+  1. hardware
+  2. software
