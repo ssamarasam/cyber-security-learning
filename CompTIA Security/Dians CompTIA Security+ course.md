@@ -1248,4 +1248,75 @@ Risk monitoring and reporting:
 
 Supply chain risks:
   1. hardware
-  2. software
+  2. software - propeprly licensed , scanned , vul assessments
+  3. managed service providers
+     - org that provide a range of tech services and support to business and other cases like SaaS
+     - evalaute data sec measures
+     - ensure C and I
+     - access cyber sec protocols
+     - resp to sec breach
+    everything must undergo a supply chain audit - not just cost effeicncy - perfm, sec, commit are all important
+
+Supply chain attacks:
+-attack that involves targetting a weaker link in the supply chain to gain access to a pri target
+hardware:
+chop washing - repackging the contents of a micro chp with a less expensive or or one with malware
+some devices with malware brings backdoor
+
+deliberate embedding of rootkits within devices by overseas suppliers
+
+software:
+- netw monitorng and mgmt soft - Solarwinds
+
+chops act - to manuf chips within us broders to prevent prorein made malware contained ones - semiconductor suppli chain
+- MSPs - managed service providers 
+1. vendor due deligence
+2. regi monito and audits
+3. educat and collab
+4. incorporating contarctual safeguards - to maintain sec stds
+
+Vendor assessment
+- a process that org implement to evaluate the sec, reliabil and perf of externam systems
+- vendors - business or orgs that rpovides good and services to an org
+- suppliers - indi involved in the produciona nd deliver of  products or parts of products
+- MSPs - indivs hired by companies to manage IT services on behalf of an org
+
+methods:
+- penetration testing - reviw vendor audit clause - the right to audi clause grants org to evalauet vendors
+- internal audit - evndors own self asseesment to evauate their patcicesagant industry std or org's reqs
+- independant assessment - evaluation condyted by 3rd party entities that hav no stake in the org's or vendor's operations
+- supply chain analysis - dive dep into evdors supply chain and assess the security and reliability of ech link
+
+Vendor selection and monitoring:
+- due diligence - rigorus evaluation goes beyond credentials
+  - fin stability
+  - operational history
+  - client testimonials
+  - on the groudn practices
+- conflict of interest
+- vendor questionnaires
+  - data redun measures
+  - security rpotocols
+  - uptime gurante
+  - disastar rec plans
+- rules of engagement - temrs of inetraction
+  - communication protcols
+  - data sharing =policies
+  - negotiation boundaries
+ 
+- moniroting - perdiodic evaluations
+- feedback loops -two way feedback sharing
+
+contracts and aggreeements:
+- clear boundries and guidelines
+- foundation stone of most bsiness relationships
+
+1. basic contract
+2. SLA
+3. Memorandom of agreement MOA - outlines roles/resps of involved parties
+4. Memorandum of understanding MOU - declation of mutal intent - les binding
+5. MSA - recurring , engament details, ayment term, confidentialty clause
+6. Stament of work SOW - sppeficy details of specifi project - deliverabl, timeleins, milestoes - indepth details of certain sevreice or projecr
+7. NDA - commitment to privacy - ensures sensit info share reminas confidential between both parties
+8. Business partnetship aggreement BPA - two enties decides to pool their resouces for mutual profit - rofit shareng, exit strategies and more - Joint venture aggreement JV  
+
