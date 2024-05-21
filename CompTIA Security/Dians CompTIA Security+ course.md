@@ -1173,3 +1173,50 @@ MTBF - avg time between failures
 - its a meausre of reliability of a system or component
 - avg time beet failures
 - higher MTBF - incidactes a system tht failes less frequently - sign of a reliable and well maintained system
+
+Risk Register:
+- risk management - involving identification and assessment of uncertainities that may impact objectives
+- risk register - risk log - a doc detailing identified risks including their desc, impactlikihood and mitigation strategies
+- may resumble heat map risk matrix
+- 1. risk description
+  2. risk outcome
+  3. risk impact - 
+  4. risk level - combineing impact and likeligood - high, low, med
+  5. risk likelihood - high , med , low
+  6. cost - financil impact - potential expenses it it occurs or cost of mitigation
+ 
+  Risk tolerance / Risk Accecptance:
+  - refers to an org or indivi willingness to deal with the uncertainity in pursiuit of their goals
+  - max amout of risk they are prepared to accept
+  - tolerating/accepting risk - no countermeasures are defined because the level of risk doest not justify the cost or because there will be unavoidable delays befoe the countermeasures are deployed - simply the og chooses to not do anythingabt the risk
+  - risk appetite -> org's willingness to embrace or retain sepecific types and evels of risk to fullfill its  strategic goals
+  - 1. expansionary - org is open to taking more risk in the hopes of achieving greater returns
+    2. conservative - less risk
+    3. neutral - balance between risk and return
+   
+  Key risk indicators
+  - predictive metrics used by org to signal risking risk levels in diff parts of enterprise
+  - barometr for forward-looking view of future portential risk and often associated with org's risk appetite
+  - provides a early wanring system for potential risk to proactively manage risk
+
+  Risk owner
+  - PERSON OR GRP RESPONSIBLE OR MANAGING THE RISK
+  - monitoring, mitiga, upding risk register
+ 
+Qualitative risk analysis:
+- a method of assesing risks bansed on the portential impact and the likelihood of their occurance
+- likelihood based on past exp, statitical analysis or expect decision
+- impact - poten conse - cost time, quality, other critial metrics
+- low, medium, high
+
+Quantitative risk analysis - 
+- objective and numerical evaluation of risks
+- probablitic analysis of poten future events and typiclaly sued in ficnacial, safety and schedulng decisons
+- performed using it key components
+- 1. singel loss expectancy  SLE
+  2. Annualized rate of occurance ARO
+  3. Annuzlized Loss expectancy ALE
+  4. Exposure Factor EF
+ 
+  Exposure factor
+  - proportion of an asset that is lost in an event
