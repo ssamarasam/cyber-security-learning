@@ -1561,3 +1561,10 @@ Documenting Changes:
   - update change requests
   - maintaina ssociated trouble tickets
 - maintencne of various associated records is completed
+
+### Audits and Assessments
+
+Internal audits and assessments
+
+internal audits
+- to assess the effctiveness of internal controls, cmpliance and the integrity of 
