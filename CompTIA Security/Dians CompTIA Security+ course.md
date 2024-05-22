@@ -1335,7 +1335,7 @@ governance
 - Monitoring and Revision when tech shift and givernance must adapt with latest changes and regulatory changes
 
 Governance structures:
-- boards - board of directrors oversee the management of an org
+- boards - board of directrors oversee the management of an org - strategic direction - siginificant decisions
 - committees - subgroup of boards - aduit committee, governance comm, secu-comm
 - governement entities - they establish lay and regulations that ogrs must comply with
 - centraliuzed and decentralized structures
@@ -1394,10 +1394,21 @@ Compliance:
      - internal - collection and analysis of data to ensure that org is following all of its internal policies and procedures - internal audit team/compliance dept
      - external - demonstrating complianace to external bodies such as regulatory boies, auditors, customers, often mandate by law or contract
      - e.g - a pharma company must submit regular reports for Food and Drug administration FDA detailing their adherences to good manufacturing practices GMP - safet measures, food quality, process control
-  3. compliance monitoring - the process of regularly reviewing and analyzing an org's  operations to ensure compliance with laws and regulations and internal policies
+  2. compliance monitoring - the process of regularly reviewing and analyzing an org's  operations to ensure compliance with laws and regulations and internal policies
      - due deligence - exhaustive review of an org;s operations to identify potential compliance risks
      - due care - steps taken to mitigate these risks  
      - attestation - formal declartion  by a responsible parrty thatthe org's processes and controls are complaint
      - acknowledgement - recognition and accecptance of complaince reqs by all relavant parties
      - internal/extrenal monitoring
+       - in - regularly reviewing org's operations to ensure complaince with internam policies
+       - ext - 3rd party reviews or audits to verify complaince with extrenal regulations or standards - iso 9001 quality measurment standards
+  2. Automation in compliance
+     - automated compliance systems   can streamline data collection, improve accuracy and provide real-time compliance monitoring
+    
+  Non complaince consequences:
+  - fines
+  - sanctions - strict measures taken by regulotory bodies to enfore compliance - restrictions on business operations, outright bans
+  - reputaional damage
+  - loss of license
+  - contractual impacts
 
