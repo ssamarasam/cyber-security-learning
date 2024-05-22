@@ -1344,11 +1344,60 @@ Governance structures:
 
 
 Polices:
-- accecptable use
-- info sec
-- business conti
-- disaster reco
-- incident response
-- SDLC
-- change mgmt
+- accecptable use - a doc outlines the do's and dont's for users when interacting wht orgs OT sys and resos - sets boundries for appropriate use - aiming to proetct from legal issues and sec threats
+- info sec - outlines how an org protects its assest from internal/ext threats - data classification, access control, encry, phsy sec (an info sec policy might specify data must be encrypte while in transit or at rest and only autho poerosall should ahve access to it) - to maintain CIA of org data
+- business conti - focuses on how an org continue its critical ops during or after a disruption
+- disaster reco - focuses how an org recovers its it sys after a disaster
+- incident response - a pan for handling sec incidents - steps for detecting, reporing, accessing, responding to and learning from sec incidents
+- SDLC - outlines how soft is developed within an org - including all stages of it - also sec coding practices, testing
+- change mgmt - aims to ensure changes are implemented in a controlled manner, minimizing risk of disruptions - req, approving, implementing, reviwng changes - stable, reiable and secure
+
+Standards:
+- provides a frameowkr for implementing sec measures - ensuring all aspects of org's sec posture ar addressed
+- 1. password stds - dictate the complexity/mgnt of pwds - first line of defense against unautho access
+  2. access control std - determine who has access to what resos within an org
+     - discretional access control - DAC - allows the order of infor or resos to decide who can access it
+     - Mandatory access control - MAC - uses labels and classfication todetermine access
+     - role based access control - RBAC - based on roles of users - least privilege and seperation of duties 
+  4. physical sec std - physical measure to protect and org's assets and info
+  5. encr std - ensures data intercepted or accessed without authorization remains unreadable and secure
+     - AES is commonly sued at data at rest due to its string security and efficient perofmance
+     - RSA - secure communication due to its PKI nature
+    
+Procudres - structure approach to any action
+- systematic sequences of actions or steps taken toachieve a specific outcome
+- e.g : Emergency evacuation procedure - outlines the steps should take in case of emergency such as fire or natural disaster
+- data bkp procedure - how and when data shd be bkedup to rpevent data loss - data incremental bkps, testing of backups to ensure data integrity
+  1. change management procedures - systematic approach to dealing with changes within org
+  2. onboarding/offboarding procedures
+     - on - integrating new emplo into org - orientation, training
+     - off - managing the transition when emp leaves - retrieving company property, exit nterviews
+  4. playbooks
+     - checklist of actions to perform to detect and respons to any specific type of incident - ensuring conssistency and efficiency
+
+
+Governance considerations:
+1. Regulatory considerations - from data protection, privacy, environmental standards and labor laws
+   - GDPR - General Data Protection Regulation - how org collect, store and use peronal data of EU citizens  - so regular audits and trainings to cmpply with this
+3. Legal - closely  tied to regu-consi but encompass other areas such as contract lay, intellectual property and corporate law - also to main integrity and reputation
+   - e.g Employment law - minimum wage, overtime, anti discrimination, employee benefits, health and safety
+5. industry - the specifc standards and practices that are prevalent in a particular industry - technical standards, best practices, ethical guidelines
+   - e.g  agile, kanban - compettive advantage and critism from stakeholders
+7. geographical -local, regional, national and global regulations impact org's operations
+   - local considerations - local ordinance in a city or zoning laws - might prohibit certain busines soperations
+   - national considreations - ADC act
+   - global considerations - GDPR - any org that collects EU citizens data anywhere in the world, must comply with GDPR
+
+Compliance:
+- adherence to laws, regulations, guidelines and specifications relevant to its business process
+- 1. compliance reporting - systematic process of collecting and presenting data to demonstrate adherence to compliance requirements
+     - internal - collection and analysis of data to ensure that org is following all of its internal policies and procedures - internal audit team/compliance dept
+     - external - demonstrating complianace to external bodies such as regulatory boies, auditors, customers, often mandate by law or contract
+     - e.g - a pharma company must submit regular reports for Food and Drug administration FDA detailing their adherences to good manufacturing practices GMP - safet measures, food quality, process control
+  3. compliance monitoring - the process of regularly reviewing and analyzing an org's  operations to ensure compliance with laws and regulations and internal policies
+     - due deligence - exhaustive review of an org;s operations to identify potential compliance risks
+     - due care - steps taken to mitigate these risks  
+     - attestation - formal declartion  by a responsible parrty thatthe org's processes and controls are complaint
+     - acknowledgement - recognition and accecptance of complaince reqs by all relavant parties
+     - internal/extrenal monitoring
 
