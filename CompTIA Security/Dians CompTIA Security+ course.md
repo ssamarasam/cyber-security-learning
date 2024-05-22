@@ -1332,3 +1332,23 @@ governance
 - shaping the path an org should follow - risk guideleins and reommended approach handling varios situations
 - instrumental in policy development
 - creating high level guideleins - outlines the org commitment and intentions toward certain actions suc as data protection or ethical conduct
+- Monitoring and Revision when tech shift and givernance must adapt with latest changes and regulatory changes
+
+Governance structures:
+- boards - board of directrors oversee the management of an org
+- committees - subgroup of boards - aduit committee, governance comm, secu-comm
+- governement entities - they establish lay and regulations that ogrs must comply with
+- centraliuzed and decentralized structures
+  - centralized - decison making authority is concentrated at the top level of management - consistant decision making and clear lines of authority - slow to respond to local needs - large corp use centralized  to ensure consitant policies accross org
+  - decentralized - distributes decison making authority throught the org - quicker decion making and greater response to local or departmental needs but can lead to inconsistancies
+
+
+Polices:
+- accecptable use
+- info sec
+- business conti
+- disaster reco
+- incident response
+- SDLC
+- change mgmt
+
