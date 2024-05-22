@@ -1509,3 +1509,55 @@ Asset disposal and decommisioning:
   Data retention requirements - what to keep and how long
   - certain regulatory requirements mandate medical record or fin records tobe preserved for specific period of time
      
+Change management process:
+- preparation - assess current state and recog the need for transition
+  - gether necessary resos
+  - engage statekholders
+  - ensure preparedness
+- vision for change
+  - a clear compelling description of the desired future state that is guding the transformation process within an org
+  - 1. define future state
+    2. explain reason for change
+    3. ensure vivid vision
+- implementation
+  - 1. training
+    2. restructing teams
+    3. intro new tech
+    4. conti communi
+- verification - once change is implemented, ensure desired outcome have been realized
+  1. survey
+  2. perf metric analysis
+  3. stakeholder interviews
+- documentation
+  - creating a thorough record of the entire change process
+  - 1. reflect on past intiatives
+    2. understand decisons
+    3. imprive practices
+   
+  1. use of scheduled maint windows except for emergences - e.g.. secutiry patches to address vuls
+  2. creation of backout plan
+  3. testing of results - validate change was successful
+  4. use of SOPs - to maint consistency and effeciency
+ 
+Technical implecations of changes:
+1. allow and deny lists
+   - used by firewaals which allows or block sertain entities to access resos
+   - allow list - allowed entities
+   - deny - blocked entities
+   - always review allow/deny lists, firewall rules
+3. restricted activities - some tasks or operatiosn might be listed as restricted due to potentila impact on security or system health - knowing restrictions, can prevent sec breaches
+4. downtime - take time to estimate the potential downtime due to changes -  against the potential benifits of the proposed change
+5. service and application restarts -
+6. legacy applications - senstitive to changes
+7. complex applications interplay
+8. dependencies - change in one area might have cascading effects in others
+
+Documenting Changes:
+- version control - tracks and manages changes, enablicng colloborative work, reverting to prior versions when needed
+- proper documentation
+  - properly document and record every change
+  - update diagrams
+  - revise policies and procedures
+  - update change requests
+  - maintaina ssociated trouble tickets
+- maintencne of various associated records is completed
