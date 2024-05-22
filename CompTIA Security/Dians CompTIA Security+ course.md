@@ -1567,4 +1567,27 @@ Documenting Changes:
 Internal audits and assessments
 
 internal audits
-- to assess the effctiveness of internal controls, cmpliance and the integrity of 
+- to assess the effctiveness of internal controls, cmpliance and the integrity of systems
+- focuses on areas such as
+  1. data protection
+  2. network security
+  3. access controls
+  4. incident response
+
+  eg. an int audit review the pwd policies. the audi team check the pwd polices alughts witht he best roactices such as complex pwd  and regular pwd changes and whetehr these polices are followed by all employees
+  e.g2. auditing user access controls - to ensure onlu autho indi can access to senstive data and sys
+  1. reviewing acess controls
+  2. examine access rights - chekcing users have right access for their need alone or unnecessary access
+  3. checks the processes for granting access , modifying and revoking access rights  - ensure proper approval rocesses are in place
+  4. test the effectiveness of access controls by  using an acct with limited access to check whetehr they able to access beyond their designated permissions - if they do, that will indicate a weakness in access controls
+  5. document findings for recomnetd access control policies
+
+  a. compliance - 
+  b. audit committee -  grp of people rsponsible for supervsiing the orgs - board of directors sub group - they review audit reports
+
+Internal assessments:
+- in depth analysis to identify and assess potential risks and vuls in org in an org's infor sys
+- before implementing a new change
+
+- before installing a new web app to production
+- 1. cndut threat modeling exercise
