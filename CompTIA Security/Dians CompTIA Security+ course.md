@@ -1412,3 +1412,100 @@ Compliance:
   - loss of license
   - contractual impacts
 
+
+### Asset and Change management
+
+
+Acquisition and Procurement:
+1. company credit card
+2. individual purchase and then reimbursement
+3. Purchase order
+   - approval process
+   - evaluation
+  
+Strurected processes make sure:
+   - integrating pursed item/soft into current environment
+   - 1. ensure financial prudunce enhance operational efficiency
+     2. increase security for the org's enterprise network
+
+
+Mobile Asset deployments:
+1. BYOD
+2. COPE - Corporate owned Personally embedded
+3. CYOD - choose your own device
+
+BYOD:
+- cannot add it tomobile device management solutions to install patches, cannot confiqure
+
+COPE:
+- both work and pursonal use too
+- standardize device management but expensive for org
+- privacy cannot be applied since employee uses the device for perol use
+
+CYOD:
+- between byod and cope
+- chosoe from a list of company aproved
+- higher level of control and standardization
+- only for work use
+
+considring factors
+- cost
+- security
+- employee satisfaction
+
+Asset Management:
+- a systematic aproch to governing and maaximizing the value of items an entity is responsible for throughout their life cycle
+- can be conducted for any asset our og is responsible for
+
+1. assignment and accounting
+   - designate indi or grp as owner of asset - allocation or assignment of ownership
+   - classification - catregorizing assets based on function, value or other parameters
+3. monitoring and tracking of those assets
+   - ensures proepr accountability and optimal use of each asset
+   - inventory of assets, specifications, loactions, assigned users
+   - when it was last serviced
+   - Asset tracking:
+     - monitoring and managig the location, status, conditoons of physical assets using spcialize software  and tracking technologies
+    - use of enumuration:
+      - involves identityfying and counting assets during times of procurement and retirement - health, connection, os installed
+      - 1. maintain accurate inventory
+        2. detects unautho dives
+        3. informd softw upd decisions
+        4. address security vuls
+
+  MDM - mobile device management:
+  - let org securely oversee employe devices, ensuring policy enforcement, sortw coisistency and data protection
+  - mangaing mobile and weabrl devices centrally
+  - devices complywith stds and protocols
+
+
+Asset disposal and decommisioning:
+- NIST publication 800-88 - Guidelines for media Sanitization
+- guasset disposal and decommisoning process
+- 1. snitization - process of making data inaccessible or irretirveable from a storgae medium using traditional forensic  method
+     - overwriting data
+       - single pass
+       - 7 passes
+       - 35 passes
+       - making ti difficult to retieve data using any forensic tools
+     - degaaussing - using a mahcine degauster which uses strong magnetic field  which disrut the magnetic domais of storage device - unreadble and retrievable - data will be permanantly destroyed - cannot re-use the device
+     - secure erase - completely erase data and makie it irreversible - but came with some flaws
+     - encr techniques
+       - crytographic erase levegares encrypoing as the pri mechanism for data sanitization
+       - encrypt data and delete encryption keys delibrately
+       - speed as keys alone needs to be erased
+       - so device can be repurposed or used again without any data leakage
+       - 
+     - pri object fo sanitization is to protect data from unautho access especially disposing or repurposing a storage device
+  3. destruction - ensures phys device is beyond recovery or reuse
+     - shredding
+     - pulverizing
+     - melting
+     - incinerating
+  5. certification - the act of proof that the data or hardware has been securely disposed of
+     - used for regulatory controls
+     - audit log of the sanitization, dsiposal and destruction of data or device
+
+  Data retention requirements - what to keep and how long
+  - certain regulatory requirements mandate medical record or fin records tobe preserved for specific period of time
+     
