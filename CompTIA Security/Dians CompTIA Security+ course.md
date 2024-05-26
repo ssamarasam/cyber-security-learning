@@ -1591,3 +1591,83 @@ Internal assessments:
 
 - before installing a new web app to production
 - 1. cndut threat modeling exercise
+  2. conduct vulnerabity tests using automation tools and manual testing techniques
+  3. risk assessmnet and otential impact of identified threats
+  4. recommeding mitiga strategyr for the results
+
+External audits and assessments:
+- data protection
+- network security
+- access controls
+- incident response
+
+- goal is to idnetify gaps in security policies, procedures and controls to ensure compliance with various regulatory stds like gdpr, hippa, pci-dss
+
+assessements:
+- iden vuls and risks
+- using combination of automated scanning tools and manual testing techqs to provide a comprehensive view of ogrs sec vuls
+  - risk assessment
+  - vulnerability assessment
+  - threat assessment
+ 
+- examination
+- independant third party audit - valdiates sec practices,
+
+Penetration testing:
+- physical - locks, access cards, sec-cameras,
+  - identify physical vuls
+  - improve sec awareness
+  -   prevent unauto access
+- offensive - red team - seek and exploit sys vuls - 
+- defensive - blue teaming - reactive approach - strengthening systems, detetcing and responding to attacks, improving incident response times
+  - monitor for signs of unusual activity that could indicate an attack
+  - improve inci-resp times
+  - strengthen systems
+  - enhance detection capabilities
+- integrated - purple team
+  - both offensive and defensive - in a single penetration test
+ 
+Reconnaissance in penetration testing:
+- an initial phase where an attacker gathers as much as info about the targetted systems
+- to better plan the attack and increase its success rate
+  1. active reconnaissance
+     - directly engae with the target sys, offernng more infor but with a higher detection risk
+     - use nmap tool to scan open ports on tgt systm (port scnaning can be detected)
+  3. passive reconnaissance
+     - operating offline without intecting tgt
+     - using OSINT
+     - researching about tgt onlin
+     - observing netw traffic
+     - using public databases
+     - e.g whois
+     - environement:
+       1. known - detauled target infra recived before the test
+          - netw diagrams, ip address, app details, OS vs, even credentials
+          - 1. docuses on known assets
+            2. evelu vuls and weaks
+            3. aims to understnd exploitability and potential damage
+            4. resembles an insider threat scenario
+       3. partially - limited infor is provided or wh may have parital knowledg of the sys
+          - similate an attacker who might have already attacked and gained some knowleg scenario
+          - uncvers hideen or forgotten assets
+       5. unknown - minimal to now ifo is provided
+          - similutae real workd attack - aims to find entry points and vuls
+
+Pentest demo:
+- metasploit
+
+- msfconsole
+- nmap
+
+Attestation of findings:
+- process that involves the formal validation or confirmation provided by an entity that is used to assert the accuracy and authenticity of specific information
+- data
+- systems
+- processes
+
+note: Sarbanes oxley
+
+- provide proof of a conducted pentest
+
+1. SOFTWARE ATTESTATION - proof that software is updated soft hasnt been tampered a sthe cyprop functions are working
+  
