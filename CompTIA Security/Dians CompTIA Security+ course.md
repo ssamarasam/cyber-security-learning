@@ -1702,3 +1702,75 @@ High Availability:
   - policy enforcement
  
 Data redundancy
+- using raid - redundant array of independant disks - combining multip storage ddevs into a recognized single local strogae dev
+- raid0 - providing data stripping across multipl discks to incr perf - striping - perf without fault tolence concerns - doenst provide any kind of data redun - only faster read and write speeds
+- raid1 - mirroing data across two drives or ssds - MIRRORING - great fault tolerance - but only with two - making one logical str dev
+- raid5 - stripes data with parity using atleast 3 str devices - STRIPING WITH PARITY-  hot swap to replace the failed drive
+- raid6 - uses data srtipping across mul devs with two peices of parity data - atleast 4 devices within RAID 6 array -  can lose 2 devices and still able to rebuld the data - without sufferng form any downtime  - more resilliency and reduncy  - STRIPING WITH DOBLE PARITY
+- RAID10 - raid1 and raid0 - featuring mirrorrd arrays in a striped setup - STRIPPED ARRAY OF MIRROED ARRAYS - even number - atleast 4 devices - can ose uptp 2 - fault tolerance and speed
+
+classification/categorization of RAID:
+1. faulure resstant - raid 1 and raid10
+2. fault tolerant - raid1, 5, 6, 10 - qucily build any data lost from the reming str devices
+3. disaster tol - catrotrpic events - two diffeet zones - raid 1 and 10
+
+Capacity planning:
+- critical strategy planning to meetu future demands cost effectively
+- cond=sidering aspects
+  1. people - anal current skills and forecast fure needs for hiring / training - right number of people to meet orgs goals thru capacity planning
+  2. tech
+  3. infra
+  4. processes  - aims to optimize busines processes to handle demand fluctioations - automation process
+ 
+
+Powering data centers:
+- surge
+- spikes - surge protector / line ocnditioner
+- sags - unexpected decrease - lin conditionaer
+- undervoltage events
+- full power loss events
+
+soltuionsL
+- line conditionars - hanlde fluctuations
+- uninerruptable power sys - UPS 
+- generators
+- - portable gas engine
+  - permanently installed
+  - battery invertor
+- power disti centers - specialized facilities recives power form pri source and sitribuets to one or mroe second circuits
+
+Data backups:
+1. onsite - bkps of data ar physically stored in own data center or office env
+2. offsite - geopgraphically seperate locations from pri place to rpotect against natural disasters - clud based srvers or move physical baup s to some new location
+
+Frequency - how much data am i going to willing to lose?
+- RPO
+- how freq the data is going to change-
+
+Encryption on data backups 
+- protect from unautho acecss / otential breaches
+- data at rest encr
+- data in transit encr
+
+Snapshots:
+- point-in-time copies of data that capture consitnt state that is essentially a frzen in time copy of data
+
+Recovery
+- regain access to data in event of data loss or sys failure
+- - selection of backup
+  - init reco process
+  - data valida
+  - test and vali
+  - documen and reporting
+  - notifcation
+
+Replication:
+- making real-time or near realtime copies of data
+- simultaeneous copy to coninute without interruption
+
+Journaling:
+- mainta a netriclulos record of every chnage made to an org's data over time
+- compliance audit, recovery point, snapshot process, cmpliance - able to track - regu stds
+- - selecting appropri data tracking granularity
+  - manging journal siz and retentio policies
+  - ensure secur and ensre it is nto tampered
