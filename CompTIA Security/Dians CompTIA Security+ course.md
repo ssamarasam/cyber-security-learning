@@ -1789,3 +1789,15 @@ Continuity of operations plan:
 
 Redundant site considreations:
 - reduncat site - alternative sites for bakup in case pri loc encounters a failure or interruption
+- 1. hot site - a fully equipped backp faciity ready to swiftly take over in case of pri site failure/disruption - expensive
+  2. warm s-te - partially equppied - can become oeprational within few days
+  3. hybrid
+  4. cold - no immeidate equipe or infra, but can be quickly transformed into  a fucntional bkp facility
+  5. mobile site - a versatile site utilizes independant and portable units like trailers or tents to deliver recovery capabilities
+  6. virtual site -   cloud based envs and offers highly flexible approach to redundancy
+     1. virtual hot site - fully replicated - isntanly available
+     2. virtual warm - partially replicated/scalable
+     3. virtual cold - minimal activation to minize costs
+     - scalabilt
+     - coste fefctivenss
+     - easy maint
