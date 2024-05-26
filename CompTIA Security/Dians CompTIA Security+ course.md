@@ -1676,3 +1676,29 @@ note: Sarbanes oxley
 - strengtheing trust
 - enhacing transprency
 - ensuring accountaility
+
+### Cyber Resillence and Redundancy
+
+cyber ressillence - an entity's ability to continiously deliver its inted outcome despite adverse cyber events
+redundancy - having additional systems, equipements, processess to ensure continuted functionality when the preimary ones fail
+
+High Availability:
+- ability of a service to be conti available by minimizing downtime by the lowest amt posible
+- uptime - number of hours that sys remains online over a given period - expressed a spercentage
+- five nines of availability - achievening 99.999% uptime - max of 5 mins downtime per year
+- 99.9999% 6 nines - 31 secons downtime
+- load balancing - process of distributing workloads  across multiple computing resources - help excess traffic
+- clustering - handling more traffic at the sametime - use of multiple compuers, dev, redundnt netw conncts all work together as a single sys to provid emroe avail, reliab, scaliabilty - privide reduncy in the event of a failure
+- both load abalcning and clustering can be compined t provide better approach
+- redundancy - duplication of critical sys/funs of a sys wwith the intenion of reliability of sys
+  - adding multilple power supplies
+  - netw connections
+  - server
+  - soft serv
+  - service providers
+- multi cloud strategy
+  - data mgnt
+  - threat mgnt
+  - policy enforcement
+ 
+Data redundancy
