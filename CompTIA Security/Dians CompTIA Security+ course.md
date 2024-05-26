@@ -1774,3 +1774,18 @@ Journaling:
 - - selecting appropri data tracking granularity
   - manging journal siz and retentio policies
   - ensure secur and ensre it is nto tampered
+
+Continuity of operations plan:
+- ensures an org's ability to recover from disruptive events or disasters
+- BCP - addresses resposnes to disruptive evnts
+- DRP - subset of bcp, focuses on resume operations swiftly afer a disaster
+- BC/DR - business conti disas reco plan
+- define the scope of bc/dr to rpevent scope creep
+- consider org's risk apetite/tolerance
+- structre bcp/drp by business function or geo area
+- coop - continuity of operations plan
+  1. bcp - incident
+  2. drp - disaster
+
+Redundant site considreations:
+- reduncat site - alternative sites for bakup in case pri loc encounters a failure or interruption
