@@ -1670,4 +1670,9 @@ note: Sarbanes oxley
 - provide proof of a conducted pentest
 
 1. SOFTWARE ATTESTATION - proof that software is updated soft hasnt been tampered a sthe cyprop functions are working
+2. hardware
+3. system - clud provider with iso27001
   
+- strengtheing trust
+- enhacing transprency
+- ensuring accountaility
