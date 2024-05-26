@@ -1801,3 +1801,20 @@ Redundant site considreations:
      - scalabilt
      - coste fefctivenss
      - easy maint
+platform diversity:
+- use of diff platforms to rpevent single point of failure
+- multi cloud or multi zone
+
+resilience and recovery testing:
+- fire drill
+- 1. table top exercise - simulated discussopn to impeve crisis readiness without deploying resources - exercise inject - team building
+  2. failover test - verifies seamless sys transition into bkp for unietrupped functionalitu during disas
+  3. simulation - comuter generated repersentations of real-wrold scenarios - simulate cyber attack from red team
+  4. parallel processing - run the parallel from secondary setup and check the reliability
+ 
+  resilience testing - tests ability to ahndle multiple failure scenarios
+  recovery testing - tests effeicncy to recover from multiple failure points
+
+  ### Security Architecture
+  - design, structure, behav of org's info security env
+  
