@@ -1869,6 +1869,48 @@ virtualization
 containerization
 - light weight atleternativbe to full machine virtualization
 - involves encapsulating an application in a container
-  
 
+Hypervisor
+- type 1
+- type 2 - hosted 
+
+virtuializtaion vuls:
+- VM escape
+- data remnants
+- privilege escalation
+- live vm migration
+- resource reuse
+- VM sprawl
+
+Suring Vms:
+- upodate os and apps
+- install anitvirus soltuojns
+- impl soft firealls, strong opwds
+- apply sec opatches to hypervisors
+
+Serverless 
+- no need to maage the underlying servers, hardwarres
+- only the fucntion code is enough to runt he functions - event triggered
+- serverless functions - cloud providers
+- auto scaling
+
+issues:
+- vendor lock in - limiting flexibity , tough to swicth providers - dependancy on service provider
+- immaturiy of best rpactices
+
+Microservices:
+- architecture compsoes of a collection of small autonmous services
+- a softw archi where large applications are brokwn down into smaller and indep services
+- each sevric runs a unique prorcess and communicates thru a well defined light weight mechanism to serve a business goal
+- unlike monolithu archi, each service in microservice architecture is self contained and able to run independantly
+- scalabilyt
+- felxibilty
+- resillience due to isolation
+- faster deployment updates
+
+challenges:
+- complexity - managing multiple services - interservcie communication - data consistency - distryubyted  system testing
+- data mgmt - each microsvc might have it own databases, so diffic  to maintain consitencyscross srvs
+- netw latency - incresed inter servc communication lead to newt latency - slower rsponse times 
+- security - many services communicating over a netw - increased surface area for attcks that we have to deal with
  
