@@ -1815,6 +1815,60 @@ resilience and recovery testing:
   resilience testing - tests ability to ahndle multiple failure scenarios
   recovery testing - tests effeicncy to recover from multiple failure points
 
-  ### Security Architecture
+### Security Architecture
   - design, structure, behav of org's info security env
   
+cloud computing
+- servers
+- storage
+- databases
+- networking
+- software analytics
+- intelligence
+
+considerations:
+- responsibility matrix - 
+- thrid party vendor
+- hybrid solutions
+
+other considerations in cloud computing:
+- availability
+- cost
+- scala
+- risk transferance
+- inability to patch
+- compute
+- resillience
+- responsivbeness
+- ease of deployment
+- patch availabilty
+- power
+
+
+CLoud security:
+- shared physical server vulnerabilities
+  - hypervisor protection and secure multi tenency
+- inadequate virtual environment security
+  - using secure vm templates
+  - regu upda patch VMs
+  - moni VMs for unsuual activities
+  - network segmentaion
+- user access management
+  - 
+- lack of upto data security measures
+- single point of failure
+- weak authentication and encryption practices
+- unclear policy and
+- data remnants - residual data left behind after deletion or erasure process
+
+Virtualization and Containerization:
+
+virtualization
+- tech that allows for emulation of servers each running its own OS within a VM
+
+containerization
+- light weight atleternativbe to full machine virtualization
+- involves encapsulating an application in a container
+  
+
+ 
