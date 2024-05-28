@@ -2016,5 +2016,117 @@ Embedded Systems:
   3. firmware code ocntrol - secu coding pract, code review, autom test
   4. inabilty to patch - OTA - over the air updates where patches are installed, delived remotely
 
-Security Infrastructure:
-- 
+### Security Infrastructure:
+
+Ports and protocols:
+
+ports:
+- inbound - server opened 443 and waiting for https connection
+- outbound - client side / personal machine started a connection with a random port 51233
+
+well known ports - 0 to 1023
+https - 443
+telnet - 23
+
+registered ports - 1024 to 49151
+SQL - 1433
+RDP - 3389
+
+
+Dynamic an drpivate ports - 49152 to 65535
+- any app without being resgistered wih IANA
+
+Protocols:
+- rules gioverning device communication and data exchange
+
+1. port number
+2. protocl used
+3. TCP/UDP support
+4. Basic description
+
+Port 21 - TCP - File transfer Protocol (FTP) - used to transfer files from host to host
+
+22 - TCP - SSH, SCP, SFTP - Provides secure remote terminus access and file transfer capabilities. provides secure copy function. provides secure file transfer
+
+23 - TCP - Telnet - provides insecure remote control of another mahcine using a  text based env
+
+25 - TCP - SIMPLE MAIL TRANSFER PROTOCOL SMTP - provides ability to send emails over network
+
+53 - TCP and UDP - Domain Name System DNS - Translates domain names into IP addresses
+
+69 - UDP - Tribial File Transfer Protocol TFTP - used as a lightwieght file transfer of method for sending configuration files or network booting of an OS
+
+80 - TCP - HTTP - used for insecure web browsing
+
+88- UDP - Kerberos - Network authentication protocol
+
+110 - TCP - Post office protocol version Three  POP3 - Responsible for reteiving email from server
+
+119 - TCP - Network News Transfer Protocol NNTP - used for accessing newsgroups
+
+135 - TCP and UDP - Remote Procedure Call RPC - facilitaes communication between different system processes(used in windows file sharing system)
+
+137, 138, 139 - TCP and UDP - NetBIOS - Networking protocol suite
+
+143 - TCP - Internet Message Access Protocol IMAP - allows access to email from a server
+
+161 - UDP - Simple Network Management Protocol SNMP - manage network devices
+
+162 - UDP - SNMP Trap - Responsible for sending SNMP tram messages
+
+389 - TCP - Lightweight Directory Access Protocol LDAP - Facilitates Directory services
+
+443 - TCP - HTTPS - provides secure web browsing
+
+445 - TCP - Server Message Block SMB - used for file and printer sharing over a network
+
+465 and 587 - SMTP Secure SMTPS - provides secure SMTP communication using SSL/TLS using TCP connection
+
+514 - UDP - Syslog - used for sendng log files
+
+636 - TCP - LDAP secure LDAPs - LDAP communication over SSL/TLS using TCP connection
+
+993 - TCP- Internet Mail Access Protocol over SSL/TLS IMAPS - used for secure email retrieval
+
+995 - TCP - POP3S - used for secure email retrieval
+
+1433 - TCP - Microsoft SQl - used to facilitate communication with MS SQL Server
+
+1645 and 1646 - TCP - RADIUS TCP - Used for remote authentication, authorization and accounting
+
+1812 and 1813 - UDP - Radius udp - used for authencation and accounting as defined by the Internet Engineering Task Force  IETF
+
+3389 - TCP - Remote Desktop Protocl RDP - Enables remote desktop access
+
+6514 - TCP - Syslog TLS - used in a secure syslog that uses ssl/tls  to encryot ip packets using a certificate becofre sending them across the IP network to the syslog collector
+
+Firewalls 
+- can be a software or hardware device tocontrol traffic
+- by placing fire on a newtwork segment, we can create a screened subnet(dual homed host)
+  - acts as a security barrier between untruested and trusted network using a protected host with sec measurs like a packet filterning firewall
+    - packet filetring
+      - chekcs pkt ehaders and allows traffic based on ip address/port numbers
+      - limited capabilities
+      - layer 4 firewall - operate at layer 4 of OSI model
+    - 
+    - stateful - monitor all inblund and outbound netw connections and requests
+    - proxy - acts as a intermediary between internal and extrenal connections and making connections on behalf of other end points
+      1. Circuit level - like a SOCKS firefall - operates at layer 5 of OSI model
+      2. Application level - condust deeper levl pkt inspection -  condunt vaios proxy functions for each type of app at layet 7 of OSI -  Layer 7 firewall
+    - dynamic pkt filetring
+    - kernal proxy firewall - Fifth generation firewall
+      - minimal impact to network perfoemance wven while conduting pkt analysis across all layers
+     
+modern firewalls:
+1. Next generation firewall - NGFW
+   - aware of applications and their behaviours
+   - can able to distings between diff types of traffic
+   - - condustc deep pkt inspection for traffic
+     - utilize signature based detection measures
+     - fast with minimal impct to newt perf
+     - offers full stack traffic visibility allows custom signatreure features
+     - integrates with various sec products
+     - challenge - vendor lock
+3. Unified threat management firewall - UTM
+   - provides abi to conduct mul-security functions in a single aplicance
+5. Web Application Firewall - WAF
