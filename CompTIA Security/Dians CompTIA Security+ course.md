@@ -1913,4 +1913,108 @@ challenges:
 - data mgmt - each microsvc might have it own databases, so diffic  to maintain consitencyscross srvs
 - netw latency - incresed inter servc communication lead to newt latency - slower rsponse times 
 - security - many services communicating over a netw - increased surface area for attcks that we have to deal with
+
+ Network infrastructure:
+ 1. physical seperation / Air gapping
+    - isolating newt by removing any direct or indirect connections from other netws
+    - still not infallable - sophisticated attacks such as Stuxnet demonstrated that air gap systems can be compromised
+2. Logical seperation
+   - create boundairies with a netw, resting access to certain areas
+   - achived using firewalls, vLANS that can control traffic based on rules and policies
+   - firewalls - to create a screen subnet network(logical subnet) contains org's external facing services - seperating from internal netw
+  
+SDN - Software defined network
+- enables efficient netw configiration to improve performace and monitoring
+- directly programmable network
+- achived thru theee planes
+  1. data plane - forwarding plane resp for hanlding pakcets and makes decisons based on protocols(ip, ethenrt) and concenred with the acutal rpocessing of sending and recievng data - 
+  3. control plane - brain of netw decides where traffic is sent and is centrallized in sdn
+  4. application plane - where all netw applications interacting with the sdn controller inside
  
+IaC - Infrastructure as Code
+- automating the provisioning and management of computing resources thru machine rewadble definition files or scripts
+- a method in IT infra are defined in code files that can be versioned, tested and audited
+- written using YAML, JSON, domain specific lang such as Hashicorp config langauge HCL
+- idempotence
+- main goal is elimation of Snowflake system - a config that lacks consistency that might introduce risks so it has to be eliminated
+- idempotence - the ability of an operation to produce the same results as many times as it is executed
+- benefits - speed, efficency, consistency, scnalabiluity, cost savings, auditability and compliance
+- challenges:
+- 1. learning curve
+  2. complexity
+  3. security reisks - may leak sensitive data or improperly confired may lead to inoruce security risks to resosucres deployed
+
+Centralized and Decentralized architectures:
+centralized
+- all the computinmg fucntions are coodrinated and managed from a single lcoation or authority
+- efficeny , conrtrol, cost efectiveness
+- challenge - scalabilty issues, single point of failiture, security risks
+
+decentralized
+- computing fucntions are distributed across multiple sys or locations
+- no single point ofcontrol
+- each node in the netw operates independantly and ocntributes to the overall function of trhe system,
+- benefits -0 resilliency, scnalabilty and flexibility
+- challenges - security risks, management challenges and data inconsistency
+
+IoTs:
+- rfers to the netw of physical devices, aplicancesvehicels, aplicance anbd otehr items embereed with sensors software and netw connnectivity
+hub- the centraol point connecting to all Iot devices and sens commands to them
+smart devices - everyday objects enhacied with computing copabiltiyeis and internet connetcivity
+wearbales - subset of smart devices - designed to be won on the body
+sensors - dectct changes in env and transfomtthem to analzyzable data
+- thermostat - heat and motion
+- motion - detect movement
+chalelnges
+- weak defaults - suing default credentilas comes with it
+- poorly configured netw devices
+
+
+ICS and SCADA:
+
+Industrail control systsm:
+- control sys used to monitor and control industrail process form simple to cplex systems
+- e.g:
+- - distribyetd contro, system, - contro, production using single controler
+  - programmable logic ocntrollers - used o control specic process - production lines, assembly
+
+Supervisory control and data acquisition:
+- a tyoe of ics to control and monitor geographically dispersed indutrail process
+- electricy, water pipelines, oil gas piplene, elect powe gener, trans and dis sys
+- watre treamrnt and distr sys
+
+challenges:
+- unautho attacks
+- malware
+- lack of updates
+- physical threats
+
+solutions:
+1. imple string access controsl
+2. regualr updates and patching system
+3. using firewall and IDS
+4. condutring regu sec audiuts
+5. emp training
+
+Embedded Systems:
+- specialzed computing component designed to perform dedicated fucntions  within a larger structure - mechanical, electricu
+- integrated with hardware, electrical or mechanical componenst
+- pace makers
+- engines
+- autmation, process control, robotics
+- RTOS - real time operating system - deisgned for real time applications and process data that comes in - time sentsitive, wno delays
+  - flight navigations
+  - medical
+- challenges
+  1. hardware failures
+  2. software bugs
+  3. sec vuls
+  4. outdated sys
+- 4 strategies in securing emb sys
+  1. netw seg
+  2. wrappers - travelling net new
+  3. firmware code ocntrol - secu coding pract, code review, autom test
+  4. inabilty to patch - OTA - over the air updates where patches are installed, delived remotely
+
+Security Infrastructure:
+- 
