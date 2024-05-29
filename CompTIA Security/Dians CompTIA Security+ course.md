@@ -2130,3 +2130,58 @@ modern firewalls:
 3. Unified threat management firewall - UTM
    - provides abi to conduct mul-security functions in a single aplicance
 5. Web Application Firewall - WAF
+   - focues on the inspection of the http traffic
+     1. inline configuration - device sits between network firewall and web servers - block web attacks - sometimes blobk legitimate reqs
+     2. out of bank configuration - device revices a mirrored copy of web servre traffic - it cannot block, but can work like a IDS
+    
+Configuring firewalls:
+- ACS - Access control list - a rule set thats placed on routers, firewalls or other netw devices that permit or allow traffic thriugh aprticular device
+- top down manner to apply the commands from ACS - so specific rules at top of the lista nd generic rules at the bottom of the list
+- always include a DENY rul at the end of the ACL
+- type, source, destin, action
+- hardware
+- software based
+
+IDS and IPS
+ids - detect, alert
+ips - detect, alert, take action
+
+Network IDS - resp for detecting unaut netw access or attacks
+
+NIDS - monitor the yraffic coming in and out of network
+- port scan, traffic from parituclar ip or port
+
+HIDS - host based
+- looks at suspicous netw traffic going to or from a single server or endpoint
+
+WIDS - wireless based
+- detcts attempst to cause a DoS on a wireless network
+
+IDS works based on 
+- signature based -
+  1. pattern matching - specifi pattern of steps - common in NIDS, WIDS
+  2. stateful matching - knwon system baseline - reporting any changes to that state - HIDS
+- anamoly based
+  - behavour based
+  - analyzes traffic and compares to normal baseline of traffic to determiune whtehr threat is coccuring
+  - 1. statistical
+    2. protocol
+    3. traffic
+    4. rule/heuristic
+    5. application based
+   
+  IPS:
+  - nips - device placed right the bord of network - right near the firewall
+
+note: NIDS shoudl be attached to the mirrored port of the backbone switch - so it can analyse all the traffic in a passive manner
+
+Network appliances:
+- dedicated hardware deicve preinstalled with software that is deigned to provide netwoking services
+1. load balancers - ADC application Delivery COntroller - other than distributing laod, it does SSL termination, HTTP compression, Content cashing - high traffic websites, criti app sys, extensive digital platforms
+2. proxy servers - intermediary between client and server to provide various functions such as content caching, req filtering and login management - obscurity to sheild server from direct attacks - imple user auth proto, procing secur tunnesl, routing traffic - adhecrece to policies, relaiability
+3. sensors - detect perf issues and unsual activy, breaches, monitor - perfom monitorng, responsives ness, downtiem, detect perf analomies, trigger alerts - integral for IPS, IDS - alert netw admins for any DDOS attack based on traffic
+4. jumpr servers/box - dedicated gateway used by system admins to securely access devices located in different security  zones within a network - restrict direct access to protected devices/servers
+
+
+Port security:
+- common sec feature found on the netw switches that allows admins to retrict which devices can connect to a specific port based on the 
