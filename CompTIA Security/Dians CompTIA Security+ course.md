@@ -2325,3 +2325,121 @@ Other concepts in IAM
 2. identity proofing - process of verifying the identity of the user before the user is created - chekcing the id porors, ask details
 3. interoperability - the ability of differnt systems, devices and applicatiosn to work together and share information - SAML, oATHU
 4. attestation - process of validating that user accounts and access rights are correct and up-to-date - regular reviews and audits to make sure all user has right access and follows preinciple of lease privilege 0 minum acces thats necessary
+
+
+MFA:
+- knowledge based factor - pwd, pin, sec question aswer - soemthing you know
+- posession - smart card, hardware tokenm, soft token, key fob - you have - usb which has digi certficate
+  - sofware token - authenticate or based or sms one time code
+- infererence - something you are - biometric characteiritics - face, fingerpreionts, voice recod
+- behavior - soemthing you do - recognizing patters that are typically associated with the user - keystorke patterns, mouse movement, even the way user walks down the hallway - 
+- location - ip address verifciation, gps tracki8ng, by connecting to specifc netw
+
+Authentication
+1. single factor
+2. two factor
+3. multi factor
+
+passkeys - users can create and access online acocunts withiut needing to input password
+- passwordless, more security, mfs
+- utlizes public key cryptography when users login using finger print or other bio metric
+
+Password Security:
+- measures the password's ability to resist guessing or brute force attacks
+
+group policy for 0pwd
+- length
+- complexity
+- reuse - reuse limit 24 times - after 25th time, only can resuse or set the old pwd sued
+- expiration - set this to reset the pwd for every certain number of days. NIST is not recommening it since people just change 1 char sequentially which is a weak method
+- age - once pwd is changes, they shoudl be allowed to change the pwd for cetrain number of days
+
+password manager - used to store, generate, autofill pws to enhance security
+- pwd generation
+- auto fill
+- secure sharing
+- cross platform access
+
+passwordless authentication
+- higher level of security and better user experience
+- pwd managers - 1password, bitwarden, dashlane
+- 1. biometric
+  2. hardware tokens
+  3. one time pwds
+  4. magic links
+  5. passkeys - using finger print, dvice fetches the securely stored passkey
+ 
+
+password attacks:
+1. brute force
+2. dictionary - leet speak $ for S
+3. spraying - a form of brute force attack that involves truing a small number of comonly used password agains a large number of user accounts / user names
+4. hybrid
+
+note: john the ripper 
+
+Single sign on
+-  an authentical process which allows  a user to access multiple applications or websites by logging in only once with a single set of credentials
+-  trusted relationship between an application and an identity provider
+-  idp - identity provider - systems that creates, maintains and manages identity information for principals while poroiving authentication services to replying apps within a federation or distributed network
+-  beneifts:
+- 1. user exp
+  2. enhanced sec
+  3. productivity
+  4. reduced info tech support costs
+ 
+commonly used protocols for SSO
+1. LDAP - used to access  and maintain distibyted info services over an internet protocol network - coomin items, netw resources, printers  - an org might use LDAP to form a directory of its employees - a central repo for user information - grp memberships, roles, credentials
+   - LDAPS - ldap secure - can support ldap over ssl or StartTLS of which encr data to provide secure transmission
+3. SAML - Security aessertion markup language- a standard for logging users into applications based on their sessions in another context
+   - allows services to seperate from identty providers and removes th eneed for direct user authentication
+  
+    
+5. OAuth - open std or token based authentication system that allows an individyals user info to be sued by third party services without exposing the user's password - used in RESTful APIs
+
+
+Federation:
+- a process that allows for the linking of elctroinic identidies with attributes to store information across multiple disticnt identity amangement systems
+- SAML
+- Oauth
+- OpenID connect
+
+1. user logon
+2. identity provider allows sign in and craetes assertion
+3. services validtates assertion and provides access to their services (trust the authentication proivided by the user's home network, reduces administrative iverhead
+
+Priviledged Access Management - PAM
+- solution that helps org to restrict and monitor priviledged access within an IT env
+- refres to policies, procedures and tech controls used to prevent the mali abuse of previldged accponts
+- soltuions
+  1. just in time permissions - adminstratiuve access granted only  when needed - admin who fixes any isses will lose acces once tyask done
+  2. password vaulting - technique used to store and manage passwords in a secure environement such as digital vault
+  3. temporal accounts - provide time-limited access to resos and automatically revoked after a certain period of time
+ 
+Access Control models:
+1. mandatory access control - employs security labels to autho user access to spcific resos - every single user must be assigned a security label - allowed or forbeidden
+2. discretionary access - resouscr's owner determines whic user can access each resos - in corportae, admin will add the users to authozired users, then the user can access the resos - like admin add my name in the list to use specicf sharepoint
+3. role based
+4. rule based - enable admins to apply security policies to all users
+5. attribute based
+   - user attributes
+   - env attributes
+   - resos attributes - file craetion dat, resos owner, file name , data sensitivitye
+
+Access control restrictions:
+1. time of day restriction - restrict resos access based on request times
+2. implementatin of lease privilege
+
+permission or authorization creep:
+- occurs when user gaiuns excessive rights during their carrer progression in the company
+
+Assigning permissions:
+1. Administrator and user accounts
+2. local accounts
+3. microsoft acocunts
+4. principle of least rivilege
+
+UAC - User account control
+- a machanism designed to ensure that actions requireing admin rights are explicttly authorized by user
+
+
