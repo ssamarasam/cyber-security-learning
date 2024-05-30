@@ -2184,4 +2184,85 @@ Network appliances:
 
 
 Port security:
-- common sec feature found on the netw switches that allows admins to retrict which devices can connect to a specific port based on the 
+- common sec feature found on the netw switches that allows admins to retrict which devices can connect to a specific port based on the
+- CAM - content addressable memory table - store info on mac address
+- mac flooding
+- stiky mac - persistant MAC learning - feature in network port security where the swict  autom learns adn associates  MAC address with specifi interfaces
+- better soltions:
+  - 802.1x authentication - std framework for port security authentication for wired and wireless networks. below provide actual authentication process - radius and tacacs
+    - uses RADIUS and TACACS+
+    - 802.1x is a top noitch defece against unautho access to the network
+    - roles
+      1. supplicant - device or user that requests access to the netw
+      2. authenticator - device thru which supllicant is trying to access network such as network switch, WAP, VPN concentrator
+      3. authentication server - centralized device performs authentication process - congired as radioius or tacasc server
+         - RADIUS - CROSS PLATFORM - doenst support remote acces protoco - mixed netw infra
+          - TACACS  - CISCO PROPRISTORY PROTOCOL - slow, but indepe condu authen, autho, account process - used in cicsco uses tcp - suppost all netw protocols
+  - Extensible authentication protocol
+    - a framework proiced numerous ways to conduct authenttication
+      - simple pwds
+      - digital ceritcates
+      - PKI
+      - types:
+        - EAP-MD5 - variant that utilizes simple password and the challenge handshake authentication process to provide remote access authentication - must use long string pwd - one way authn process
+        - EAP-TLS - uses PKI with digi cert being insatll on both clinet and server as the method of authentication - form of mutual authentication
+        - EAP-TTLS - reqs digi cert on server and not on client
+        - EAP-FAST flexible authentication secure tunneling - uses protect access credntial instead of a certificate to establish mutual connect bet devices
+        - EAP-LEAP - lightweight EAP works only for Cisco based devices
+        - PEAP - protected EAP - supports mutual authentication and by using server certificates and microsoft active directory databases for it to authenticate a password from client
+
+  802.1x - data link layet - layer 2
+  eap - flexible authentication framework -min conj with 802.1x with multiple auth methods
+
+Securing Network Communications:
+methods:
+to secure data in transit:
+1. VPN - extends a private net over a public netw, enabli users to send and receive data securely
+   1. site to site vpn - establishes secure tunnels over poublic internet for interconnecting remote sites - may slow down due to extra transfer
+   2. client to site vpn - connects individual devices directly to org's headquarters enabling remote users to access network
+   3. clientless vpn - seures remote access  through browser based vpn tunnels without needing client software or hardwareconfiguration - using https / tls / 443
+      - tls - transport layer security - a protocol provides cryptographic security for secure connections and i used for secure web browsing and data transfer - layet 5, 6, 7
+      - tcp - tsl sues tcp to estblich secure connection between client and server, but may slowdown the connection
+      - DTLS - datagram TLS - a UDP version of TLS offes same level security while maintaing faster connections
+3. TLS
+4. IPSec - a protocol suite for secure communicastion thru authentication and data encryption in IP networks
+   1. confidentialy - data encr
+   2. integrity - verify hash digest once data recives
+   3. authentication - 
+   4. anti replay - ckhecks all seq of numbers of all data pkts sent
+   - 5 main steps in the process of establishing secure VPN tunnel using IPSec
+   - 1. req to start Internet Key exchange - IKE
+     2. IKE phase 1 - authen parities - establish chanel for negotiation
+     3. IKE pahse 2 - negotiate security asssciatn parameters and fully establish secure tunnel;
+     4. data transfer
+        1. transport mode - use the pkts of ip header for client to site vpns - dvantageous when dealing wth MSU contsraints - max size units 
+        2. tunneling mode - encapsualte the entire packetand put anotehr header on top of it - causing icnrased size of pokt and exceed MTU    - sist eto site - may need jumbbo frames since this might exceed 1500 btes - mtu - if jumbo frames cannot be used, then drop inner triurs to MTU to 1400 bytes
+        3. jumbo frames 9000 bytes - feasible only in LAN not recommned for internet use
+     6. tunnel termination
+    
+     Authentication Header AH
+     - offers connectionless data integrity na ddata origin authentication for IP datagrams using cyroptographic has as identificatio infor
+     Encapsualting security payload ESP
+    - provide CI and replay protection and data confidentiality bny encr  pks payload
+
+SD-WAN and SASE:
+ sd0-wan - virtual wan to connect to cloud without going to org netwfirst and then to cloud  
+ - virtualized approach to managing and optimizing wide area network connections to efficetly route traffic ebwteen remote sites., data centers and cloud environments 
+ sase - secure access ervice edge  - used to consolidate numerous networking and sec functions into a single cloud native service to ensure secure and access to that end users can be achieved
+ - used sdn
+ - - firewalla
+   - vpn
+   - zerot trust netws
+   - CASBs - cloud access security brokers  
+
+Infrastructure considerations:
+1. correct placement of devices
+2. security zones and screened subnets
+3. understanding attack surface
+4. dtermining connectivy method
+5. understyanding device attriobutes
+6. configuring failure mode
+full tunnel - route every request to headqauerters - offers more security
+split tunnel - devides traffic and network requests and then routes it to the   appropriate network - offers better performance
+1. google - it will use enencryted tunnel and will go directly to google
+2. ms365 - it will go thru cross sit secure tull to ytour org's networks
