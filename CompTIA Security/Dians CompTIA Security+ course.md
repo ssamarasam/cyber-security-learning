@@ -2297,5 +2297,31 @@ Methodologies:
 
 Best Practices:
 1. conduct a comprehensive risk assessment
-2. align control selection wiuth established frameworks
+2. align control selection wiuth established frameworks - NIST, ISO
+3. customize framework controls - as per our reqs
+4. emphasize stakeholder engagement and training
 
+### Identity and Access Management
+
+IAM solutions:
+4 main process
+1. idenfitcation - claioms a username or email as identity
+2. authentication  process of verifying user's identiry, device or system
+3. authorization - establishes the user's permissions or levels
+4. accounting- aditing - process of recording tracking user activitiesfor compliance, securiy records
+
+IAM - Identity and access management
+- systems and process that manage the access to informations system to ensure that right individual has access to right resources at right times for the right reasons
+1. idenfitifcation - a process where user claims an identity using a unique identifier like a username, or email address
+2. authentication - a process of verifying the identiyty of a user. device or system by validating the credentials prtovided by the user against a database of authorized users
+3. authorization - once authenticated, process that detrmines the persmissons or access the user has
+4. accounting - process of tracking and recording user activites
+   - detect security incidents
+   - find vuls
+   - provide evidence
+  
+Other concepts in IAM
+1. Provisoning and de-preovisioning
+2. identity proofing - process of verifying the identity of the user before the user is created - chekcing the id porors, ask details
+3. interoperability - the ability of differnt systems, devices and applicatiosn to work together and share information - SAML, oATHU
+4. attestation - process of validating that user accounts and access rights are correct and up-to-date - regular reviews and audits to make sure all user has right access and follows preinciple of lease privilege 0 minum acces thats necessary
