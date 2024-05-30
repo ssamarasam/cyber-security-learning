@@ -2262,7 +2262,6 @@ SD-WAN and SASE:
    - vpn
    - zerot trust netws
    - CASBs - cloud access security brokers  
-
 ...
 
 Infrastructure considerations:
@@ -2274,4 +2273,29 @@ Infrastructure considerations:
 6. configuring failure mode
    - fail open - allows traffic in the evnt of failure - firewall is set to allow traiffc even if ti fails
    - fail closed - blocks all traffic in the evnt of failure(when fireall fails or malfunctions, it will block all traffic)
+
+
+Selecting Infrastructure controls: for enterprise infrastructure
+
+control - a protective measure put in place to reduce potential risks and safegard ogr's assets
+
+Key principles:
+1. principle of least privilege
+2. defense in depth
+3. risk based approach
+4. lifecycle management - regularly revieing, updating., retiving controls to adapt to evolving threat landscapes
+5. open design principle - ensuring transparency and accountability through rigorous testing and scrunity of infrastructure and controls
+
+Methodologies:
+1. assesing the current state
+2. conduct gap analysis
+3. set clear objectives
+4. conduct bench marking
+5. conduct cost benifit analysis - do before you implement new security control 
+6. ensure stake holder involvement
+7. monitorng and feedback loops
+
+Best Practices:
+1. conduct a comprehensive risk assessment
+2. align control selection wiuth established frameworks
 
