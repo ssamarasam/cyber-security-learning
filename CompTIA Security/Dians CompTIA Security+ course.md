@@ -2239,11 +2239,19 @@ to secure data in transit:
         2. tunneling mode - encapsualte the entire packetand put anotehr header on top of it - causing icnrased size of pokt and exceed MTU    - sist eto site - may need jumbbo frames since this might exceed 1500 btes - mtu - if jumbo frames cannot be used, then drop inner triurs to MTU to 1400 bytes
         3. jumbo frames 9000 bytes - feasible only in LAN not recommned for internet use
      6. tunnel termination
+  
     
      Authentication Header AH
      - offers connectionless data integrity na ddata origin authentication for IP datagrams using cyroptographic has as identificatio infor
      Encapsualting security payload ESP
     - provide CI and replay protection and data confidentiality bny encr  pks payload
+
+full tunnel - route every request to headqauerters - offers more security
+split tunnel - devides traffic and network requests and then routes it to the   appropriate network - offers better performance
+1. google - it will use enencryted tunnel and will go directly to google
+2. ms365 - it will go thru cross sit secure tull to ytour org's networks
+
+
 
 SD-WAN and SASE:
  sd0-wan - virtual wan to connect to cloud without going to org netwfirst and then to cloud  
@@ -2255,14 +2263,15 @@ SD-WAN and SASE:
    - zerot trust netws
    - CASBs - cloud access security brokers  
 
+...
+
 Infrastructure considerations:
-1. correct placement of devices
-2. security zones and screened subnets
+1. correct placement of devices 
+2. security zones and screened subnets(DMZ)
 3. understanding attack surface
-4. dtermining connectivy method
-5. understyanding device attriobutes
+4. dtermining connectivy method(lan, wired, wireless, micorwave, satellite)
+5. understyanding device attriobutes - active - ips, passive ids - can be isnalled inline or tap based configuration - firewall, router, ips , taps, monitors outside - for netw health, perf and security  
 6. configuring failure mode
-full tunnel - route every request to headqauerters - offers more security
-split tunnel - devides traffic and network requests and then routes it to the   appropriate network - offers better performance
-1. google - it will use enencryted tunnel and will go directly to google
-2. ms365 - it will go thru cross sit secure tull to ytour org's networks
+   - fail open - allows traffic in the evnt of failure - firewall is set to allow traiffc even if ti fails
+   - fail closed - blocks all traffic in the evnt of failure(when fireall fails or malfunctions, it will block all traffic)
+
