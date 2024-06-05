@@ -2443,3 +2443,16 @@ UAC - User account control
 - a machanism designed to ensure that actions requireing admin rights are explicttly authorized by user
 
 
+### Vulnerabilities and attacks
+
+Hardware vulnerabilities:
+- device firmware - a software stored in thehardware device that privides low level control for the device specific hardware
+- end of life hardware
+- legacy hardware
+- unsupported sys and apps
+- unpacthed sys
+- hardware misconfigurations
+
+
+
+
