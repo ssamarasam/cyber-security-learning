@@ -2453,6 +2453,160 @@ Hardware vulnerabilities:
 - unpacthed sys
 - hardware misconfigurations
 
+solution:
+- hardening
+- pacthing
+- config enforcement
+- isolation
+- decommisioning
+- segmentation
+
+Bluetooth vulnerabilities and attacks:
+- a wireless tech to exachnga edata between fixed and mobile devives in a short range
+- 1. insecure pairing
+  2. device spoofing - attacker impersonating a device and tricks user to connect
+  3. on-path attacks - expolits bluetootk communication protocol and alter communications betw devices without users' awareness
+ 
+attacks:
+1. bluejacking - prack to find vuls using text message
+2. bluesmaking - control of device, call, msg
+3. bluesnarfing - ddos
+4. bluebourne
+5. bluebugging
+
+- turning off
+- non disco mode
+- updating devices
+- only pairing with legitimate devi
+- causting on connection attemps
+- use pin/passkeys
+- use encr for senstive data transfer
+
+Mobile vuls and attacks
+1. sideloading
+2. jailbreaking and rooting
+3. insecure connection methods
+
+MDM - mobile device management solution
+- disable dev ability to sideload   programs
+- detect oif device have been jailkroben or rooted
+- force each dev to use a vpn connection
+
+Zero day vuls and exploits:
+- any vul thats discovered or exploited before the vendor can issue a patch for it
+
+- zero day vul
+- zero day exploit
+- zero day attack
+
+- vuln
+- expolit
+- malware
+
+--- identiy, patch and fix
+--- govt agencies, law enforcment agencies, criminals
+
+Operating system vulnerabilities and attacks:
+- unpacted systems
+- data exfiltration
+- misconfigurations
+- zero day vuls
+- malicious updates
+
+SQl and XML injection attacks:
+
+sql injection:
+
+slect * from user where name='jsoan' and password = '' Or 1=1''
+
+- use input validation
+- data sanitization
+- USE A WEB APP FIREWALL to perform input validation and can stop sending the req to server
+
+Note: attacks against data base - might be SQL injection
+
+XML - extensible markup lang
+- used for auth, autho and other types of data exchange
+- use TLS tunnel
+- inpiut vali
+- input sanit
+- vulnerable to
+  - spoofing
+  - snooping
+  - req forgery
+  - injection of arbitrary code
+ 
+XML bomb - Billion laughs attack
+- xml encodes entities that expand to exponential sizes consuming memory on the host and potentially crashing it
+
+XXE attack - XML enternal entity
+- an attack that embeds a  request for a local resource
+
+- xml vul
+- xml exploitation
+- xml injection
+
+XSS and XSRF attacks:
+
+XSS - cross site scripting
+- injects a mali script into a trusted site to cpompromise  the site's visitors
+  1. attacker identifies a input vali vul
+  2. attacker crafst a URL to perfom code injectionagainst the trusted web
+  3. trusted site returns a page containing mali code injected
+  4. mali code runs in the clien browsew with permi level as the trusted site
+ 
+1. defacing the trusted website - by injecting html code
+2. stealing user dats
+3. intercepting data or communications
+4. installing malware on clien sys
+
+XSS breaks the browser security and trust model
+
+1. non persistant XSS - type of attaclk only oocurs when  its laucnhed  and happens only once
+2. persistant XSS - allows attacker to insert code into the bakend database used by that truted websute
+3. DOM XSS - explots the client web broswer using client side scripts to modify the content and layout of the website
+
+Cross site Server request forgery: - XSRF
+
+Session management:
+- enables web apps to uniquely identify  a user across several different actions and requests
+- cookie - persistant, non-persistant
+
+session hijacking
+-  type of spoofing attack wher the attacker disconnects and host and replaces  it with his  or her own machine by spoofing the original host ip
+
+session prediction:
+- type of spoofing attck where the attacker attempts to predict the session token in order to hijack the session
+
+
+Cross site request fporgery
+- mali script is used to  exploit a session started on another site within the same browser
+
+
+Buffer overflow:
+- occurs when data exceeds allocated memory , potentially enabling unautho acces or code execution
+- buffer - tempo sto area where a pgm stores its data
+- NOP
+- Address space layout randomizationASLR
+- attacker puts moire data into allocated memory so that taccket makes his code to run  using buffer overflow
+
+Race conditions:
+- soft vul where the outcome depnds on the timing of events not matching the developers intented manner
+- dereferencing -  soft vul that occures when the code attempots to remove the relationship betwee a apointer and the thing that pointer was pointing in the memory
+- Dirty COW - copy on write
+
+- TOC vul - time of check vul - type of race cpondition where an attacker can alter a system resource after an application checks it state but before the operation is performed
+- TOU - time of use - alter the change oif its state between the time it is  checked and the time it is used
+- TOE-time of evaluation - involve manipulation of data / resos during the time window when a syst is making a decision or evaluation
+
+soltion:
+- locks or mutexes to lock resousrces  while a process is being run
+
+### Malicious activity
+
+
+
+
 
 
 
