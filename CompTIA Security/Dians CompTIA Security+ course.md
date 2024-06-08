@@ -2604,6 +2604,107 @@ soltion:
 
 ### Malicious activity
 
+DoS - Denial of service attacks
+- used to describe any attack that attemps to make a computer or server's resources unavilable
+Fllod attack - spe type of dos - attempts to send more pkts to a single server/host
+1. ping food - sedning too many ping - ICMP echo
+2. SYn flood - attacker will intitiate multiple TCP sessions but enever compelet the three way handshake - flood guards, IPS, Timeout
+3. Permanent DoS - PDOS - attack which exploits    a sec flaw by reflashing a firmware, permenantly breaking a netw device
+4. Fpork bomb - a large number of process is created to use up a computers available procesing power
+5. Distributed Denial of Service attack - DDOS - more mahcines are used to launch an attack simulatenuously agiant a single server to create a denial of service action
+6. DNS amplification attack - spa ddos attack allows an attacker to initiate DNS requests from a spoof IP address to flood a website
+
+solution:
+- blockhole/sinkhole -  track all attacking ip address and toute to a non existent server thru null interface
+- IPS
+- elastic cloud infra (cloudFlare, Akamai)
+
+DNS attacks:
+- dns cache poisoning - dns spoofing - involves corrupting the dns  cache data of a DNS resolver with false info - utilize DNSSEC to add digi sig to the org DNS data - imple sec net congigs, firewall 
+- dns amplification attacks - u
+- dns tunneling - ses dns protocol to encapsulate non dns traffic such as http or ssh over 53 to attepmt to byspass the org's firewall tules in order to condut cpommand and control or data exfiltration
+- domain hijaking
+- DNS zone transfer attacks - mimics authori sys to get copy of all dns zone data for a domain
+
+
+Directory Traversal attack:
+- directory traversal %2e%23%2f ../../../ shadow file from /etc
+- file inclusion - add or download a file - create a backdoor
+  - remote file inclusions - exeutes a script o inject a remote file
+  - local file inclusions (%00 - null char at the end of url - to bypass security mechanisms
+
+  ../ - directpory traversal
+
+Execution and escalation attacks:
+- arbitrary code execution - a vul allows attacker to run own code or module that explits vul - able to run the things they want to run
+- remote code execution - allwos an attacker to trasmit code from a remote host
+- privilege escalation - operate at higer levels of privilege - occurs when user acces or modifies resos that they are not entitielsd to access
+  - vertical privilege exclataion - form normal elevel to higher level - admin or root level
+  - horizontal - form one user to another use on the same level
+- rootkits - a class of maleware that modifes systme files often at the kernal level to conceal its presense
+  - kernal mode - rng 0 - comp;lete control over system
+  - user mode
+ 
+
+  Replay Attack:
+  - a type of network based attack  - involves maliciously repeating or delaying valid data transmission
+
+session hijacking:
+session management - a funda sec concept wnbles web apps to idenify a user across number of actions and requests
+cookies
+encrytpion
+
+On-Path attacks:
+- an attck whe the penetration tester locacally put his workstation beween two hoists during communication to inctercept the auth pkts ebings ent and receive
+  1. ARP poisioning
+  2. DNS poisoning
+  3. Inroducing a rogue Wireless Access Point
+  4. introducing a rogue hover/switch
+
+once valid data is capture, 
+- Replay attack -
+- relay - part of comming - like  a proxy to intercept communications
+
+SSL stripping 
+- trcking the encryptio application with http connection instead of httpos
+downgrade attack
+- attacker attempts to have a client or server abondon ts high sec mode  - ssl 3 to ssl 1.2
+
+
+Injection attacks:
+- ldap injection
+  - ldap - a protocol for access and maintence of distributed directory information services
+- command inject
+- process injection
+  - injection thru DLLs
+  - thread execution hijacking
+  - process hollowing
+  - process doppelganging
+  - async proce =dure calls
+  - portablo eexcution injections
+  - solution:
+    1. end point sec soltuions
+    2. secu kernal module
+    3. practive of least privilege
+   
+  Indicators of compromise:
+  - account lockouts
+  - concurresnt session usuage
+  - blocked content
+  - impossible travel
+  - resource consumption
+  - resource inaccessability
+  - out of cycle logging
+  - articles or documents on security breach
+  - missing logs
+
+
+
+
+
+
+
+
 
 
 
