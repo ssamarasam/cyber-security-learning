@@ -2699,15 +2699,121 @@ Injection attacks:
   - missing logs
 
 
+### Hardening
+
+Changing default configurations:
+- def pwds,
+- unneeded ports and protocols and e
+- xtra open ports
+
+Restricting applications:
+- least functionality - a proc3ess of configuring a workstation or server with only essential applications and services for the user
+  - restrict
+  - uninstall
+- secure baseline image
+  - a standardized workstation setup, including OS, essential applications and strict policies in corporate networks
+- allowlisting
+  - a sec measure that allows only allowed applications can only be installed / run on a OS
+- blocklisting
+  - entails preventing listed apps from running, allowing all others to execute
 
 
+Unnecessary services:
+- background apps that operate within the OS, executing a range of tasks
+
+Trusted Operating systems: TOS
+- a type of OS designed to provide a secure computing environment by enforicing stringent security policies that usually rely on mandatory access controls
+- MAC- is going to be used to speicify who or what process is permitted to access particular resource or piece of information
+- j-35 strike fighter is using Integrity 178B - POSIX based os deigned for embedded system use
+  - rated EAl6 - Evaluation assurance level - based on a set of predefined security std and certification from the Common Criteria for Information Technology Security Evalutaion
+  - Mandatory Access control
+  - Security Auditing
+  - RBAC
+- SELinux - Security Enhanced Linux - EAl-4
+  - set of controls that are installed o top of another linux distribution like CentOS or RedHat Linux
+- Trusted Solaris
+  - offers secure multilevel operations with MAC, detailed system audits., and data process compartmentalization
+ 
+- trusted OS  enhaces sec with microkernals by minimzing the trusted base and redcing attack surface and vuls
+
+- in mobile, APpArmour
+
+- - usuability
+  - performance
+  - functional requirements
+ 
+updates and patches:
+- pacteh management for addressing bugs/vuls
+  - manual
+  - automated
+- Hotfix
+  - a software patch that solves a security issue that should be applied immidiately after being tested in a lab environment
+ 
+- update
+  - provides a system with additional features, does not provide and patching of security issues
+- serice pack
+  - includes all the hpotixes and updates since the release of the OS
+ 
+Patch Management:
+- planning, testing, imlementing and auditing of software pacthes
+- planning - creaing policies, procedures and systems to track and verify patch compatibility
+- Micorsoft endpoint configuration manager
+- PATCH RINGS - 10 TO 20 MACHINES
+- Cisco UCS manager - centralized resos and device management, incliudng firmware for server network interfaces and devices
+
+Group policies:
+- a set of rules or polices that can be applied to set if users or computer systems within an OS
+- gpedit
+  - pwd reqs
+  - account lockout policies
+  - software restrictions
+  - application restrictions
+ 
+- security template - a group of policies that can be loaded thru one procedure
+- baselining -  process of measring changes in the net, hardw, or softw env
+- gpedit - windows security -> application sec -> create rule - allow / deny - publisher, path, hash digest
 
 
+SELinux:
+MAC- system enforced access control mechanism thats based on subject learance or labels
+COntext based permissions
+- persmisison schems that are designed by various properties for a given file or process
+- Se linux or app armour
+- DAC - each obj has a list of  entities that are allowed to access it - owner controls it
+- SELINUX
+  - user - defines what users can access the obj
+    - unconfied_u - all users
+    - user_u -   unpriviliedeged users
+    - sysadmin_u - sys admins
+    - root - root user
+  
+  - type - label portion of mac - groups objects togtehr that has similar sec requs or characteristics
+  - role - defines what roles can access an obj
+    - object_r applies to files and directories
+  - level - descrives the sensitve level of the given file, directory or process
+  - modes:
+  - 1. disable
+    2. enforcing - all the selinux security policies are enforced
+    3. permissive - selinux is enabled, but sec policies are not enforced
+  - policies:
+    1. targetted - default policy set in centos and redhat linux - processes that are tergetted will in in confined domain, others will run in unconfined domain
+    2. strict - every subject in that sys is enforced to operate on mac method
 
 
+Data Encryption:
+levels:
+- full disk - bitlocker recovery, filevault
+- partition - veraCrypt
+- file - GNU privacy guard - 
+- volume - encr[pt a set space - creating a encrypted container that can house various files and folders
+- database - SQl server Transpernt Data encryption TDE
+- record
 
 
-
-
+Secure baseline:
+-  std sec configration applied to gurantee a minimum sec for a system., netw or app
+-  1. establish secure baseline
+   2. deploy across all of orgs digital assets - firewalls, user permisisons, encr protocols, uotod data antiviru/antimalware - GPO, AWS config
+   3. maintain the secure baseline on all assets
 
 
