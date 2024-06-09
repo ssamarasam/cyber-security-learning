@@ -2896,10 +2896,112 @@ Network Access Control - NAC
   - role basesd access- adaptive NAC - roile of the device and dcie should or shoud not be allowed
 
 
+Web and DNS filtering:
+
+Web filtering aka content filtering:
+- a technique  used to restrict or control the content of a user can access on internet
+  1. agent based web filtering - install a small piece of softw that reqs web filtering - monitor and control devi internet connectivity by enforcing org's web user policies - usually to remote /home netw
+  2. centralized proxies - server that acts as an intermediary between org's end user and internet - pro server evaluates the request against org web use policy - if complience, proxy server retirves the content on behalf of the user and returns to the user - else blocked /denied with a warning
+  3. URL scanning - used to analyze the web url whether it is safe to use or not to access - agsint a database of known mali websites
+  4. content categorization - websites that are categorized on content like social media, adult content or gambling - restriced in workplaces
+  5. block rules - spefic guidelines set by org to prevnt access to cetrtain web or categories of websites - block supected IP to exhange data until sec team analses the incident for data exfiltration
+  6. Reputation based filtering - block/allow based on repu score
+
+DNS filtering:
+- techniq used to block access to  cetrain websites by preventing the translation of speici domain names to their corresponidng ip address (dns fileters block list)
+
+Email security:
+- adv ttechniq to protect email contect, acocunts and infra from unautho access
+Techniques:
+1. DKIM - domain keys identified Mail - aloows the reciver to check if email sent from the specied domain it claims and if the content was tampered during transit - digital sig to hedears and can be validated againt pub cryptographic key  located in the domain's dns records
+   - email authentication
+   - protection against email spoofing
+   - improved email delivery
+   - enhanced reputation score
+3. SPF - Sender policy framework - email authen method designed to prevent forging sender address during delivery (SPF enabled server can do this - checks the ip address of sender domain present in spf authorized records, else will be makred as span or blocked)
+   - rpevent email spoofing
+   - imrpving email deliverability
+   - enhanced domain reputation
+5. DMARC - domain based message authentication , reporting and conformance - email validation system designed to detect and prevent email spoofing
+   - workds with dkim, spf using admin policies set
+   - email compromise attacks
+   -   phsing emails
+   -   email scams 
+7. Email gateway protocol - server or sys thats serves entry or exit point of for emails- smtp  - email gatewyas
+   - email rotuing
+   - email security
+   - policy enforcement
+   - encr/decr
+   - can be isntalled on prem, cloud, hybrid
+9. Spam filtering - process ofdetectingunwanted email and preventing them from reaching user's emailbox
+    - technisues such us
+    - content analysis
+    - bayesian filtering
+    - DNS based sinkhole list
+    - email filetring rules
+  
+EDR - end point detection and response:
+1. endpoint detection and response
+   - category of sec tools to monitor endpoint and netw events  and record events in a centraiized database
+     1. data collection
+     2. data consolidation
+     3. threat detection
+     4. aletrts and threat reponse
+     5. threat investigation
+     6. remidiation
+   - techniques
+     1. signature based
+     2. behaviour based
+    
+2. File integrity monitoring FIM
+   - used to validate the integrity of os and app software files using a verification method between current file state and a known good baseline
+   - binary files
+   - sys and app files
+   - config/parameter files
+   - a FIM agend it isntalled which monior all file changes and alerts the sec team
+  
+3. XDR - Extended detection and Response
+   - securoty strategy that integrates multiple protection technologies into a singe platform to improve detection accuracy and simplify the inci response process
 
 
+User Behaviour analytics:
+- using behaviour and ML to identify anamolies
+
+UEBA - user and entiry behaviour analytics:
+- built uopn uba with monitoring of entities as an additional function
+
+- collect and analyze data from various sources
+-   emply adv analytic methods
+-   create baseline for normal user behaviour
+-   monitor and detect anamolies comapred to baseline
+
+1. early detectiion of threats
+2. insider threat detecion
+3. improved inci resp
 
 
+Selecting Secure Protocols:
+- protocols
+- ports
+- transport methods
 
+1. http vs https
+2. ftp vs sftp
+3. telnet vs secure shell ssh
+4. imaps 993 - imap 143
+5. pop3s 995 - pop3 110
+6. smtps 587  - smtp 25
+7. snmps - snmp 
+
+Port selection process:
+- logical construct that identifies specifi process or services in a given system
+- well known ports 0 - 1023
+- registered 1024 - 49151
+- dynamic or private ports - 49152 - 65535
+
+Transport Method:
+- refers the way data is moved from one place to another - tcp or udp
+- tcp - connection  oriented protiocl ensures data is delivered without any errors
+- udp - connectionless protocol - denst guarentee data delivery
 
 
