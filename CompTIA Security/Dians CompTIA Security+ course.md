@@ -2815,5 +2815,91 @@ Secure baseline:
 -  1. establish secure baseline
    2. deploy across all of orgs digital assets - firewalls, user permisisons, encr protocols, uotod data antiviru/antimalware - GPO, AWS config
    3. maintain the secure baseline on all assets
+ 
+
+### Security techniques
+
+Wireless Infrastructure Security
+WAP - center of buliidng, top
+ESS- extended service set ESS - invoilves multiple WAPs
+interference:
+- co-channel - two waps use same frew and get interef=eared
+- adjacent channel
+  - 1, 6, 11 in 2.4 gh wireless freq band
+ 
+site survey
+- process of planning and designing a wirless netw to proivide a solution
+- wirless cov
+- data rates
+- netw capascity
+- romaing capbility
+- quality of serv levels
+
+Heat Map:
+- graphical representation of the wirless cov, the signal strength, and the frew utilization data at different locations on a map
+
+
+Wirless security Settings:
+1. WPA3
+2. AAA
+3. RADIUS - for creating additional layers of authentication on a network
+4. EAP - extensive authentication protocol
+
+Common form of wirless encryption:
+1. WEP - wired equivalent privacy - 64(key + intialization vector), 128(104 + 24) bit encr keys - weak 24 bit initialization vector
+2. WPA - Wifi Protected access ieee 802.11i std - insecure becase of the lack of sufficent data  integrity checks in the TKIP implementation
+3. WPA2 - with AES and CCMP for stringer encr - provices encr and MIC message integrity code for integrity checking
+4. WPA3 - AES, SAE - simultaneous authentication of Equals, enhacned, open , upd cryptiographic protocols and mgmt protection frames
+   - SAE- enhaces se by offering a keyestablishment protoc to guard against dict attacks
+   - Enhanced open / OWE
+   - cryptographic protocol - uses new variaent of AES GCMP - Galois counter mode protocol - 128 bit aes for personal, 192 for enterprise
+   - Mgmt protection frames - req to protect netw from key reco attacks - eavesdroping, forging, temproing
+  
+AAA - Authentication, authorization, accounting for network security to ensure autho users are allowed to access netw and resos
+
+RADIUS - Remote authentication Dial In User Service:
+- cleint / server protocol offering AAA services for network users
+- predefined policies
+- audits/monitoring for acocuntability
+
+TACACS+ - Terminal Access Controller Access  Control System plus
+- seperates the fiunctions of AAA to allow for a more granular control over proceses
+
+Authentication protocols
+- confirm user identiy for netw secureity and authorized access
+  1. EAP - authentication framework that support multiple authentication protocols - point to point connections 
+  2. PEAP - proitected - encrypted and autenticated TLS tunnel - dual side certicifcate  
+  3. EAP-TTLS  extensible, tunneled TLS - req certicitae on server only
+  4. EAP-FAST - flexible authenticatrion secure tunneling
+  
+
+
+Application security:
+- build apps - secure by design
+1. input validation - validation rules, front end and backend validation
+2. secure cookies - enable sec attribute to ensure it is not transmitted over an unsecure http connection accidently, use HttpOnly attribute, samsite cookie, 
+3. static code analysis - SAST - a mthod of debugigng an app by revieng and examing its code befre the pgm is ever run - to find protentail vul such as buffer overflows, sql injection, XSS, input validation
+4. dynamic code analysis - analyzes code while its running DAST - run time errors, memory leaks
+   1. fuzzing - find soft erros by boadring with data to triugger crashes and sec vuls - inject unexpetd data to sys 
+   2. stress testing - type of softw testing to evalaute the stability and reliabilty of a sys under extreme conditions
+6. code signing - techq used to confirm the identity of the author that the ocde is not altered or corrupted since it was signged
+7. sandboxing
+
+Network Access Control - NAC
+- scans netw devices for their sec status befroe granting newtwork access , safegiuarding agisanst both known and unknown devices
+- persistant agent - a soft installed on a  deivce requesting network access
+- non persistant agent - coonect to wifi, access a web portal an clink on a link to login these soltuions - download the agent, scans the device and deletes itself after scan complete
+- software or hadrwared solions
+- IEEE std 802.1x - used in a port based network access control - more than health policy, theare can ade additional rules to grant access theu NAC - time, roile, locationto check the device for entry to the network
+  - time based - definec access periods using time based schedule
+  - location - IP , geo location
+  - role basesd access- adaptive NAC - roile of the device and dcie should or shoud not be allowed
+
+
+
+
+
+
+
 
 
