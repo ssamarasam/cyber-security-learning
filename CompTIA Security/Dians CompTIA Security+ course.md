@@ -3005,3 +3005,140 @@ Transport Method:
 - udp - connectionless protocol - denst guarentee data delivery
 
 
+### Vulnerability Management
+
+Vulnerability management:
+- process of identifying, evaluating, prioritizing and mitigating vuls
+- 1. vul scanning
+  2. assessment
+  3. remidiation
+  4. monitoring
+- identify vuls in sys, apps, netws
+
+Identifying vuls:
+- systematic process of spotting and categorizing weakness in sys, net, apps that could be potentially be exploited
+- techniques:
+  1. vul scnanning - nessus and openVAS - analyse the current state againt a database of vuls and generate detailed report
+     - priotize
+     - patch
+     - mitigate
+  3. application sec techniques - used to safeguard the software from being manipulated during its lifecycle
+     - static analysis - analyze app code without executing it
+       - manual review
+       - automated tools
+     - dynamic analysis - analyze while executing
+       - OWASP ZAP
+       - burp suite
+       - peach fuzzer
+     - pkg monitoring
+       - ensures that packages and components that the app depends on are secure and up to date
+       - Synk
+       - dependaBot
+  5. penetration testing
+  6. sec and process auditing - comprehensive review of  info sys, sec policies, procedures
+ 
+process:
+1. planning
+2. testing
+3. implementing
+4. monitoring
+
+Threat Intelligence:
+- continual process used to understand the threats fced by an org
+- context
+- mechanisms
+- indicators
+- implications
+- actionable information
+
+FireEye - provides subscription based threat intellgence reports
+
+for mobile devices:
+- MDM mobile dev mgmt
+- MAM - mobile appli mgmt
+
+Threat intelligence feed:
+- continuos stream of data related to potential or current threats to an org's sec
+- new malware signatires
+- IOCs
+- malicious IP addresses
+- URLs
+Sources
+- OSINT
+  - alient vault open threat echange
+  - SANS internet storm center
+  
+- proprietary or third party feeds - commercial - reefined, analyzed and timely
+  - fireeye
+  - mcafee
+  - symantec
+- info sharing orgs
+- the dark web
+  - part of the internet that is intentionally hidden and in accessible through standard web browsers
+
+Responsible Disclosure:
+- term used to descibe the ethical practice where the sec researcher discloses info about vuls in a softw, hardw or online service
+- inform the team or company first before dislosing the vul publically so that the org can prepate the patch or fix before it is exploited
+- bug bounty - internal/external
+  - HackerOne
+  - BugCrowd
+  - Synack
+ 
+Analyzing vuls:
+- confirmation
+  - true positive
+  - False positive
+  - true negative
+  - False negative
+- prioritiztion
+  - CVSS - common vulnerability scoring system
+- classification
+  - CVE - common vuls and exposures -  sys that rpovides a std way to uniquely identify and reference known vuls in soft/hardw
+- org impact
+- exposure factor - a quantifiable metric used to help  a cybersec professional to understand the exact percentage of an asset thats going to be damaged or affected if a particular vul is exploited
+- risk tolerance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
