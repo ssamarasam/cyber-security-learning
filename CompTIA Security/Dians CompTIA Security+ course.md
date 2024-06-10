@@ -3098,7 +3098,33 @@ Analyzing vuls:
 - exposure factor - a quantifiable metric used to help  a cybersec professional to understand the exact percentage of an asset thats going to be damaged or affected if a particular vul is exploited
 - risk tolerance
 
+Vulnerability response and remediation:
+- patching
+- purchasing cybersecurity insurance policies
+- network segmentation
+- implementing compensating controls - alternative se controls where std controls are not feasible or effective
+- granting exceptions and exemptions
 
+Validating vulnerability remediation:
+- rescans
+  - schedule autom rescans
+  - use of comprehensive scans
+  - replicate initial scan of conditions
+- audits - config audit, patch audit, complaince checks - gdpr, hippa, glba, sox
+- verification - testing the system, pentest, feedback loops, user verification
+  - holistic testing
+  - conti monitoring
+  - external auditors
+
+
+Vulnerability reporting:
+- internal reporting
+- external reporting - vendors to fix theirs, CVE
+- responsible disclosure reporting
+- confidentiality in vul reporting
+- - encr
+  - need to know basis
+  - executive summary
 
 
 
