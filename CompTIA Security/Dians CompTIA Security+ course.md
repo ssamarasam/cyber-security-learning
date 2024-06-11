@@ -3126,7 +3126,65 @@ Vulnerability reporting:
   - need to know basis
   - executive summary
 
+### Alerting and Monitoring
 
+219: Monitoring Resources:
+
+System monitoring
+- system resources - cpu utilization, memory consumption, disk usuage/utilization, network perf
+- disk usuage
+- perf
+- Baseline - metrics
+Application monitoring:
+- mgnt/monitoring of apps  perf /availability
+- NewRelic or AppDynamics - resp times, errors, other metrics
+Infrastructure monitoring:
+- physical and virtual infra
+- servers, networks, containers, cloud services and other hardware
+- SolarWinds or PRTG Network monitor - netw traffic, bandwidth utilization, stsus of newtking devices
+
+
+220: Alerting and monitoring activites:
+- log aggregation
+- alerting
+- scanning
+  - vul scan,
+  - config scan, cis-cat
+  - code scan
+    - SAST - fortify or SonarQube
+    - DAST - pen test while running
+- reporting - splunk or sumoLogic
+- archiving
+  - hippa requires 6 years of archived data
+- alert response and remidiation or validation
+  - investigate
+  - escalting
+  - initiate pre defined procedure for a known incident
+  - quarantining
+  - alert tuning - adjust parameters to reduce erros like false positives and to imprve overall alert generating system
+ 
+
+221: Simple Network Management Protocol - SNMP:
+- Internet protocol for colleting and organizing info abt managed deviced on IP networks and for modifying the info to change device behaviour
+- Managed devices - any deice that connect with SNMP manager - Mangement Information base - MIB
+- CAN SEND AND RECIVE DATA FROM ALL THESE DEVICES  - routers, swtiches, printers, end user devices, firewalls
+- SNMP manager and agents
+- agents
+  - set - mamager to an agent to set/change a variable
+  - get - 
+  - trap - without manager sends req to trap agent, trap agent sends infor to snmpo manager about any siginifiacant events occured in near real time
+    - uptime
+    - config changes
+    - unexpeted downtime
+    - otehr essential info
+    - 1. granular traps - each trap msg gets a uniq id OID - stored in transaltion file MIB
+      2. verbouse traps - all info about th eevent as a payload - may take more storage
+    - data in snmp are stored in key-vbalue paring - Variable binding
+   - SNMPv1 - use community string to give devices acces - shared key- stroed in plain text which makes insecure - def community string - read-only or private (read-write) 
+   - SNMPv2
+   - SNMPv3 - validates sources, use DES encr56bit
+   - 
+  
 
 
 
