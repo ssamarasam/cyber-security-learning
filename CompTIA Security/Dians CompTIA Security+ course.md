@@ -3183,15 +3183,91 @@ Infrastructure monitoring:
    - SNMPv1 - use community string to give devices acces - shared key- stroed in plain text which makes insecure - def community string - read-only or private (read-write) 
    - SNMPv2
    - SNMPv3 - validates sources, use DES encr56bit
-   - 
+
+222: Security Information and Event Management system - SIEM
+- aggregation and correlation of various logs colleted from various sources
+- log all releveant data and filter all irrelevant data
+- establish and document scope of events
+- develop use cases to define a threat
+- plan inci resp for a threat
+- establish a ticketing system for tracking
+- schedule regular threat hunting
+- provide auditors and analysts an evidance trial
+
+- Splunk
+- ELK or Elastick Stack
+- ArcSight - used for compliance reporting and regulations like hippa, pcidss, sox
+- Qradar
   
 
+223: data from Security tools:
+- anivirus software - protect sys against, virus, malware and others = malware detection logs, system scans, updates
+- DLP system - data loss prevention system - used to control and monitor data end-points, netw traffic, data stored in cloud to prevent potential data loss - generate data about potential data leaks, policy violations, other suspicious activities
+- NIDS / NIPS
+- firewall - internal barrier between trusted network and internet - fileter incoming /outgoing netw traffic based on predefined sets of sec rules called as ACLs Access control lists
+
+224: Security Content Automation Protocol - SCAP:
+- an open standard to automate vul management, measurement and policy compliance for systms in an org
+- developed by NIST and provides vul scanning., config checking and softw inventory
+- languages used in scap:
+  - oval - open vul and assessment language - XML schema for describing sec states and querying vul reports and info
+  - xccdf - extensible configuration checklist description format - developing and audting best pracice config checklists and rules
+  - arf - asset reporting format - for expressing info abt assets and the relations
+- methods:
+  1. CCE - common configuration and   enumuration
+     - scheme for provisioning secure configuration checks across multiple checks
+  2. Common platform enumuration
+     - schme for identifying hardware devices, OS and apps
+  3. CVE - common vulnerabilities and exposures
+     - list of records where each item contains a uniq id used to describe a publicly known vulnerability
+
+metric system used in scap:
+- CVSS - common vul scoring system
+  - used to provide a numerical score to reflect the severity of a given vul
+  - cvss3
+  - 0 - none
+  - 01. to 3.9 - low
+  - 4 to 6.9 - medium
+  - 7 to 8.9 - high
+  - 9 to 10 - critical
+ 
+benchmark:
+- set of sec config rules for some specicif set of products to proide a detailed checklist that can be sued to secure systems to a sepcic baseline
+- red hat linux
+- Center for Internet CIS Security's microsoft windowns 10 enterprise
+
+
+225: NetFlow and Flow Analysis:
+
+FPC - Full pkt capture:
+- captures the entire pkt including the header and payload for all traffic entering and leaving the network
+
+Flow analysis:
+- relies on the flow collector whcih recors metedata dn statistics rather than recording each frame that passes thru the network
+- rapidly generates visuals to map network connections, traffic types, session volumes
+
+NetFlow
+- cicso developed  means of reporting netw flow info to a structured database
+
+IPFIX - IP Flow information export:
+- defines traffic flows based on shared pkt characteristics
+
+Zeek:
+- passively monitors a netw like a sniffer but only logs full pky capture data of potential interest - based on filters and signatures
+- npormalize and   stores in atab delimited data or JSON fmt txt file
+
+Multi router traffic grapher - MRTG
+- creates graphs showing traffic flows thru the netw interfaces of routers and switches by polling the appliances using SNMP
 
 
 
-
-
-
+226: Single pane of glass:
+- a centrail point of access  for all infor , tools, systems  for sec team to monior, manage , secure IT env
+  1. define the reqs
+  2. identifying and integrating data srcs - api, webhooks, plugins, connectors
+  3. customizing the interface
+  4. developing SOPs and documentation
+  5. continuously monitorng and maintaining the solution
 
 
 
