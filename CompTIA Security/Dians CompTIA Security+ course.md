@@ -3270,7 +3270,50 @@ Multi router traffic grapher - MRTG
   5. continuously monitorng and maintaining the solution
 
 
+### Incident Response
 
+228: Incident response process:
+NIST:
+- preparation    - hardening systems
+- detection  - identify, categorize(triage)
+- analysis - thorigh examination of incident and evaluation to understand the scope and impact of the incident and provde valuable insights -0 stakeholders are informed, containment begins, initial response actions are taken
+- containement - limit the incident's impact by secuing data and protecting busi operations - disconnect affected device form netw to prevent spreading
+- eradication - remove mali activity from sys/netw
+- recovery - restore sys and services to normal secure state
+  - restoing from bkp
+  - installing sec patches
+  - implementing config updates
+- post incident activity / lesson learned
+  - analyse the inci response activities, collect what wokred best and what dint
+    1. root cause analysis - idnetify inci src and how to prevent in future
+    2. lesson learned process - document experiences
+    3. after action report - formalized report - info about what happened
+   
+229: Threat Hunting:
+- a cycbersecurity method for finding hidden threats not caught by regular security monitoring
+- act of being proactive in defense
+- 1. establish a hypothesis - predict high impact, likely events by threat modeling
+     - who might want to harm us
+     - who might want to break into our netws
+     - how might they be able to do that
+     - combine threat modeling and threat intelligence
+  2. profiling threat actors and activities
+     - envisioning potential actors and their activities
+     - how ttps they might use
+     - who wants to harm us
+     - are they insider threat, a hactivist, croimala org, or a nation state APT
+     - based on the abv qs, determine what their objectives might be and what sys they might be trying to get
+     - analyze the logs, data, processes, file sys, server changes to gather info
+     - threat hunters will analyse these into SIEM to correlate and analyze the data
+     - threat hunting aims to:
+       - seek undetetced issues
+       - focus on what what bypasses exiting rules
+       - explore cases where quieres do not yield expected data
+       - to uncover and detect new threat tactics and IoCs
+      
+  For threat hunting, analysts must be uptodate with the latest threats and attacks
+  - advisories and bulletins
+  - intelligence fusion and threat data - use SIEM and analysis platforms to spot concerns in the logs and real-wrodl sec threats
 
 
 
