@@ -3317,10 +3317,95 @@ NIST:
 
 
 
+230: Root cause analysis:
+- a systematic process to identify the initial source of the incident and how to prevent it from occuring again
+  1. define the scope of the incident
+  2. determine the casual relationships
+  3. identify an effective solution
+  4. implement and track the solution
+ 
+uses a no-blame approach - lead to open and honest reporting
+
+231: Incident response Training and Testing:
+1. Training
+   - training specific to each different group of employees
+   - lessons learned
+   - techincal and soft skills
+3. Testing
+   - practical exercise of incident response procedures
+   - 1. tabletop exercise TTX - exersices simulate incidents within a control framework
+     2. pen test
+        - metasploit
+        - cobalt strike
+        - kali linux
+        - parrotOS
+        - commandoOS
+     4. simulation
+        - simple scenarious - phishing or ransomware
+        - complex - multi stage attacks, data breaches in coordination with extrenal parties
+       
+232: Digital forensics procedures
+- process of investigating and analyzing digital devices and data to uncover   evidence for legal purposes
+- always adhere to org's well written procedures - oin accordance tith the regulation
+- 4 main phases of digital forensics
+  1. identification - ensures the safety of the scene, secures it to rpevent any contamination, determines the scope of the evidece collected
+  2. collection - refers to gathering, preserving, documenting physical or digial evidence in various fields - get required authorization from law enforecement or cio, cso, ceo before colection
+     - follow the porper aquisition procedure
+       - order of volatility, - seq in which data srcs shoudl be collected and preserved - from most volatile resos to least volatile resos - maintain evidential integrity
+         - NIST suggested 5 main steps - nist special publication 800-86
+           1. collect data from sys memory - ram, cache
+           2. capture data from sys state - sys, netw configuratiosn, active user sessions, any data that can be abtained without altering the system
+           3. collect data from storage devices
+           4. capoture network traffic and logs
+           5. collect remotely stoired and lcoud data
+       - preserving chain of custody
+         - documented and verifiable record that tracks the handling , transfer and preservation of digital evidence from the moment it is collected untill it is presented to the court of law
+       - collection process
+         - disk imaging - involved creating a bit by bit or logical copy of  a storage device, poreserving its entire content, including deleted files and unallocated space - exact duplicate copy of data
+         - file carving - extrating files   and data fragments from storage media without relining on file system - useful when metadata is corrupted or missing
+  4. analysis - involves systematically scrutinizing the data to uncover relavant info such as potential signs of criminal activity, hidden files, timestamps, and user interactions
+  5. reporting - involves documenting the findings, processesm methodologies used  udring a digital forensic investigations
+ 
+Legal hold:
+- formal notification that instructs employees to preserve all potentially relavant electronic data, documents and records
+
+E-dicovery: electornic discovery:
+-  process oif identifying, collecting , producing electornically stored info durening potential legal proceedings
+-  emails
+-  documents
+-  databases
+
+foresics analysts must adhere to code of ethics - analysis must be only based on evidence
+- avoiding bias
+- repeatble actions
+- preservaytion of evidence
 
 
+evidece should be in away that it should produce same results if multiple people analyze the same evidence
+- time
+- action
+- results
 
+233: data collection procedures
+- follow digital foresic procedures to preserve evidence data on a server
+- capture and hash the images - to make sure it donet change while you anyzling it
+- sftware tools to analyze:
+  1. Forensic Toolkit - FTK
+  2. EnCase
+ 
+- capture scresnhots fo the machine
+- follow th eoder of volatility
+- as quickly as possbile
+- taks estaments fporm witnesses and administrators
+- review licensing and documentaion for all sys
+- track the man hours and expenses
 
+data acquisition:
+- the method and tools to create forensically sound copy of data form a source device such as system memory or a hard disk
+- do i have the right to seacrh and seize the data? - authozirze to cllect data
+- not all devices are owned by the company
+- data might lost if computer gets shutdown or restarted - from sys memotry, cache, ram
+- but some data can only be collected once ths sy is shutdown or power is suddenly disconnectec
 
 
 
