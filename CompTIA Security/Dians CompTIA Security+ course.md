@@ -3506,10 +3506,169 @@ Metadata:
   web application firewall - layer 7 - application layer
 
 
+242: Application logs:
+- macro detection
+
+243: Endpoint logs:
+- stage 1 dropper
+- stage 2 dropper
+
+244: OS specific logs:
+- incorrect login attempts
+- pwd attempts
+- password
+- password cracking
+- brute force
+- dictionary attack or hybrid of both
+
+245: IPS/IDS log:
+- high, blocked, alerted, data exfiltration
+
+246:   Network Logs:
+- ARP spoofing - changing mac address
+- 8.8.8.8/4.4 google dns server
+
+247: Metadata:
+- data about data
+- file name
+- file size
+- type
+- creation date
+- last mdofiied
+- last accessed
+- owner
+- md5 checum
+- sha256 checksum
+- file path
+- ip addres accessed form
+- user agent: mozilla/5.0
+- network protocol
+- security flags: None
+- mostly files/pdf form phishing capmian/email
 
 
+### Automation and Orchestration:
+
+- automation - indivudial tasks
+- orchestration - coordination of the automated tasks for a specific outcome or workflow - multiple automated tasks
+- SOAr - security Orchestration Automation Response - integrate with siem,--> next gen SIEM - inci response, threat hunting, automared procudres
+- palybooks
+- runbook - automated versions of playbooks with human interaction points
+
+249: When to automate and orchestrate:
+Automation:
+- streamline complex process
+- enhace sec measures
+- improve operational efficiency
+- challenges:
+  - complexity
+  - cost
+  - single point of failure
+  - technical debt
+  - ongoing supportability
+ 
+
+250: Benefits of Automation and Orchestration:
+1. Increasing efficiency and cost savings
+2. enforcing baselines
+3. implementing standard infrastructur configurations + automated corrective actions if anything deviates from std baseline/configurations
+4. scaling in a secure manner
+5. increasing employee retention
+6. increasing reaction times - respond more quickly to incidents and anmolies thru automation
+7. being a workforce multiplier
+
+251: Automating support tickets:
+- effieciency
+- consistency
+- scalability
+- 1. ticket creation
+     - captured
+     - categorized
+     - assigned
+  3. ticket escalation
+     - ensures complex or high priotity iussues are addressed by right personal
+     - excalation criteria - urgency, issue nature, SLA
+     - automation rules
+       - priority level
+       - response time
+       - unresolved status
+      - executed pr3edefined actions
+      - monitoring/tracking the progress
+    
+- transparency and acocuntability
+- meet SLAs
 
 
+252: Automating Onboarding process:
+- Automation: use of tech to execute repetivte tasks without conitinious human intervention in order to increase overall efficiency
+- eliminate any tedious manual tasks
+- preduce likigood of human error
+- consistent experience
+- ensure compliance
+1. creating documentation records
+2. scheduling training
+3. provisioning equipments
+4. managing access rights
+5. distributing various checklists
+6. collecting feedback
+
+1. user provisioning
+2. resource provisioning
+
+253: Automating Security:
+- involves use of tech to handle repetitve sec tasks and maintain consistent defenses
+  1. guardrails - automated safety controls to protect against insecure infra configs
+     - enforce sec policies, monitor infra and sec violations
+     - revoke permissions
+     - reconfig components
+     - isolate infected netw
+  2. Security Groups
+     - act a s a cloud based firewall - contolls incoming/outgoing netw traffic
+    
+  3. Service Access management
+     - enabling and disabling service access
+     - auto access review
+     - monitor unsual activities - restriuc/disable access
+    
+  4. maanging permissions
+     - rbac
+     - ensures protction of sensitive data
+
+254: Automating Application Development - CI/CD
+- manage, test, deploy
+- CI - continious integration"
+  - practice i soft development where developers merge code changes frequently in one place
+  - automated tests follow code integration for efficiency
+  - release - enabling software installion and usuage
+  - deployment - installing software in a new environement
+ 
+- CD - continious delivery
+  - maintains deployable code with automation
+  - automation upto certain stage only
+  - allows maual controil of deploying changes to the live production environment
+ 
+- CD - continous deployment
+  - automates the process of deployment from testing to prod after build stage
+  - rollback capability in the event of error for serice continuity
+ 
+255: Integration and APIs
+
+integration:
+- process of combining diff sussytems or components into one comprehensive system to ensure they function properly together
+
+API:
+- set of rules and protocols that are used for building and integrating application software
+- service oriented architecture
+- allows to integrate with any service
+- using api, automate
+  1. administration
+  2. management
+  3. monitoring pof various cloud based services and oyther apps
+- use REST or SOAP to communicate
+  - REST
+  - SOAP - simple object access protocol - in xml format  high level of security
+ 
+- tool - CURL
 
 
 
