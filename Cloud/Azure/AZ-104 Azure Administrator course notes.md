@@ -140,7 +140,37 @@ Note: changing form customer managed key to platform managed key might not work 
 - new DISK will be already exisitng in the new mahcine without Initializing it from Server Manager
 
 
+### Shared disks for multiple VMS
+- create  anew VM
+- create and attach disk - check the max number of shares
+- select share count number - eg 2
+- review and create
 
+- create new vm-2 -> attach an exisitng disk - the old disk will be appearing eher - select that
+- review and create
+
+- when u login Vm1 and initialize, new volume - craete  new file
+- login vm-2 , init, new vol, - you will not see the already created file - for that some OS level software must be installed to felect the changes created in one VM to apprear on the another vm which shares the same disk
+
+### custom script extensions
+- script to run when the VM is laucnhed first time
+- to install some apps
+- script to be stored in azure storage acocunt or in github
+- max exec time is 90 mins
+- dont specify user input commands
+- no reboot commands
+
+1. create a new storage acocunt
+2. COntainers
+3. upload the script file\
+4. craete  new VM -> inbound port rule - cjhoose http-80
+5. go to advanced  -> Extensions -> Select an extension to install ->  search "custom script extension" and select it ->
+   - next
+   - browse the file from storage
+   - choose the script container - choose the file
+   - select
+   - create
+   - go to resousr -> copy ip, paste it in browerse - we can see the IIS already loaded (insted of going to VM and then isnatll it there) 
 
 
 
