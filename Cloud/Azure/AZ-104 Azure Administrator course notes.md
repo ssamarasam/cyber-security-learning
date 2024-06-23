@@ -172,10 +172,13 @@ Note: changing form customer managed key to platform managed key might not work 
    - create
    - go to resousr -> copy ip, paste it in browerse - we can see the IIS already loaded (insted of going to VM and then isnatll it there) 
 
+other way:
+- connect VM RDP -> server manager -> add roles and features -> select web server
 
 
-
-
+for Linux:
+- advanced - custom script for Linux
+- in command -> write the name of the file of the script " sh install_wb.sh" - review and create
 
 
 
