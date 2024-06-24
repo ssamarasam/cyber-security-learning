@@ -138,10 +138,93 @@ how they authenticate?
 - guest
 - member
 
+User:
 1. internal member -
 2. external guest - consulatants, vendors, partners - autnehticates using extrenal ms-entra acct or social media acct
-3. external memeber - 
-4. internal guest - 
+3. external memeber - orgs consists of multi tenants - member level access
+4. internal guest - orgs who collobaorate with distributors , vendors, - set uo internal guest - b2b collaboration - use their own credentials- alowing extrenal identity provider to manage authentication and account life cycle
+
+Workload identities: - software workload
+- applications and service principals
+- service principal - an identity for an application
+- app must be registered with ms-entra to delegate its identity and access functions
+- after registration a service principal is created in each ms-enyra tenant where the app is used
+
+managed identities:
+- type of service principal -automatically managed in ms-entra-id eliminate the need for developers to manage credentials
+- provide idnetities for use to connect to azure resos that support ms-entra without any cost
+
+1. system assigned:
+   - tied to one resos - live in resos life cycle, gets deleted when resos gets deleted
+2. user-assigned:
+   - standalone azure resos
+   - assign it to one or more instances of azure resos - multiple VMs
+   - scenario - when multiple VMs need same set of permissions
+   - deleting resos doesnt impact user-assigned identity
+
+
+Device:
+- device identity gives admin they can use when making access or config decisions
+1. MS entra registered devices - for byod - registered device can access org resos without requiring an org acocunt to sign in
+2. ms entra joined - device joined to ms-entra-id thru an org account, which si then used to sign into the device - generally owned by org
+3. ms-entra-hybrid-devices - devices from on prem act dir acn be joined to ms-entra - requiring org acct to signin
+
+regsitiering and joining dveices allows to use SSO to access cloud resos
+devces that are  ms-entra joined beniefit from sso to resos /apps that rely on on-prem active dir
+
+Microsoft intue - MDM and MAM - mobile application management
+
+Groups:
+- if several identieis need same level of acces - then can create a group
+- group to asisgn permissions and access to resos for zero trust
+1. security - manage user and  device access to shared resos
+   - requires MS_entra admin role to create security groups
+2. Micorsoft 365:
+   - distribution groups - used for grouping users accoridng to colloboration needs
+   - access to shared mailbox, file sharepoint sites,
+   - memebrs can be users and , users outside of org also, no need of admin role
+
+can be configured manual or dynamic 
+dynamic membership rules to automatically assign or remove identities
+
+**Hybrid identity**
+- on-prem and cloud
+
+accomplished by inter directory provisioning and synchronization
+- when a user is already in Active directory is provisioned into Microsoft entra id
+- making sure identity infor is matching between active directory and cloud
+
+method:
+- ms-entra cloud sync using ms-entra cloud provisiong agent
+- provides a light weight inter directory  rpovisning experience that acts as a bridge between ms-entra-id and active directory
+- org needs to deploy the agent in their on-prem or IaaS environment
+- provisong config is stored in ms-entra and managed as part of service
+
+SCIM - System for cross domain identity management
+- a std used to automate the exchange of user or grp identity information between identiy domains such as entra
+
+ms-entra cloud sync agent uses SCIM to provion and deprovison users/grps
+
+**External identities**
+- providng acces to org resos to extrenal users
+- Micrsoft entra external ID
+  - b2b collaboration
+  - b2b direct connect
+  - ms-entra external id for customers - preview
+  - ms-entra multi tenant organization
+ 
+  B2B collaboration:
+  - enables emp of an org to collabotae with ext users - letting them use prefered identity to sign into ms-apps or org;s enterprise apps
+  - guest users
+  - they use their home org's or identity provider
+  - we check guest user's eligibility for b2b collaboration
+    1. invite users to b2b using the entra acocunts, social ids
+    2. use self service signup usef flow to let ext users to signup
+    3. use ms-entra entitle amangement - identity governance feature  -lets you manage identity and access for ext users at scal by automating access request workflows , access assignments, reviews and expiration
+   
+  user ppbj is created in the same directory- allows to assign permisisons
+
+
 
 
 
