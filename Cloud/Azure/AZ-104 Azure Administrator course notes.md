@@ -234,5 +234,113 @@ azure dedicated host:
   - Reapply
   - 
 
+### Availability Sets
+- fault domain - networking and power - 3 
+- update domain  - microsoft maintenance updates - 20
 
-  
+### Lab - availability set
+- create a new VM
+- availability zone:
+  1. availbility zone
+  2. VM scale set
+  3. **Availability set**
+  4. create new -"app-set"
+  5. fault domains
+  6. update domains
+ - review and create
+ - go to resosurce
+ - check the new "availability set " resource app-set
+ - VM1
+   - fault domain 0
+   - update domain 0
+  - create new vm and choose the already created availability set "app-set"
+  - now check the availability set app-set
+  - app-set will show both vms under it
+  - vm1 - f-0, u-0
+  - vm2 - f-1, u-1
+
+if we add more vm, then it will have 0, 0 
+if we delete app-set, we will get error since VM shoudl be deleted first before availability set deletion
+
+### Availability Zones
+- multiple data centers spread across diff places within a region
+- no cost for using availzbilty zone
+- but cost for VMs
+- cost for data transfer between availability zones
+- create new VM
+- availability options - availability zone
+- availabiulity zones - Zone 1
+- no seprate availability zone resource - it just map the VM as part of zone 1
+
+
+### Azure Virtual machine scale sets
+- create an identical set of VMs to host an app
+- vertical scaling - increasing the size of ram, cpu
+- horizontal scaling - multiple machines hositng a machine
+- create a 'virtual machine scale set ' resource
+- number of VMs can increase or decrease based on demand
+
+### lab - VM SS
+- search scale set in marketplace
+- Create a new Virtual machine Scale Set
+- Name, region, A-zones, orchestration mode - uniform, security type - std
+- instance details - ubuntu
+- networking: network interface-  edit, allow selected ports- 22-ssh, enable public ip address - OK button
+- load balancing - azure load balancer or app-gateway or none
+- scaling - 1 as part of VMSS
+- scaling policy - manual
+- review and create
+
+- go to new scaleset resource
+- check isntances - 1 instance running as of scale set
+- go to all resos, see the below resos
+  - virtual network
+  - NSg
+  - network watcter
+  - scaleset
+  - not seeing any ip or VM
+  - VM is reprsented as an instance here
+ 
+  Scaling conditions:
+  - go to sclaset resos
+  - select "Scale"
+  - manual or custom
+  - scale mode: metric or  isntance count
+  - metric - add rule
+  - min, max, default
+  - set thr ule
+  - based on coidntion increase the count - scale out
+  - decrease the count - scale IN
+  - SAVE
+ 
+trigger stress in Linux to test the VM scaling OUT / IN
+connect linux using ssh - putty
+- sudo apt-get update
+- sudo apt-get install stress
+- sudo stress --cpu 1000
+- control Z to strop the stress tool
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
