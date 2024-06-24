@@ -90,8 +90,58 @@ data
 ### Capabilities of Microsoft Entra
 
 **Function and identity types of Microsoft Entra**
-- 
+- cloud based identity and access management system
+- can be sync with  on-prem active dir, other dir services, ur used a sstand alone service
+- securely enable personal devices, mobiles, tablets and enable collaboration wiht business partners/ customers
 
+identity secure score:
+- how aligned you are with MS best practice recommendations for security
+- tailored to specific config
+- measure your identity sec-posture
+- plan identity sec improvements
+- review the sucess of improvements
+
+terms:
+- teneant:
+  - instance of ms entra
+  - single orgnincluding prg objects - users, grousp, devices, apps registrations
+  - security and administrative boundary to manage and control access to resos, apps, devices and services
+ 
+- directory:
+  - microsoft entra directory or microsoft entra tenent
+  - logical container within a ms-entra tenent - hols and organizes various resos and objects
+  - directory - a database or catalog  of identities and resosuces associated with an org;s tenent
+  - a ms-entra tenant consist of only one directory
+
+- multi-tenant:
+  - org with multi tenant
+  - org with multiple subsidaries which operate independantly
+  - org's that merge or acquire companies
+  - multiple geo-boundaries with various residency regulations and more
+
+- can setup mfa to access resos
+- add sso
+- provide APIs - allow personalized app experiences using exising org data
+- subs to azure serices, ms-365, dynamics 365 automatically have ms-entra-id
+
+**Types of identities**
+categoroes:
+1. people
+2. physical devices
+3. software based objs - workload identities
+
+**user**:
+how they authenticate?
+- internal authentication
+- external
+**user-type**
+- guest
+- member
+
+1. internal member -
+2. external guest - consulatants, vendors, partners - autnehticates using extrenal ms-entra acct or social media acct
+3. external memeber - 
+4. internal guest - 
 
 
 
