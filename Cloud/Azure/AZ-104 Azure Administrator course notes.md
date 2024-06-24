@@ -320,6 +320,62 @@ connect linux using ssh - putty
 - sudo stress --cpu 1000
 - control Z to strop the stress tool
 
+Exam question:
+- when VM scales out by adidng more VM, will the apps get installed in all new VMs automatically?
+  - NO:
+    options:
+    1. custom script extensions
+    2. use images which have application set already on it  and scale set could set the VM based on the image
+
+- combine CPU percentage oif all current VM gpoes up to the specified point only, the new SCALE OUT (increase) option will trigger. its just not based on one of the VM gets more CPU pertencege up
+- check Autoscal concepts in learn-MS
+- click the rulk - cool down period: (5): time to give the application load across the current and newly added VM machines
+  - time for new VM to stablise
+  - duroing cool down time, no sclaing operations will be performed
+  - time for entrire infra to stablize itself with the addition of new machines
+ 
+
+### 51: Azure VMSS - orchestration modes
+orchestration mode: flexible(achive high availability at scale with identifcal or multiple  machine types_  - earlier : uniform
+- creatre new VMSS  with flexible
+- go to scaleset:
+  - instances ->  instance in creating state
+- go to resosucres:
+- - see the below resos which you can see only via flexible option and not in uniform
+  - 1. netw ointerface
+    2. Virtual machine
+    3. disk
+   
+  - so we can manage these resos seprately using flexible option
+ 
+  - create a ne "VM" - in the availability optio n select " virtual machine scale set" - chosse the a;lready created scale set "app-set"
+  - go to scale-set app set -> two VMs are there
+ 
+### 52: VMSS- Custom script Extensions
+- create a VMSS using windows
+- go to networking - edit network interface - allow selected ports - rdp-3389 and http-80 - enable public ip address - ok
+- scaling - initial isnace count as 2
+- review and create
+
+- go to storage acocunt
+- go to containers
+- go to scrip container
+- upload the new powersheel- file to install IIS webserver and craete a defauilt.html page with computer info
+
+- go to scaleset
+- instances - 2 shud be running
+- click extensions + applications --> Add -" search "custom script extension" - next -> chosse the uploaded script from storage account
+- custom scrip is added as part of the scale set
+- script can run on both the machines(instances) that are part of scale set
+- latest model: no i scale set - which says no changes made to the isntances which was applied to VMSS
+- so custom sctript is not yet ran till now
+- cleick on both instance and clecik "upgrade" to apply the change from the custom script extension -? clcik yes
+
+- we can make this a stupomatiuc proces
+- by going to "upgrade policy" of VMSS resos
+- go to upgrade policy - currently se as "Manual"
+- 
+
 
 
 
