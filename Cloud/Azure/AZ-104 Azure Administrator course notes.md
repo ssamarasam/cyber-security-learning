@@ -180,9 +180,59 @@ for Linux:
 - advanced - custom script for Linux
 - in command -> write the name of the file of the script " sh install_wb.sh" - review and create
 
+### 34: Linux virtual Machines - Cloud Init
+- install packages in linux
+- .yml - a markup language - can specify config for cloud init
+- create new vm - enable http-80 and rdp(already) - advanced: "custom data and cloud init"
+
+#cloud-config
+package-upgrade: true
+packages:
+   - nginx
 
 
+### 35: VM - Boot diagnostics
+- create new VM - windows
+- go to Monitoring:
+  - boot diagnostics: enable with managed storage account - review and create
+- go to VM
+- under HELP section -> boot diagnostics - refresh if need3d, check serial log
 
+### 36: VM - run command
+- go to "RUN COMMAND"
+- it allows to execute various commands without going to vm
+- remotely execute PS scripts in run command
+
+
+### 37: confidential computing and Azure dedicated host
+
+confidential host:
+- a apsecial type of hardware included in the cpou hardware
+- DCsV2 series
+- enclave
+- intel SGX tech
+- open enclave software dev kit
+- confidential consortium framework
+
+azure dedicated host:
+- dedicated host for a particular customer
+- not shared to anyone
+- chares based on the dedicated host/physical server - not based on the number of VM running inside it
+- can control the maint events that are initiated on the azure platform
+
+### run command:
+    import-module servermanager
+    add-windowsfeature web-server -includeallsubfeature
+
+### Redeploying your VM
+- if vm is not boarded ar not able to connect
+- - stop and start may bring the vm from the same physical server
+  - reploy - VM will be migrated to new Azure host - lost data from temporal drive
+  - no losing of data from c drive
+ 
+- if Vm is in failed state,
+  - Reapply
+  - 
 
 
   
