@@ -222,11 +222,186 @@ ms-entra cloud sync agent uses SCIM to provion and deprovison users/grps
     2. use self service signup usef flow to let ext users to signup
     3. use ms-entra entitle amangement - identity governance feature  -lets you manage identity and access for ext users at scal by automating access request workflows , access assignments, reviews and expiration
    
-  user ppbj is created in the same directory- allows to assign permisisons
+  user obj is created in the same directory- allows to assign permisisons
+
+
+B2B direct connect:
+- allows to conenct with extrenal ms-entra orgs using teams shared channel
+- not represented in ms-entra directory
+- can be viewd in Teams shared channle or monitored in Teams admin center
+- two was trusted relationship
+- when 2 orgs enable b2b direct connect, they authneticate from their home org and recive token from resource org
+
+- enable teams connect shared channel - lets you colloborate with extrenal users ffrom multiple orgs for chat, calls file sharing, app-sharing
+- 1. within teams, a shared channel owner can searchf ro allowed users from ext org, add them to shared channel
+  2. ext users ca access resos without having to swicth org to sign in with diff account. can access file thru teams. cross tennt access settings wil bemange truted relation with extrnal users inblund as well as outbound
+ 
+Micorosft entra external id for customers - preview:
+- new MS's Cusomter identify and access management solution - CIAM
+- with ms-entra ext id, create a distint tenant follows the std MS-entra tenant module , but configured for customers
+- 1. SSO with social and extrenal identities - usernam/pwd, otp, email
+  2. signup and signin pages to your apps
+  3. add company brnading to signup page - customer can securely access all the apps using single identity
+  4. provide slef service account management
+
+
+Multi-tenant organization:
+- more isntance of ms-entra id
+- multiple clouds or multiple geo boundaries
+- one way synchronization called cross tenant synchronization
 
 
 
+### Authentication capabilities of MS-entra id
 
+Authentication methods:
+- password
+- phone - sms - primary, voice call veririfcation - secondary
+- OATH - open authentication - seocndary - for sspr or ms-entra mfa
+  1. software oath token
+  2. hardware oath tokens
+- passwordless
+  - biometrics with windows hello for business
+  - fido2 security key
+ 
+windows hello for business; - pri + seocndary
+- replaces pwd with string two-factor authentication on devices
+- combination of key or certificate tied to device and something that person knows-pin or biometic, to cryptographyically sign data to send to identity provider - the IDP verifies and authenticates the user - can be used as secondary form of authentication when verutying during mfa
+
+fido2 - fast identity online
+- open std for passwordless authn
+- incorporates web authentication standard webAuthN - supported by ms-entra
+- usb devices, blutooth or nfc also
+- primary + seocndary
+
+MS-authenticator-app - pri
+- can be used as a software token to geneate oath verification code
+
+Certificate based authentication:
+MS entra CBA - certitifcate based authN - allow to authnticate directly with x.509 certificates against their ms-entra identity
+- for apps and browswer signins
+- cba is only as a pri form of pwdless authN
+- x.509 certificates are part of PKi, digitally signed documents - bind an identity - user, org, website
+
+
+
+**MFA**
+- know
+- have
+- you are
+
+Security defaults and MFA:
+- basic identity sec mechanisms recommneded by MS
+- 1. enforcing mfa for users
+  2. forcing admins to use mfa
+  3. requring all users to complete mfa when needed
+ 
+SSPR:
+- reduce it support
+- more productive
+- admin can roll our changes
+- includes robust sec-logs available from api, enabing data t be imported to a SIEM
+- enabled for SSPR by admin
+- sec questions for secdnary
+- admins cant sue sec questions, they have otehr mfa options
+- password write back to on-prem active directory without a delay
+- email notificatiosn after sspr
+- all global admisn will be notified when SSPR is used on a admin account
+
+**Password protection and management capabilities:**
+- reduces the risk of using weak pwds
+- detects and blocks weak pwds and weak terms
+- default banned pwd lists are applied t all users in a tenant
+- custom abnned also can be defined
+- when user restes, these listss will be checked
+- mfa for pwd protecion
+
+global banned pwd list:
+- mainted by ms-entra id protection team
+- with all varients created using algo - s to $
+
+custom banned pwds list:
+- org name, location as pwds
+- focused on specif terms like
+  - brand names
+  - product names
+  - locations
+  - comapny ehadqrters
+  - comapsny speci terms
+  - abbreviations used in comapny
+ 
+custom abnned willbe compbined with global banned list
+
+banned pwd list are feature of ms-entra p1 and p2 licensing
+
+Proetcion against password spray:
+- real wrld teleterty daa
+- weak pwd banning
+
+Hybrid security:
+- admisn can integ ms-entra pwd protection within an on-prem act-dir env
+- component installed on act-dir willrecive banned lists from ms-entra and perfocm checks 
+
+### Access management capabilities of MS-entra
+
+**Conditional access**
+- implemented thru policies - craeted/managed in ms-netra-id
+- conditonal policys analyses signals from user, location, device, apps and risk to automate decisions for authorizng access to resos
+- if-then statements
+- if user belong to a  certain gro, then mfa needed
+- conditional access policies are applied after first factor authentication is completed
+
+conditional access policy components:
+1. assignments:
+- which signals to use
+- who, what, where, when
+- logically ANDed
+- 1. users and groups
+  2. cloud apps or actions - netgartin of defencder for cloud - control over access and activities
+  3. condtions: where and when -
+     1. sign-in risk
+     2. user risk
+     3. devices platform
+     4. ip location info
+     5. client apps
+     6. filters for devices
+
+
+2. Access controls
+   - block access
+   - grant access
+     - with no extra controls
+     - with mfa
+     - with a pwd change
+     - with a specif complaince policy requirements
+       
+   - session - using session control, enable limited exp within specific cloud apps
+     - use signals from ms-defender for cloud apps to block download, cut, copy, print for sensitiev docs
+     - signin freq
+     - application enforced restrictions
+     - limited or full exp based on device state
+
+**MS entra roles and RBAC**
+
+built in roles;
+1. global admin
+2. user admin
+3. billing admin
+
+custom roles:
+- define the role defining with permisnions
+- assign the defention to user or group
+
+Categories of MS entra roles:
+1. ms entra specific roles - user admin, app admin, groups admin,
+2. service specif roles - grant permissions to amaneg features within the specif servuce- echange admin,ntune admin, sharepoint admin, teams admin
+3. cross service roles -
+   - sec admin grant access to ms365
+   - complaince admin grant access to ms365 compliance center, exchange
+  
+
+MS entra RBAC - ms entra resosurces susch as users, grps, apps
+Azure RBAC - vms, storage using ARM
 
 
 
