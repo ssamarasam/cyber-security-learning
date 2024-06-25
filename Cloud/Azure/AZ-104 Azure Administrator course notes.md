@@ -414,6 +414,52 @@ Virtual machine images:
 27. restart now
 28. rdp - windows-c/ inetpub/wwwroot/default.html - still old name - change it to new name
 
+Generalized image process:
+1. first perom the generalization process
+2. go to appvm-1
+3. connect via rdp
+4. open file explorer
+5. go to c drive
+6. go to windows folder
+7. delete panther directory
+8. open cmd as administrator
+9.  cd %windir%\system32\sysprep
+10.  copy the one from learn.microsoft .com  vm/generalize
+11.   paste it in CMD
+12.   this will generalize the machine
+13.   appvm will not be used anymore - canot use that vm anymore
+14.   create an image and create an VM out of it
+15.   go to overivew of appvm -? capture
+16.   select "no, capture as managed image"
+17.   review and create
+18.   go to the image
+19.   create VM
+20.   specify credentials here *****
+21.   create
+22.   rdp - check ip and default.html which ahs old name
+23.   got to local server - name should refelct correctly
+
+### 58: Proximity placement groups:
+- allows the multiple VMs which is hsostinga  signle location to remain close to each other to provide low latency - accelarated netwoking speed enabled
+- imporve netw performance
+- 1. craete "proximity placement group - app-place-grp"
+  2. create new VM - go to advanced -> proximity placement grp->  choose the created grp
+  3. if the Vmlcoation is different than the placement grp, then you cannot able to select the promoity grp created, it willbe disabled
+ 
+**deployments**
+go to resource group name - check deploymenets and explore
+
+**Azure app service - PaaS**
+- app service plan - defines the set of compute resos to assign to the web app
+- craete new app service
+- name, service plan, pricing, domain name, sleeted .net
+- app service and app service plan will be created
+- go to web app
+- copy and paste the url - it will show web app serice age waiting for content
+- go to app service editor
+- open editor
+- under wwwroot - right click - create new file - def,html - editht he html file
+- go to url - url/def.htmp - it will show the html page we created
 
 
 
