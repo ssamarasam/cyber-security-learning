@@ -462,11 +462,35 @@ go to resource group name - check deploymenets and explore
 - go to url - url/def.htmp - it will show the html page we created
 
 
+**connect vscode to azure**
+- tools - azure - azure service authentication 0- account selection - choose the accunt
+- right clickt he project - click publish - azure - azure app service windows - resosurce grp - ceick the azure webapp -  publish
+- it will open the webvrowser and lauch the app as ar of azure webapp
+
+new apps ervice can be created under same app-service plan already craeted to hist many applications(azure-app-service) as part of single app-service plan
+uage plans are based on combined usage
+if you are using free tier which is 600 mins per day
+and 2 webs apps are running, hten 30 +30 mins they can use per day - or else comnined 60 mins
+
+python will use linux based machines only currently - so new app serice plan must be created since the location also differs based on tech
 
 
+**azure web app logging**
+- application logging
+- web server logging
+- detailed erro msgs
+- deployemnt logging
 
-
-
+- to to webapp service
+- go to app service logs
+- app logging - filesystem - on - at OS level
+- app logging - blob - off - on will store the gs on azure storage accout
+- web server lgging
+- retention
+- ftp to download the logs
+- save
+- go to log stream
+- web server logs - real time web logs
 
 
 
