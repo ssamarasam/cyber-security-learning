@@ -16,4 +16,6 @@
 14. craete Vm with availability set
 15. Vm with availability zone
 16. Scalet set and trigger scalling in linux using stress tool
+17. ---
+18. create VM and craete image out of it, using the images for both spcialized and generalized images. create new VMs using the images        
     
