@@ -376,10 +376,43 @@ orchestration mode: flexible(achive high availability at scale with identifcal o
 - go to upgrade policy - currently se as "Manual"
 - 
 
+Virtual machine images:
+- Azure compute gallery - create an image and place as part of it
+- image definition
+- image version
+- 1. specialized VM images - with user  and machine infor
+  2. generalized Vm images - user infor will be removed before image creation
 
 
-
-
+1. create  a windows vm
+2. add a custom script extension toinstall IIS and a defalt.html
+3. go to resos, networking - add invound rule to accetp http-80
+4. go to resos -overview -->  select "CAPTURE"
+5. share it to gallery option
+6. gallery details --> create new - companygallery
+7. select **spcialized** / generalized
+8. target vm image defintion --> create new -> name: webimage - ok
+9. version number 1.0.0
+10. review and create
+    ------
+12. go to all resos
+13. we can see the new image 1.0.0 and also computegallery, also imagedefiniton - webimage
+----
+14. go to webimage defintion - vm image definition
+15. craete a VM
+16. newVM
+17. image: companygallery/webimage/
+18. no ability to mention admin account details since it is specialized iamge, it ahs the admin details already created by the source VM
+19. create VM
+20. got to new vm resos, take ip and go to browser, default.html will be working - soruce vm computer name is embedded
+21. connect vm using rdp
+22. go to server manager
+23. select - local Server
+24. click computername which ahs the old src name
+25. click- change
+26. "newVM"
+27. restart now
+28. rdp - windows-c/ inetpub/wwwroot/default.html - still old name - change it to new name
 
 
 
