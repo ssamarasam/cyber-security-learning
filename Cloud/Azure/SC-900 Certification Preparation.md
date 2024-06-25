@@ -403,5 +403,101 @@ Categories of MS entra roles:
 MS entra RBAC - ms entra resosurces susch as users, grps, apps
 Azure RBAC - vms, storage using ARM
 
+### Identity protection and governance capabilities of Microsoft entra
+identity protection - protecting org's identities agaist risk and potential vuls
+identity governance - balacing identity security with user productivity that can be justified and audited
+- protecting, monitoring and auditing access to critical assets
+- ms-entra id governance
+- PIM
+- capabilties of ms0entra protection
+- permissions mgmt
+
+**MS Entra id governance**
+- govern the identity lifecycle
+- govern access lifecycle
+- secure priviledged access for administration
+
+identity lifecycle:
+- no-access, join, move, leave
+- hr system - workday or SuccessFactors
+- p1, p2 offers cloud based hr system
+- ms-identity manager imports records from on-prem hr systems such as SAP-HCM, Oracle Ebusiness , Oracle Peoplesoft
+
+
+Access Lifecycle:
+- users need diff access during their org's life
+- automate thru technologies such as Dynamic-Groups - enable attributed based rules to determine access
+- they will be added to grp or removed babsed on the rules they satisfy at that time
+
+
+Priviledged access lifecycle:
+- admin rights - protential misuse - governance is required for that
+- MS entra PIm
+
+
+**Access reviews**
+- ms entar access reviews manage - grp memberships, access to enterprise apps, role assignment
+when access review?
+1. too many users with priviledge roles
+2. business critical data access - compalince to regularly confirm and ask why they need this access
+3. to maintain policy exception list - excpetions are reviewed regularly
+4. ask grp owners to confirm thye still need guest users in their grps
+5. have reviews occur periodically
+
+Manage user and guest user access with access reviews:
+- make changes or rmeove access after access review completion and based on the results
+
+Multi stage access reviews:
+- three review stages
+- at the end , access is revoked for denied users
+- enable complex workflows to recertification and audit requirements calling for multiple reviewers to attest access for users in a paricular sequence
+- design more efficient reviews for yout resos owners by reducing the number of decicions each reviewer is acocuntable for
+
+- admins can track progerss as the reviewers complete their process
+- can stop a review before completion
+- but access changes hdul happen after access review completion only
+
+- manual or autpo apply changes to remove access from a grp membership or aapplication assignement exceptt for a dynamic grp that originates on on-prem - in those cases, hanges must be directly applied to grp
+
+
+Entitle management:
+- who can request access
+- who must approev the access
+- when does access expires
+- managing access for extrenal users
+
+access packages: who can request, who must approve, expiration
+
+1. delegate the creation of access packages to non-admins
+2. managing extrenal users - b2b ccount in your dir will be automatically removed when their access expires
+
+
+MS entra terms of use:
+- rpesented to all suers
+- before they access data or app
+- sensite data
+- recuuring schedule
+- user attrbutes changes
+- presenting terms to all users
+
+- pdf format
+- conditional access policies are used to require terms of use statement being displayed
+- admins can view who accepted or denied the terms
+
+**Capabilities of PIM**
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
