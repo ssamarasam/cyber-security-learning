@@ -589,6 +589,10 @@ monitor:
 - data registry
 
 
+## Capabilities of Microsoft's security solutions
+
+### Core Infrastructure security services in Azure
+
 
 
 
