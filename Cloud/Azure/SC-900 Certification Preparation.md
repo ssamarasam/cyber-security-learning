@@ -512,7 +512,81 @@ pim audit history to see role asisgments,activations for upto 30 days for lal pr
 
 **MS-entra ID protection**
 - id protection tool
-  1. 
+  1. automate detection and remediate identity based risks
+  2. insvestigate risks using data from portal
+  3. export risk data for further analysis
+ 
+Detect risks:
+1. sign-in risks
+   - ananymous ip
+   - atypical travel
+   - unfamiliar signin properties
+   - ms-entra threat inteligence for unusual signin or known attack patterns
+  
+2. user risk
+   - anomalous user activity - suspicious
+   - user reported  suspicios activity
+   - leaked credentials
+   - ms-entra threat intelligence
+  
+Investigate risks:
+three reports;
+1. risk detections
+2. risky users
+3. risky sign-ins
+
+remidiate:
+1. automated remdiiation using policies
+2. unblock users
+3. risk based conditional access policies willbe anbled to to require mfa, string pwd, pwd reset
+4. manual - thru portal, api, ms-defender
+
+Export:
+- ms graph based api to siem
+- log analytics workforce, archived data to storage acct streamed to event hubs, solutions
+
+Workload identity;
+- app/serice principal
+- cant perform mfa
+- no formal life cycle process
+- no to store credentials somewhere
+
+- mage these risks by prviding workload identity risk detections acrsoss signin behaviour and other IOCs
+
+**MS entra permissions amangement**
+- cloud infra entitlement mgmt - CIEM
+- provides comprehensive visibility and control over permissions for any identity and any resource in ms-azure, aws, gcp
+- discover - remiediates - monitor
+- zeror trust
+- multi cloud access visibility
+- monitors unused or excessive access permissions
+
+discover - ustomer assess risks by evalauting gap between permissons granted and permisisons used
+  - cross cloud permissions discovery - granular and normalized metircs for aws, gcp, azure
+  - Permissions creep index - pci - evalautes the level of risk associated with the unused or excessive perms acrross your identities and resos. how much damange identities can cause based on the permissions they have
+  - permission usauage analytics -
+ 
+
+remidiate: 
+- right size perms based on usuage, grat new perms on demand, automate just-intime access for cloud resos
+- automated deletion if unsed for 90 days
+- perms on demand - on needed babssi - time bound
+
+
+monitor:
+- detect anomalous activities with ML powered alerts and generate detailed foresiic reports
+- get compreghesicve visibility
+- automate lease pri access - usalaytics to ensire identities have right perms at right time
+- unifiy access policies across IAAS platforms - consistent sec-policies
+
+
+**MS entra verified ID**
+- managed verifiable credentials service based on open stds
+- automates the verification of identity credentials and enables privacy protected interactions betw orgs and users
+- issuer
+- user
+- verifier
+- data registry
 
 
 
