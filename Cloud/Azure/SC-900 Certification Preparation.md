@@ -485,7 +485,34 @@ MS entra terms of use:
 - admins can view who accepted or denied the terms
 
 **Capabilities of PIM**
-- 
+- manage , control, monitor access on ms-entra resources - ms-entra, azure, ms online services such as ms-365, intune
+- mitigates the risk of excessive, unnecessary, misused access permission
+- requires jsutification why want access and requires mfa to activate
+
+1. just-in-time
+2. time-bound
+3. approval
+4. visible
+5. auditable
+
+use PIm with
+1. ms-entra roles
+2. azure roles
+3. pim for grps - justintime membership and just-in-time owenership . pim for groups goven access to  ms-entra roles, azure roles, azure sql, key vault, intune, application roles and third party roles
+
+workflow:
+1. assign: members or ownser, scope to resos, assignment tyep - eligible or active duration
+2. activate - eligible roles must activate with a reason why they need access
+3. approve or deny - delegated approvers recieve this request
+4. extend or renw - users have to eten if needed or renew if its already exired but needed
+
+Audit:
+pim audit history to see role asisgments,activations for upto 30 days for lal priviledged roles
+
+
+**MS-entra ID protection**
+- id protection tool
+  1. 
 
 
 
