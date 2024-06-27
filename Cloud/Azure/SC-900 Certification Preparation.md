@@ -593,6 +593,135 @@ monitor:
 
 ### Core Infrastructure security services in Azure
 
+**Azure DDOS protection:**
+
+DDOS attacks:
+1. vomumetic attacks
+2. protocol attakcs
+3. resouce/application layer attacks
+
+Azure ddos protection: protects ate layer-3 network layer and layer-4 transport layer
+- alwyas-on traffic monitoring
+- adapting real time tuning
+- ddos protecion telemtry, monitoring and alerting - integrate logging with azure event hubs, azure monitor logs, azure storage for advanced analaysis via azure monitor diagnositics interface
+
+supports 2 tier:
+1. ddos network protection - proetcts resosuces in virtual network, plus advanced capabilities including logging, alerting and telemetry
+2. ddos ip protection - pay-per protected ip model
+   - doenst include valuse added services such as ddos rapid response support, cost protection, discounts in WAF
+  
+
+**Azure Firewall**
+- managed, cloud based network security serice
+- threat protectio for resosusrs, workloads running in azure
+- deploy in   any virtual netw
+- bets approach is centralized so that all traffic to cloud or on prem passes thru Azure firewall - to centrally control traffic - across all subscriptions
+- scale up to the usage
+- netw traffic is subjected to the configured firewall rules when you route it to the firewall  as the subnet default gateway
+
+Key features:
+- 3 sku - standard, premium, basic
+- built in high availability and availability zones
+- network and application level filtering - ip, port, rpotocol - fully qualified domain name filetering for outboundhttp/s traffic and network filtering controls
+- outbound SNAT and inbound DNAT to communicate with interenet resos
+- multiple public ip address
+- threat intelligence
+- integartion with azure monitor
+
+**Web application firewall**
+- makes sec mgmt simpler
+- improeves response time to secu threat
+- pacting a known vul at one place instaed of at each application
+- gives app admins a better assurance of protection
+- protects web apps from ddos attacks occur at application layer - http floods
+
+
+**Network segmentation in Azure**
+- reasons for segmentation
+  - grp related items/resos - fpor maint workloads
+  - isolation of resos
+  - governance policies
+ 
+  - zero trust/layer approach
+  - defense in depth
+ 
+  Azure Virtual Network - Vnet
+  - enables orgs to segment their netw
+  - can multiple VNs per region, subs, multiple smaller network(subnets) within each VN
+  - no traffic allowd across VNETs  inbound to the VN
+  - communications needs to be explicitly provisioned
+ 
+
+**Azure Network Security Groups - NSG**
+- filter netw traffic to/from from Azure resources in an azure virtual network
+- only one NSG to each virtual network subnet/network interface in a virtual machine
+- same nsg can be associatd to many diff subnets/network interfaces
+
+Inbound/outbound sec rules
+- evaluated by poriotiry using five info points
+- source
+- source port
+- dest
+- dest port
+- protocol
+- azure create a set of 3 inound, 3 outbound baseline rules which cannot be removed - but can be overriden with new rules with higher priorities
+
+properties in each rule - one or more of these below:
+1. Name - adminAccessOnlyFiler
+2. priorority - lower numbers processed before higher numbers - when traffic matches a rule, processing stops. any other rules with lower priority (higher numbers) will NOT be processed
+3. source or dest - ip address, ip addr range, app-sec-grp, service tag, 
+4. protocol
+5. direction
+6. port range - individual or range of ports
+7. action - allow/deny
+
+e.g inbound:
+1. port 400 can be allowed
+2. allow servicetag-VN to any
+3. denyAll
+
+**Azure Bastion**
+- if deve;loper or admins want to connect VM remotely - then azure bastion without using ip, or open rdp, ssh 
+- no need to expose open ssh or rdp ports outside
+- enables to connect to  all VMs in the VN using secure ssh/rdp
+- dont need apub ip, agent or special software
+- per Virtual Network basis, not per acocunt/subs or Virtual machine - with suppoirt for virtual network peering
+- from browser/portal
+- PAAS
+- platform managed PAAS
+
+Benefits:
+- rdp/ssh directly from azure portal
+- remote session using TLS and firewall tarversal for rdp/ssh - html5 based
+- no pub required on azure VM - connects using rpivate IP
+- no hasstle managing NSGs
+- protection against port scanning
+- hardening in one place to protect againts zero day exploits
+
+- two avaialable SKUs - Basic and Standard
+
+
+**Azure Key vault:**
+- cloud service for securely storing and acecssing secrets
+- 1. secrets management - tokens, pwds, API keys, other secrets
+  2. key management solution - create and control the encrption keys used to encrypt your data
+  3. certificate management - tls, ssl certificates
+
+  tier:
+  1. standard - encryo with software key
+  2. premium - inclusded HSM - hardware security module protected keys
+
+  why key vault?
+  1. centralize application secrets - uses key vault object idneitier for applicatios to get the keys from vault -0 url format
+     -   standard - https://{vault-name}. vault.object typoel object-name, object-version
+     -   premium - https://{hsm-name}. vault.object typoel object-name, object-version
+  2. securely stores secrets and keys - authorization is needed
+     - provided by Microsoft Entra / Azure RBAC or key vault access policy
+  3. monitor access and use - enable logging for ytour vaults
+  4. simplified administration of application secrets
+     - replicate content of key vbault in secondary region easily
+     - provide azure std administration options via portal, azure cli or powershel
+     - automate certain tasks on certificates such as enrollment or renewal from Public certificate Authorities - CAs
 
 
 
