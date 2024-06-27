@@ -723,6 +723,146 @@ Benefits:
      - provide azure std administration options via portal, azure cli or powershel
      - automate certain tasks on certificates such as enrollment or renewal from Public certificate Authorities - CAs
 
+### Security management Capabilities in Azure
+
+
+**Microsoft Defender for Cloud**
+- a cloud native application protection platform - CNAPP
+- policies and security initiatives
+- CAPABILITIES:
+- - devsecops
+  - cloud secutiry posture management - cspm
+  - cloud worklods protection platform - cmpp
+ 
+1. devsecops:
+   - protects code management platform
+   - code pipelines
+   - get insights into developement environments security posture form a single location
+   - multi cloud and muliple pipeline envs
+   - security practices
+  
+2. CSPM:
+   - monitors/assess ytour cloud and on-prem envs and alerts sec team for configuration changes or anything
+   - proper config and deployment
+   - tools and setrvices to monitor
+  
+3. CWPP:
+   - security controls to protect the workload
+   - indicates the nature and severity of threats so you can plan for response
+   - implements ecureity practices
+   - proactive secuity principles
+  
+  
+**Security Policies and initiatives improve cloud security posture:**
+- azure policy - rule about specific security condition
+- security initiative - grp of azure policies fo r apsecific goal
+  - assign them to a scope of resos
+  - mgmt grps, subs, resosurce grps, resources
+
+MS defender applies security initiaties to subscriptions - may contain or ore more security policies
+- sec admins can build their own sec inititives
+- default : Micorosft cloud secutiy benchmark - automatically assigned when you enable Microsoft defender foc cloud on your subscription
+
+Micorosft cloud security benchmark: MCSB
+- MS authored set of guidelines for security and complianace - best practices, recommendations
+- bulit from CIS - center of Internet security  and NIST  with a focus on cloud security
+- its a excel sheet with the below colums
+  1. id -
+  2. control domain - high level desc of feature or activity that needs to be addressed - e.g - idenity management, priviledged acces, inci resp, endpoint security, network security, data protecion
+  3. Mapping to industry frameworks - CIS< NISt, PCI DSS<
+  4. recommendation - for each control domain, many distictnt recommendations - NS1, NS10
+  5. Azure guidance - how -> technical fatures or ways to implement the controls in azurelike using NSG or ASG
+  6. AWS guidance -
+  7. links - info ron implemenattion relate to azure or aws
+
+
+  MSCB in Defender for cloud:
+   - ms defender continuos asses the hybrid cloud envs and analsye the risk factors accoridng to MSCB
+   - regulatory compliance dashboard in MS defender - reflects the status of compliance with the mscb and any other stads you applied to your subs
+
+Security recommendation:
+- recommendations on how to mitigate issues or congif issue sfound form the assesing oif our clodu
+- recommendations based on the chosen intiatives and the mscb intiiative
+- when something is not compliant, then the rcomendations will be presnted  - to secure or harden your resos
+- e.g -
+  - a short desc of the issue
+  - remediation steps
+  - the affected resources
+ 
+
+**Cloud Security Posture Management - CSPM**
+- provides hardening guidance - efeicintly and effectivly improve your security
+- visibility of your current security situation
+
+1. Secure Score
+   - asses all cross cloud resouscres for security issues - azure , aws and gcp
+2. Hardening recommendations
+   - based on identified secuiry misconfigurations
+   - grouped into logical security controls - reflects your vulnerable attack surfaces
+3. Defender CSPM plan options
+   - foundational multi cloud CSPM is free with asset discovery, continuos assessment and secu-recommendations for posture hardening, cpomplaince with MSCB and secure score
+   - optional defender CSPM plan - offers advanced posture managment capabilities and tools to asses ytour secu cpmlaince with a wide range o benchmarks, stds and any custom sec policies
+
+
+**Enhanced Security of Microsoft defender for cloud**
+- a pillar cloud security is cloud workload protection
+
+defender plans:
+- MS Defender for servers
+- app service
+- storage
+- SQL
+- kubernetes
+- container registries - azure resource manager based registries
+- key vault
+- Resource manager
+- DNS
+- open source relational protections
+
+features:
+- comprehensive EDR
+- vul scanning
+- multicloud security
+- hybrid security
+- threat protection alerts
+- track compliance with a range of records
+- assess and application controls - allow/deny lists, ml powered recommendations, just-in-time conntrolled acecss amanagment ports on azure VMS
+
+
+**DevOps Security Management**
+- development and operations
+- unite people, process, tech in application planning, development, delivery,  and operations
+- defender for devOps console - allows you to manage your connected DevOps Environements amd provides ytoutr secteams with a high level overiview of duscovred issues that may exist within them
+
+Defender for DevOps:
+- across multi pipeline envs
+- protect apps and resources from code to cloud across multi-pipeline envs siuch as github and azure DevOps
+- findings help remediate code
+
+Key capabilities:
+- unified visibility into DevOps security posture -
+- strengthen clodu resosurce cponfigurations throiught the development lifecyel - enable security of IaC templates
+- prioritize remediation of critical issues in code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
