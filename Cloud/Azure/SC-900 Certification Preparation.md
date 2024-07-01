@@ -845,6 +845,268 @@ Key capabilities:
 - prioritize remediation of critical issues in code
 
 
+### Security capabilities of Microsoft Sentinel
+
+SIEM - collect data, trigger alerts
+SOAR - Security Orchestration, Automation and response - initiates resposnse workflows for automated response for incidents
+
+MS-Sentinel:
+- collect
+- detect
+- investigate
+- respond
+
+connect sentinel to your data sources:
+- DEFENDER XDR SOLUTIONS, ms-365
+
+workbooks
+- monitor data using ms sentinel integration with azure monitor workbooks
+- visualize data
+
+analytics
+- built in correlation rules
+- build your own
+- ml rules
+
+Manage incidents in ms-sentinel
+- standard incident response
+- playbooks
+
+SOAR using playbooks
+investigation
+
+Hunting - MITRE framwwork
+- custom detection rules
+- bookmarking
+
+Notebooks:
+- jupier notebook for analytics
+- custom python query for analyis
+- visualization
+
+Content hub:
+- centralized location to discover and manage out-of the box packaged solutions
+- ms-sentienal content or ms-sentinel api
+- out of the box content
+
+Microsoft Security Copilot:
+- response at machine speed
+- generative AI security product
+- prompt bar allows sec-analysts to ask questions in natual lang
+  1. security posture management - infor on anything that exposes org' data dn provides mitigation techniques to protetc against those vuls detected
+  2. incident reponse - provide infor on source of incident, response and remediation steps, single plane of glass - pulls data form defender, sentinel
+  3. security reporting
+ 
+- data is protected by comprehensive enterprise compliance and security controls
+- your data is not used to train the foundational AI
+
+
+## Threat Protection with Microsoft Defender XDR
+
+### MS Defender XDR services
+- detection, prevention, investigation and response
+- networks, apps, endpoints, emails
+- detects lateral movement
+ XDR suits protect:
+1. Endpoints with msdef for endpont
+2. assets with defender vul management
+3. email and collaboration with msdef for office 365
+4. identities with msdef for identities
+5. applications with msdef for Cloud Apps
+
+MS defender threat intelligence:
+- inside ms defender portal
+- helpos streamline sec-analyits triage, inci response, threat hunting, vul mgmt workflows,
+- aggregates and enriches critical thret infor in an easy to use interface
+
+
+### MS defender for office 365
+- preset sec-policies
+- threat protection policies
+- reports
+- threat investigation and response capabilities
+- automated investigation and response capabilities
+
+- plan1 - exchange online protection eop , known attacks, volume based - email and collaboratoion tools such as sharepoint - malware, phishing, BEC
+- plan2 - post breach ivestigation, hunting, response, automation, training simulation
+
+
+
+
+### MS defender for endpoints
+- network resos, laptops, phones, PCs, accesspoints, routers and firewalls
+- 1. endpint behavioural sys - collection
+  2. cloud sec analytics -translates signal into insights
+  3. threat intelligence
+ 
+features:
+1. core defender for vul mgmt
+2. attack surface reduction
+3. next gen protection
+4. endpoint detection and response
+5. AIR automated investigation and remediation
+6. MS secure score for devices
+7. Micorsoft threat experts
+8. management and APIs - expose entities and capabilities thru a std ms-entra id based authentication and authorization
+
+- plan1 and plan2
+
+### MS defender for cloud apps
+- protection for SaaS apps
+- tradiotnal cloud - CASB - cloud access security broker
+- 1. Fundamental CASbs - cloud app usuage, shaodow IT, infor protection, copmpliance
+  2. SSPM - SAAS Security posture mgmt
+  3. advanced threat protection - enabled by ms defended extended detection and response
+  4. app- to app protection - extending core threat scenarios to OATHu enabled apps thta have permissons to critical data and resos
+
+**Discover SAAS apps:**
+- identify -
+- assess - more than 90 key risk indicators - asses your orgs apps security and compliance
+- manage - set policies to monitor apps for aunusual activtiites, anamolus behaviour
+
+**Information protection:  which data is stored and who is acecssing it**
+- scan files containing sensitive data
+- 1. apply sensitive level
+  2. block downdloads to a unmanaged device
+  3. remove external collaborators on confidential files
+- can be integrated with Micorosoft purview which enables out of the box data classification types in their info protecion policy anc ontrol sensitve infor with DLP features
+
+**SAAS Security Posture Management - SSPM:**
+- defender for cloud apps helps by surfacing misconfigs and recommending specific actions tpo strengthen the sec posturefor ech connect app
+- recommentsdations ar ebased on CIS - center for internet security
+- automatically provides sspm data in ms secure score for any supported and connected app
+
+**Advanced threat protection**
+- offers bulit in AAC adaptive access control which provides UEBA user and entity behaviour analysis and help mitigate attacks going laterlly compromsing end points
+- directyly integrated into ms defender XDR, correlating detection and response signals XDR form ms defender suite - proivdes inci-level detection, investigation and powerfiul resp capabilities
+- gives SOC teams compolete kill chian visibility and improves overall efficiency and effectivity
+
+
+**App to App protecion with app governance:**
+- OAuth - open std for teoken based authentication and authorization - enables   user account info to be used by thrid party serices whitout exposing pwd
+- often have excessive permissions
+- defender for lcoud apps closes the gap on OATH security, ptotect inter app data exchange with application governance
+- watch for unused apps and monitor current and expired credentials to goven the apps used in your og and maintain app hygiene
+
+
+### MS defender for identity
+- collect signals form active directory
+- 1. monitor user, entity, behaviour, activities - learning based analytics
+  2. protect user identities and credentials stored in AD - secu reports and user profile analytics - identity user / devices who uses clear text pwds - protects AD FS (federation sevrices) by detecting on-prem attacks and proivides visibility in authn events generated by ad-fs
+  3. identify and investigate sus activities and adv attacks across the cyberattack kill chain
+     - reconnaisance - idntity rogue users and atatckers attempts
+     - compromised credentials - identity attempts to compormise creden, rute force attacks
+     - lateral movements - gaining other user acocunts inside the netw
+     - domain dominance - highlighting attacker behaviour if domain dominance is achieved, thru rmeote code execution on th edomain controller or other methods
+  5. provide clear infor on  a simple timeline for fast triage
+  6. investigate alerts and user activities
+     - only importnat security alerts - reduce alert noise
+     - real-time organizational attack timeline
+     - defender for identity attack timeline view/intellience of smart analytics
+
+### MS defender vul mgmt
+- visibility, intelligent assessments , built in remidiation tools for windows, macos, linux, andorid, ios, network devices
+- prioriizes vuls
+- continus deliver and monitoring
+- risk based inteleigent prioritization
+- remediation and tracking
+
+
+continious asset discovery and monitoring:
+- cnsolidated inventories - soft apps, digital certificates, hardware, firmware, browser extensions
+  1. visibility into software and vuls
+  2. network share assessment - netw share config
+  3. browser extension assessments - info on extension's permissions and associated risk levels
+  4. digital certificates assessment - identity certs before they expire and detect potential vuls due to weak signature algorithms
+ 
+risk based intelligent prioritization:
+- ms threat intelligence, breach likelihood predictions, business contexts, device assessments - priotirizte biggest vuls
+- single view of prioritized recommentdations with critical details, CVEs and exposed devices - help quickly remediate vuls on most assets
+
+
+Remediation and tracking:
+- remediation requets to it in MS-intune form a specific security recommendation
+- block vul app - mitigate
+- alternate mitigations - config changes to reduce risk on soft vuls
+- real-time remediation status - real-time monitoring of the status and progress of remeidation actitivies across org
+
+
+dashboard insights:
+- view exposure score and ms-secure score for devices + top recommendations, soft vuls, remdiationactivites and exposed devices
+- correlate endpoint detection and response with endpoint vuls and process them
+- select remeiation action and track the remediation tasks
+- select exception actipons and track them
+
+
+### MS defender Threat Intelligence - TI
+- keyword, artifact, CVE search
+- intel explorer  -with articles
+- Defender TI articles:
+  - actionable content and key indicators of compromise to help users take action
+  - insight into threat actors, tooling, attacks and vuls
+  - descripotion - 
+  - public indicato rs - poreviously published indicators related to this article
+  - defender TI indicators - indicators that defenders Ti's reseacr team found
+- vul articles:
+  - cve search
+  - descriton of cve, list oif affacted compoonnets, tailored mitigation procedures and startegies, related intelligcen articles, ref in deep/dark web and other observations
+  - defender ti priority score, sevrity indicator based on cvss
+ 
+- data sets:
+  - tradtional - whois, ssl certs, subdomains, dns, reverse dns and services
+  - advanced - trackers, componentshost pairs, cookies - collected from observing the DOM or web page crawled
+ 
+- reputaion scoring and analyst isights:
+  - repu scores of host, domain, ip address - to udnerstand they are tied to malicious or suspicous infra
+ 
+### MS defender portal
+- RBAC based - cards will appear based on that
+- should be on oiff these - global admin, security admin, security operatoir, secutrity reader
+- incidents and alerts
+  - ms365 serviuces generat;es alerts - corelatted oincidents in xdr
+    1. full stoiryof the attack, inslcuing all the laerts, assets, rediation tasks
+    2. all the alerts related to that incident
+    3. all the assets
+    4. all the automated investigations triggered by the alerts in the incident
+    5. all the support evidence and response
+- hunting:
+  - custom detection rules
+  - query based threat hunting tool lets proactively isnpect events in your org to locate threat indiacors / entities
+  - can be atomated to repond tpo sec breaches, misconfigured machines, and pother findings
+ 
+- Threat intelligence:
+  - threat analytics - in-product threat intelligcen solution from expert ms-security researchers  to assist sec teams track and respond emerging threats - hightlights the reports that relavant to your org
+  - intel profiles - curated content organized by thret acors, their tools and nown vuls
+  - intel explorer - access exising dendetedn TI contentdescribed inthe previous unit
+
+- Secure score:
+  - representaion of comanys sec posture
+  - higher the score., better the protections
+
+note:
+secure score in ms-defender is measure of secuiry posture of your azure subscriuptions
+secure score in ms-defender xdr  - sec post of org across apps, devices and identities
+
+Learning Hub:
+-   official documentation form miscorost securiy blogs, ytoutube, learn
+
+Reports:
+- genarl sec report
+- can be bracnhed into specuifc endpoint, emails, collaboration
+- dynamically genared based on workload config
+
+
+Permissions and roles:
+- access to XDr is configured  with ms-entra global roles, or by using cusotm roles
+
+
+
+
+
+
+
+
+
 
 
 
