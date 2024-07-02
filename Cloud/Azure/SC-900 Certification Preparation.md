@@ -1100,16 +1100,401 @@ Permissions and roles:
 - access to XDr is configured  with ms-entra global roles, or by using cusotm roles
 
 
+## Capabilities of Microsoft Compliance Solutions
+
+### Service trust portal
+1. certifications, regulations and stds
+2. reports whitepapers, artifacts
+3. industry and regional resos
+4. resos for your org
 
 
+### Microsoft privacy principles
+1. customer control
+2. transparency
+3. security
+4. strong legal protecions
+5. no content based targetting
+6. benefits to you
+
+### Microsoft Priva
+1. priva privacy risk management - snapshot view of personal data your porg stores in ms365
+   - exchange online
+   - sharepoint online
+   - ondrive
+   - ms-intune
+  
+2. priva subject rights request
+   - data subject access request - dsr or dsar
+   - provides workflow and automation , collaboration capabilities for helping you search data, renew findings, collect appropriate files and produce reports
 
 
+## Compliance management capabilities in Microsoft Purview
+
+### MS Purview Compliance portal
+- provides tools and data to understand and manage an org's compliance needs
+- should be ms365 customer with the below roles
+  1. global admin
+  2. complaince admin
+  3. compliance data admin
+- the portal contains several cards
+1. complaince manager card
+  - to manage compliance
+  - provdes risk based compliance score - measures towad completing the recommendatiosn to reduce risks associated with data protection and regulatory stds
+  - providews workflow capabilities and built-in-control mapping to help you efficiently carry out improvement actions
+
+2. Solution catalog - collections of inetegarted solutions to manage ened to end complaince scenarios
+   - information protection and governance - 
+   - privacy
+   - insider risk management
+   - descovery and response
+
+3. active alerts card
+   - most active alerts with link to check the details
+  
+Navigation:
+- left side
+- with access to
+- complaince manager
+- data classification
+- alerts
+- reports
+- policies
+- data connectors - import non ms-data to ms365
 
 
+### Compliance manager
+- to manage compliance requirements of an org
+- from taking imnventpory of data porotection risks
+- to magaing the complexities of implemneting controls
+- staying current with regulations and certifications
+- reporting to auditors
+
+provides:
+1. prebuilt assesmnts based on regional/indus regus and stds - can do custom assessments spe if to org
+2. workflow capabilities to complete risk assessments
+3. step by step improvement actions to help meet regus and stds - some actions are managed by MS and admins get notifications on th0ose actions/audit results
+4. complaince score for compliance posture
+
+Key elements fo compliance manager activities - to assign test, monitor complaince activities
+1. Controls
+   - a req of a regu, std or policy to assess and manage system config, oirg policies and people to meet specift reqirement, regu or std, regulation
+   - tracks the below
+     1. ms managed controls
+     2. customer controls
+     3. shared controls
+    
+    - comiliance manager continuously aessess controls by scanning thru ms365 env and detecting your settings, continuously detecting and and automatically updating your technical action stat
+  
+2. Assessments
+   - grouping of controls from a specif regu, std, por policyt
+   - compelting actions within an ass helps meet req of sts, reg or law
+   - e.g. bring org ms365 settings in line wiht iso 27001 reqs
+   - contains sveral componnets that are in scope  ms-managed ocntorols, customer/your controls., shared controls, and assessment score - shows progress towards reaching the complinece req
+  
+3. Templates
+   - templates for admins to quicly create assessments
+   - customize as per need / org req
+  
+4. Improvement actions:
+   - recommended guidance to align wiht data protection regus and stds
+   - can be assigned to users to do implementation and testing work
+   - admin scan store documentation updates, record status updates, notes wihtin the oimporevement actions
+  
+**Benefits of compliance manager:**
+1. translating complivcated regus, std, company policies in simple lang
+2. providng access to large variety of pout of box assesmnts an dcustom assemnt needed
+3. mapping regu controls with impevembt actions
+4. provindg step by spetp guidnace on how to implement soltiuons to meet regu req
+5. helping admins/users to rpiotorixze complaince actiuons with a score
+
+Overall compliance ,manager helps org iun completing actions to meet complaince req to  reduce risks around data porotection and regu stds
+
+### Use and benefits of compliance score
+- progres
+- current posture
+- prirotize
+
+- calculated using scores assigned to actions
+  1. your improved actions - actions that org is expected to manage
+  2. ms actions - actiosn that ms manages for the org
+ 
+**actions are categorized into:**
+1. mandatory
+2. discretionary
+
+**Sub categories:**
+4. preventative
+5. detective
+6. corrective
 
 
+Orgs accumulate points when the actions are completed - complaince score is the percentage representing all the actions completed, compared with the ones  outstanding
 
 
+## Information protecion, data life cycle management and data governance capabilities in Microsoft Purview
+
+### Know your data, protect and govern ypour data
+
+MS-purview information protection - discovers, classifies, protects senstive and busines critical data thorught its lifecycle across your org
+- proivdes tools to know your data, protect and prevent data loss
+
+MS-purview data life cycle management - manages content lifecyel using soltions to import, store and classify busines scritical data so you can keep what tou need and delet what you dont- capabalities to govern data for complinace and regu reqs
+
+infor proetcion and data lfcye mgmt works together to classify, porotect, givern your data where it lives and wherever it goes
+
+1. know your data - tools : trainable classfiers, activity explorer, content epxlorer
+2. protect your data - excr, acess restrictions and visual marking
+3. prevent data loss - detect risky behavious and prevent accidental overshairng of sensitive infor - data loss prevention ploicies, endpint data loss prevention enable orgs to rpevent data loss
+4. govenr your dtaa: - retention policies, retention labels, records amanbgemt
+
+
+### Data classification capabilities of the compliance portal
+- manual
+- automatd pattern recognition like senstive information types
+- machine learning
+
+
+SIT - sensitive information types
+- pattern based classifiers
+- ms purview has built in patterns
+- custom sit
+  - for employee ids and project numbers
+ 
+- support fo EDM - exact Data Match
+
+Trainable classfiers:
+1. pre-trained classifiers - ready to use
+   - resumes, source code, harrasment, profanity and threat (five pretrained classifiers to use)
+  
+2. custom trainable classfifiers
+   - provide samples (seeding) and test the predictions of classification
+   - org based classification like invoices, cusotomner records, contracts
+
+at this time, classfiers will only work with items that are NOT encrypted
+
+**understand and explore the data**
+- overview secion of data classfication pane in complaince portal
+  - number of items classified as sensitive infor and which classificatiosn they are
+  - details on the locations of data based  on sensitivity
+  - summary of actions that users are taking on senstive content across the org
+ 
+admins can use content and activity exploreer to gain deeper understsnidng and can guide their actions
+
+**Content explorer:**
+- under data classification pane
+- visibility into the content that ahs been summarixzed inthe overview pane
+- highly restricted as it makes us posisble to read the scanned files
+- roles: content explorere list viewer and content explorer content viewer
+- can a get a currnet snapshot of conet that has bene classified across org - exchange, onedrive, sharepoint
+
+
+**Activity explorer:**
+- visibility into what contnet has been discovered and labeled and where the content is
+- possible to monitor whats being done with label content across org
+- visiblity into document level actvities like lable changes, label downgrades,
+- fileters - label, users, file types, activities
+- helps to evalate controls are placed and effective
+- activities that can be analyzed:
+  1. file copied to removable media
+  2. copied to netw share
+  3. labell e applied
+  4. lable changed
+ 
+- fileters :
+  - locatiuon
+  - user
+  - sensitivity label
+  - retention label
+ 
+### Sensititvity labels and policies
+lables:
+- customizable - personal, public, confidential, highly confifdential
+- clear text - APPS AND SERVICES CAN read it and apply their own protective actions
+- persistent- lableis stored int he metedata of email or document. lable moves wiht the ocntent inclduing the proetcion settings and this data becomes the basis for applying and enforicng policies
+
+only label can be applied at a time to a item
+
+can be cofnifgured to:
+- encrypt
+- mark the content - watermarks, headers/footers
+- apply the label automatically
+- protect content in containers such as sites and groups - doenst apply automatic labelling - but protects content by controlling access to the container where documents are stored
+- extend senstitve lables to theird party apps and services - the ms purview protecion SDK allows theird party apps/services to read sensitivity labels and apply protecion settings
+- classficy content without using protecion settings -  - to generate reports and   view activity data  for sesitive content
+
+
+**Lable policies**
+- once sensitivity labels are created, it then needs to be published to specific users / grps sot hat it eill be nabled in their office apps and sensitivve lables avcn be applied to documents or emails
+enables admisn to:
+- chosse the users and grps that can see the labels
+- apply a default label
+- require justifications for label changes
+- require users to aply the label - mandatory
+- link users to custom help pages
+
+once sensitive label is applied to docu or email , any configured protection settings for that label are enforced on that content
+
+
+### Data loss prevention
+- apply dlp policy to implement data loss prevention- identity , monitor and automatically protect
+- deep content analysis - analyzed for primary data macthes to keywords, regular exps, internal function valdiuation, secondary data matches
+- ml algos, other methods to detect conent thta matches your DLP policies
+
+**Protective actions of DLP policies**
+- dat at rest, transit or in use
+1. show apop up  or warning aboyt sensitive data access
+2. block the sharing with override option with customer justification
+3. vblobk the sharing without overidng option 
+4. data at rest, sensit items - locked and moved to secure quarentine locations
+5. for teams chat, senstive data will not be displayed
+
+**DLP policy infomration:** 
+- predefined templates or custom policy
+  1. chose the typoe of data to monitor
+  2. choose adminitrative scoping - adminitrative units
+  3. chosse the location where the policy can be applied
+  4. choose the conditions that must be matched for a policy to be applied
+  5. choose the practive actions to take when the policy conditions are met
+ 
+
+**End point data loss prevention**
+- audit and manage users take on senstive itmes stored in win10, 11, macOS devices
+- - create, renaming, coping to externam media, printing, cassing via unauth apps/browsers
+ 
+  - activity explorere help on users activity on sessitive documents
+ 
+**Data loss prevention in Microsoft teams**
+- in teams chat or channel messages
+- block shairng of senstive data by blobking and displaying a warning or tip in the chat
+- select "what i can dp" and take appropriate action -0 can oveedir with justitication as well
+
+
+### Retention policies and retention labels
+- retain only
+- delete only
+- retain adn then delete
+
+retention policies
+- site / mailbox level / container level
+- retention settings dont travel when documents are moved out but a copy is kept stored in a secure location
+
+retention label
+- document/folder level
+- settings travel
+- can be automatically applied when codnitions met
+- support disposition review to review content beofr i6s permantly deleted
+
+- single retention label can be include in multiple retention label policies
+- retention label policies specifiy the locations to publish the retention lables - same location can be include in multiple retention label policies
+
+
+### Records management
+- labeling content as record
+- establish retenion and deletion policies within record level
+- triggening event based retention
+- revieng and validating disposition
+- proof of records deletion
+- exporting info about disposed items
+
+when content is labeld as record:
+- restrictions are put in place to block certaina ctivities
+- activities are logged
+- proof of disposition is kept at the end of the retren period
+
+
+regulatory record:
+- cant be relabled or label cannot be removed
+- retention period cannot be shortened
+
+
+use cases:
+- enabling admins/users to manually apply retention and eletion actions for documents/emails
+- automatically applying retention and deletion actions to doc/emails
+- enabling site admins to set default
+- enabling users to automati apply to emails using outlook rules
+
+
+### Microsoft Purview Unified Data Governance Solutions
+
+Data map - metadata about enterpirse data, data discovery
+Data catalog -
+- search
+- automate tagging of data assets to glosary terms
+- visually trace the lineage of  data assets
+
+Data estage insights:
+- what data is actively scnanned
+- where sens data is
+- how it moves
+
+data policy:
+- manage access to data sources and datasets securely at scale
+- categorization:
+  1. data owner policies - grant acces directly in ms purview by creating data access policy theu policy management app in ms purview governance portal
+  2. devops policies - grant access to database system metadata instead of user data - simplyfy access provisonng for it operations and security auditing personal - they can grant - not deny access
+  3. self service data access policies - allwos data consumer to request access to dataset and once its approved augenerated policy will provide the access - currently supported for containers, storage accounts and folders, files
+
+ Data sharing:  - preview
+ - to securely share data within org or corss orgs with busines partners and cusotmers wihtin just clicks
+ - data providers can centrally manage and motoru data sharing relationships and revoke sharing at any time
+ - data consumers can acces received data with theoir own analytics tools and turn data into insights
+
+## Insider risk capabilities in MS Purview
+
+
+### Insider risk management
+- enable org to detect, investigate and act on risky and malicious activities
+- priciples:
+- 1. transparency - balance bwteeen user privacy and org risk with privy by design achitecture
+  2. configurable - configurable policies based on industry, geo, busines grps
+  3. intgerated - integrated workflows access ms-purview soltuions
+  4. actionable - provdes insights to enable user notifications, data investigations and user investigations
+ 
+  Insider risk management workflow:
+  1. policies - what risk indicators are examined in ms365 using policies
+  2. alerts - alerts dashboard
+  3. triage - needs review status
+  4. investigate - case dashbord  - user acitvity, content explorer case notes
+  5. action - sending notifcation when employee accidently  or inadvertenly violate policy conditions - more serious case - escalating to other stakeholders to eDiscovery(premium) in ms-purview
+ 
+data theft, intentional/unintenional data leaks, offensive behavior or more
+
+### communication compliance
+- detct, capture, act on inappropriate messageswhich leds to potential data sec or compliance incidents
+- commu compliance avlautes text and image based messages in teams, viva engage, outlook, whatsapp - inappro sharing of data, offensive lang, harrasing lang, threatning, potenail regu violations
+- RBAC,  - removing msg from teams / notifng senders pr protentially inappropriate conduct
+- workflow:
+  configure, investigate , remediate, MONITOR
+
+  - ENABKES SCANNING FO EMAILS , TEAMS, EXCHANGE, ONEFDRIVE
+ 
+  important complaince areas wher communication complaince policies assit with revieing msgs:
+  1. corporate policies - ethical stds
+  2. risk management - scna unautho communication abt projects which are confidential - auistions, earnings disclosure
+  3. regulatory compliance - regu complaince to monito insider tading, laundring bribery 
+
+
+## eDiscovery and Audit capabilities in MS Purview
+ - identity , collect , audit infor for legal , regu oir business  reasons
+
+**eDiscovery solutions in MS purview**
+- process of identityfing and deleivering info that can be used as evidence in legal cases
+- exchange online, onedrive,m teams, ms365 grps, yammer teams, mailboixes sites
+- identity, hold., export content found in mailboxes and sites
+
+
+eDiscovery Solutions:
+1. content search - search and export in loacal computer
+2. eDiscovery Standard - craete edisocvery cases and assign edisco managers to specif cases - lets you assoictae seacherches and hold on contnet locations relavant to the case
+3. eDiscovery Premium - end to end workflow to identify, preserve, collect and review, analyze, report, export content responsible to your org internal or external investigations
+
+member of the ediscovery manager role grp in ms prucive complaince portal
+
+
+### Audit solutions in MS purview - for breaches across ms365
+- audit std
+- audit premium
 
 
 
