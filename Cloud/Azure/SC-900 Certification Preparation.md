@@ -827,6 +827,9 @@ features:
 - threat protection alerts
 - track compliance with a range of records
 - assess and application controls - allow/deny lists, ml powered recommendations, just-in-time conntrolled acecss amanagment ports on azure VMS
+  - blobk malware and other unwanted applications using ml - wllowlist, deny lists
+  - reduce netw surfce - JIT, controlled access managmt ports, protocols
+  - reduce brute force and other attacks
 
 
 **DevOps Security Management**
