@@ -109,7 +109,7 @@ terms:
  
 - directory:
   - microsoft entra directory or microsoft entra tenent
-  - logical container within a ms-entra tenent - hols and organizes various resos and objects
+  - logical container within a ms-entra tenent - hols and organizes various resources and objects
   - directory - a database or catalog  of identities and resosuces associated with an org;s tenent
   - a ms-entra tenant consist of only one directory
 
@@ -152,31 +152,31 @@ Workload identities: - software workload
 
 managed identities:
 - type of service principal -automatically managed in ms-entra-id eliminate the need for developers to manage credentials
-- provide idnetities for use to connect to azure resos that support ms-entra without any cost
+- provide idnetities for use to connect to azure resources that support ms-entra without any cost
 
 1. system assigned:
-   - tied to one resos - live in resos life cycle, gets deleted when resos gets deleted
+   - tied to one resources - live in resources life cycle, gets deleted when resources gets deleted
 2. user-assigned:
    - standalone azure resos
-   - assign it to one or more instances of azure resos - multiple VMs
+   - assign it to one or more instances of azure resources - multiple VMs
    - scenario - when multiple VMs need same set of permissions
-   - deleting resos doesnt impact user-assigned identity
+   - deleting resources doesnt impact user-assigned identity
 
 
 Device:
 - device identity gives admin they can use when making access or config decisions
-1. MS entra registered devices - for byod - registered device can access org resos without requiring an org acocunt to sign in
+1. MS entra registered devices - for byod - registered device can access org resources without requiring an org acocunt to sign in
 2. ms entra joined - device joined to ms-entra-id thru an org account, which si then used to sign into the device - generally owned by org
 3. ms-entra-hybrid-devices - devices from on prem act dir acn be joined to ms-entra - requiring org acct to signin
 
 regsitiering and joining dveices allows to use SSO to access cloud resos
-devces that are  ms-entra joined beniefit from sso to resos /apps that rely on on-prem active dir
+devces that are  ms-entra joined beniefit from sso to resources /apps that rely on on-prem active dir
 
 Microsoft intue - MDM and MAM - mobile application management
 
 Groups:
 - if several identieis need same level of acces - then can create a group
-- group to asisgn permissions and access to resos for zero trust
+- group to asisgn permissions and access to resources for zero trust
 1. security - manage user and  device access to shared resos
    - requires MS_entra admin role to create security groups
 2. Micorsoft 365:
@@ -206,7 +206,7 @@ SCIM - System for cross domain identity management
 ms-entra cloud sync agent uses SCIM to provion and deprovison users/grps
 
 **External identities**
-- providng acces to org resos to extrenal users
+- providng acces to org resources to extrenal users
 - Micrsoft entra external ID
   - b2b collaboration
   - b2b direct connect
@@ -234,7 +234,7 @@ B2B direct connect:
 
 - enable teams connect shared channel - lets you colloborate with extrenal users ffrom multiple orgs for chat, calls file sharing, app-sharing
 - 1. within teams, a shared channel owner can searchf ro allowed users from ext org, add them to shared channel
-  2. ext users ca access resos without having to swicth org to sign in with diff account. can access file thru teams. cross tennt access settings wil bemange truted relation with extrnal users inblund as well as outbound
+  2. ext users ca access resources without having to swicth org to sign in with diff account. can access file thru teams. cross tennt access settings wil bemange truted relation with extrnal users inblund as well as outbound
  
 Micorosft entra external id for customers - preview:
 - new MS's Cusomter identify and access management solution - CIAM
@@ -451,7 +451,7 @@ Multi stage access reviews:
 - three review stages
 - at the end , access is revoked for denied users
 - enable complex workflows to recertification and audit requirements calling for multiple reviewers to attest access for users in a paricular sequence
-- design more efficient reviews for yout resos owners by reducing the number of decicions each reviewer is acocuntable for
+- design more efficient reviews for yout resources owners by reducing the number of decicions each reviewer is acocuntable for
 
 - admins can track progerss as the reviewers complete their process
 - can stop a review before completion
@@ -638,7 +638,7 @@ Key features:
 
 **Network segmentation in Azure**
 - reasons for segmentation
-  - grp related items/resos - fpor maint workloads
+  - grp related items/resources - fpor maint workloads
   - isolation of resos
   - governance policies
  
@@ -1106,7 +1106,7 @@ Permissions and roles:
 1. certifications, regulations and stds
 2. reports whitepapers, artifacts
 3. industry and regional resos
-4. resos for your org
+4. resources for your org
 
 
 ### Microsoft privacy principles
