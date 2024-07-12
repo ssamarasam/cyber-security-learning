@@ -67,7 +67,15 @@ Supply chain attacks/buls:
 
 
 ### 7. Insecure plugin design
-- act as connectors
+- Plugins act as connectors between llm mdoels/chatgpt to thrid pary applications
+- risks of promt engg attacks (inject malicios commands or code into plugins)
+- e.g: webPilot plugin
+- left shift
+> implement least privilege access controls to plugins
+> rigorously test plugisn before allwing access to sensitive data
+> add a human check for intentional behaviours
+> implement encr, access controls, and data
+> secure coding pratcices, patching
 
 ### 8. Excessive agency
 
