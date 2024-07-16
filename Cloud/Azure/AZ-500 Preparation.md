@@ -246,4 +246,134 @@
 - 
 - 
 
+### Azure AD roles
+- roles who has access only to active directory activities only
+- azure rbac roles are for azure resources
+
+### Azure AD roles - user admin
+- login with userA
+- go to azure active directru
+- users - all suers
+- can see other users, but cannot able to create "new user"
+- go to admin account
+- select the userA
+- click "assigned roles"
+- under "active assignments"
+- add assignment
+- select "user administrator" role
+- scope type = directory
+- next
+- assignment type = Active
+- enter justifications
+- click "assign"
+
+- go to default directry
+- "roles and admins"
+- click the "user admin"
+- under active asignments, you can see "userA"
+
+
+
+- now userA has "new user" option enabled
+
+  Note: custom role
+- can create a custom role under default directory
+- can start from scrat or clone from exiring roles
+
+### Azure AD groups
+- create userB and userC
+- create a group groupB and asisgn owner as userB
+- login as userB
+- userB can able to add mebers to groupB
+- login as admin
+- cannot remove owner from groupB untile new owner is assigned to groupB - so one owner must be prsent for a group
+
+
+### Inviting an external user
+- admin account user AD
+- users
+- new guest user
+- "invite user"
+- name, email address
+- add message and INVITE
+- can see the user in users  as guest user
+
+- guest user will get email
+- accept the invitation
+- no access to any resos as of now
+- as a normal user, he can be provided with varius access
+
+### group naming policy
+- naming policy for microsoft 365 group in azure ad
+- go to ad - groups
+- naming policy
+- blocked words" - download th csv file and upload the file back
+- group name policy - set particular prefix or particular suffix
+- naming policy does not apply to certain directory roles such as Global administrator or user administrator
+
+
+
+### Application registration
+- to make an application to use the resosuce securely
+- register the pplication in AD - application object and service principal will be craeted
+- then give access to service pricipal to use the required resos
+
+### Application registration - instalong postman
+- download postman for win64
+- install postman and signin
+
+### app registration - azure ad application object
+- use api call to get the user details from azure directory
+- so some authentication must be neede in azure ad and  authorization is needed to get the users details
+- 1. register an application in azure ad
+  2. provide permissions
+
+- go to AD
+- app registrations
+- new registration
+- name- postman
+- register
+- applciation registered with the necessary details - check the postman application overview
+- name, application id, object id, directory,
+
+- go to API permissions
+- default persion wa salready there- microsoft graph api - user.read permission, type - delegated
+- remove the above permissions
+- add a permisison
+- chosse "micorosft graph service"
+- chose application permission if you want to run on behalf of the applications
+- go down to user
+- user.readALL - select this permission
+- add permission
+- click "grant admin consent for default directory" - click YES
+- so postman tool can make direct call to fetch the users list with the help of the assigned permission
+
+### application registraton - calling the graph API
+- call th eauthorization endpoint using the application credentials and get the access token
+- using access token, app can access the resos - short lived
+- go to overview of the app postman
+- click endpoints
+- OAUTH 2.0 token endpoint v2
+- copy the url
+- go to post man
+- POST - url
+- select body
+- click - www-form-encoded
+- key "grant_type"
+- value "client_credentials"
+- key scope - https://graph.microsoft.com/default
+- client_id
+- clicnt_secret  (generate a pwd for the application - go to certificates and csecrets - client secrets -> new client secret -> descrition : secret  - click add
+- copy the value and pste it in the client secret value
+- click SEND in postman
+- access token is received int he response
+- postman - GET https://graph.microsoft.com/v1.0/users
+- headers: Authorization - Bearer $access-token
+- info about all of th user is received in the response
+- DELETE the postman application after this exercise
+- 
+
+
+
+
 
