@@ -374,6 +374,98 @@
 - 
 
 
+### install Visual studio community edition
+- install web aspdotnet and azure development tools
 
+### 40: Azure AD - application registration - .net
+- download the resos from az500 udemny course
+- extract the zip
+- go to application files inside it
+- open vscode as administrator
+- open a project or solution
+- go to the extrated flder
+- find and select - webapp----.sln file
+- open appsettings.json - make sure application is integrated with active directory
+- info abt application object
+- go to AD
+- go to 'app registration'
+- new registration
+- name- webapp
+- redirect uri - web based
+- url: https://localhost:44321/signin-oidc
+- create application
+
+- go to API permission of webapp
+- it has the default api permisison - user.read - signin and read user profile
+- type as delegatedadmin consent - no
+- go to authentication
+- check the signin url
+- copy and put the same in "logout url" and change signin to signout-oidc
+- enable "ID tokens"
+- SAVE
+
+- now to to vscode - appsettings.json
+- you need to provide the client id and tenent id
+- so go to AD again - overview
+- copy the client id and tenent id from AD overview and past it in the appsettings.json file
+- RUn the project locally
+- it will open the local host and open the azure portal login page
+- get userA signin
+- consent screen will be opned for the permisisons requested
+- accept it
+- loggedin with showing the user detail
+- signut
+
+### sign-inlogs and audit logs
+- go to AD
+- click signin logs
+- all llog details of all user logged in - both user signins and service pricipal signins
+- check audit logs now
+- e.g someone has done user managment, application management - those details will be there
+- can download or export the logs on continuous basis
+- add disgnostics settings
+- select log categories and "destination details " to send to LOG analytics workspace , or archive to storage acct, event hub, partner solution
+
+
+### Enterprise applications
+- AD has enterprise applications
+- for example an org might have DROPBOX for business acocount and might need to create seperate loginc for dropbox
+- but using AD, we can use single identity for azure as well as for dropbox
+- also using SSO
+- integration available via enterprise applications
+- go to AD's Enterprise application
+- click - New application
+- browse azure AD gallery
+- see the most popular apps
+- like github
+- whatveer the pricing you sleect that has support with AD also
+- dropbox also shuld support authentication from azure AD
+
+- when you regsiter an enterprise app, it will craete a enterprise application object in AD
+- note: all apps registred via "app registrations" will appear in enterprise applications also
+
+
+### Assigning a user to an Enterprise Application
+- myapps.microsoft.com
+- see the applicatiosn that are asisgned to the user
+- how to make an app visibilt ot he user in myapps.microsoft.com
+- go to enterprise applications
+- go to DROPBOX
+- go to "users and groups"
+- add a user - select userA
+- now if userA login to myapps, then he will be able to see dropbox in his page
+- if SSO is anabled, userA can directlya ccess dropbox without logiging in again
+- admin acct - go to enterprise app - dropbox - select "single sign on"
+- enable sso
+
+### enterprise application - important properties
+- go to dropbox properties
+- enabled for users  to signin - YES - so same azude dire credentials can be used to login for dropbox
+- visibile to users? - YES - for myapps portal
+
+### enterprise application - Self service
+- allow users to request access to an application (instead of assigning users with app)
+- they will be automatically added to a group if they request is approved and app is assigned
+- 
 
 
