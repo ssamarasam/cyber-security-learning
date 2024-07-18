@@ -1,6 +1,6 @@
 # Burp Suite - Intro to Penetration Testing
 
-![Uploading image.png…]()
+![BurpSuite](Tools/Images/Screenshot from 2024-07-18 15-19-11.png)
 
 - is a tool/collection of tools designed to perfom security testing on web applications
 - identify and exploit vulnerabilities
@@ -38,5 +38,6 @@
 - click the proxy tab
   - it has intercept, http history, websockets history and proxy settings
   - proxy settings - define all the proxy listeners - so you can use either the default browser provided by burp-suite for intercepting the request or you can set any broswer on your system to use
- 
+  - request interception rukes - you can exlcude things like images, gif, css to skip the intercepting
+  - response interception rules
   - 
