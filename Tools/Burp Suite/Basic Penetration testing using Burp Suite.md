@@ -1,6 +1,6 @@
 # Burp Suite - Intro to Penetration Testing
 
-![BurpSuite](Tools/Images/Screenshot from 2024-07-18 15-19-11.png)
+![BurpSuite](https://github.com/ssamarasam/cyber-security-learning/blob/6106dcd53511776dc312cc2142b6a7229efc1b2c/Tools/Images/Screenshot%20from%202024-07-18%2015-19-11.png)
 
 - is a tool/collection of tools designed to perfom security testing on web applications
 - identify and exploit vulnerabilities
