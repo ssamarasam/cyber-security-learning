@@ -41,3 +41,54 @@
   - request interception rukes - you can exlcude things like images, gif, css to skip the intercepting
   - response interception rules
   - 
+![proxy-settings](https://github.com/ssamarasam/cyber-security-learning/blob/9286df858a02efd556d4a89be7e79ab7ddba4b0b/Tools/Images/Screenshot%20from%202024-07-18%2015-25-28.png)
+
+![](https://github.com/ssamarasam/cyber-security-learning/blob/fec9389d2b30d18a869c06cfb534a39adbf5eab4/Tools/Images/Screenshot%20from%202024-07-18%2015-27-39.png)
+
+![](https://github.com/ssamarasam/cyber-security-learning/blob/fec9389d2b30d18a869c06cfb534a39adbf5eab4/Tools/Images/Screenshot%20from%202024-07-18%2015-27-49.png)
+
+Set Intercept to ON
+![](https://github.com/ssamarasam/cyber-security-learning/blob/7e29eaf5d58418f7dd39833b27df8ea0cad2cc47/Tools/Images/Screenshot%20from%202024-07-18%2015-29-52.png)
+
+Open inbuilt browser from burp suite
+enter portswigger.com
+see the intercepted message
+you can forward, drop it or can do various operations from Action list
+
+
+if you set intercept is off, then go and refresh the brower with the url, the requets will flow thru normal
+
+### Modify the HTTP request after intercepting in Burp Suite and before forwarding it to server
+- file upload vulnerability - an app allows application to upload files without proper validation
+- clould lead to execution of malicious activities
+
+
+
+### Reissue the individual modified HTTP request multiple times with the burp repeater
+- will be able to resend a request with different input data multiple times to explore vulnerabilities
+- guessing multiple times - like brute force
+- modify the request and run multiple times
+- intruder also can be used to automate this process
+
+- intercept OFF
+- open local host
+- login page will be opned
+- intercept ON
+- try using wrong pwd intentionally
+- interceptor will capture the request
+- right click and "send to repeater"
+- go to repeater tab
+- in the request section
+  - modify the pwd and SEND
+  - check the response
+  - you can repeat until pwd is matched in the repeater tab
+ 
+- follow redirection
+- you can also go to the previous page by using the arrows before the "follow redirection " button
+- you can create multiple TABs for various request
+
+
+Capstone project:
+- develop a list of common vulnerabilities in web application such as SQL injection, HTML injection and others
+- write the scripts to intercept and modify requests, test for common vulnerabilities and generate a report on the findings
+- sample BWAPP application - http://localhost/81
