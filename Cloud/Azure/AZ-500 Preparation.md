@@ -466,6 +466,44 @@
 ### enterprise application - Self service
 - allow users to request access to an application (instead of assigning users with app)
 - they will be automatically added to a group if they request is approved and app is assigned
-- 
+- approval required?
+- select approvers
+- role
+
+1. create a group dropbox-grp
+2. select a owner- userA
+3. create
+4. go to group - dropbox-grp
+5. go to owners in that
+6. userA should be there
+7. go to dropbox enterprise application
+8. go to suers and groups
+9. remove particular user
+10. go to self service
+11. YES - useres to request access
+12. select the grp dorpbox-grp
+13. YES - require approval
+14. select approiver - userC (new)
+15. SAVe
+16. login myapps from any user
+17. clcick - request access - new apps
+18. select dropbox for bussines - click ADD
+19. so the approver woll be replaced by userC from userA since we gave userC in the self service
+
+
+### Managing applications in Azure AD
+Azure Ad roles
+- application administrator - allows all aspects of enterpise apps,app registrations, application proxy settings
+  - ability to grant consent for delegated and application permissions
+  - user will not be added as the powner when creating new application
+ 
+- cloud application admin
+  - NOt app proxy settings
+ 
+- Application developer
+  - can create app registrations - is users can register application is set to NO
+  - can grant persmissons to consent on ones behalf, when users can consent tpo apps  accesing company;s data on theri beha;lf is set to NO
+  - but the user will be assigned as the powner of the application
+  
 
 
