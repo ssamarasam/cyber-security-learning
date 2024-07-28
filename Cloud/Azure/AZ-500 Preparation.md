@@ -506,4 +506,84 @@ Azure Ad roles
   - but the user will be assigned as the powner of the application
   
 
+## Implement Platform Protection
+
+### Review of virtual networks and machines
+- while creating VM, virtual networks get created (isolated network)
+- it gets an address space 10.0.0.0/16
+- subnets can be created under VN
+- subnetA - 10.0.0.0/24 - network interface - private ip address - 10.0.0.4 - public ip address 109.8.9.66
+- subnetA - 10.0.1.0/24 - network interface - private ip address - 10.0.1.5 - public ip address 109.8.9.67
+- NSG network security group - can be assigned to network interface or subnet
+
+### Setting up azure cloud shell
+- storage account needs to created first
+- advanced settings
+- resos grp, uniq name, file-share name
+- az group list
+
+### Azure virtual machine security
+- using role based access control
+  1. control who has access to your VM
+  2. control who can start or stop the VM
+  3. control who can change the properties of the VM
+ 
+- Protect against malware
+  1. install an antimalware solution that can help identify   and remove viruses
+  2. you can use microsoft antimalware solution
+  3. or partnr end point solutions - TrendMicro, McAFee
+ 
+- Update management for your Virtual Machines
+  1. you can manage the updates for your VM - with the help of update management
+  2. always deploy the latest security updates
+  3. if you are deploying a new VM, always use the latest image which has all the latest security updates
+ 
+- use Microsoft Defender for cloud
+  1. this tool can give several recommendations on how to improve the security posture of your VMs
+  2. it can also monitor for any threats to your VMs
+  3. you can use features such has just in time access to give access to your VMs
+ 
+- Azure Disk encryption
+  1. encrypt the disks on your virtual machine using Azure disk encryption
+  2. can be used for both windows and linux based VMs
+ 
+- Network Security Groups
+  1. ensure to restrict inbound and outbound traffic via Network security Rules
+  2. continuously review the rules you have in place
+ 
+### Network Security Groups
+- basis firewall type of feature
+- filter the traffic coming into your VM and traffic going from your VM
+- rules:
+  1. priority
+  2. protocol
+  3. port no
+  4. source and destination
+- NSG can be applied only to the Virtual Network Interface of the virtual machine or the subnet that contains the virtual machine
+- create VM
+- nsg basic
+- resos grp - nsg-grp
+- network - app-network
+- windows
+- port 3389 rdp
+- create VM
+- go to resosucr appvm
+- go to Networking
+- can see inbound and outbound rules
+- go to all resoss- select appvm-nsg
+- there also you can edit the tules
+- go to inbound, outbound and network interfaces
+- network interfaces
+- if you have another VM in the virtual network, you can "associate " the NSG or the network interface attached on the vm - appvm599 is for appvm - similarly you can add another VMs network interface in the NSG
+- you can also attach the NSG on to a subnet as well - go to subnet and can do
+- default rules:
+  1. allow all VMs to connect within the same Virtual entwork
+  2. allow all laod balancer within the VN
+  3. Deny all other traffic
+ 
+### Modifying RDP settings in nsg
+- currently ANY is set to RDP source and destination which is risk
+- normally org will have a static IP
+- grt your laptop IP
+- 
 
