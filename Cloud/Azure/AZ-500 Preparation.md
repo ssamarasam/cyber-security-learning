@@ -587,3 +587,14 @@ Azure Ad roles
 - grt your laptop IP
 - 
 
+
+**NSG at subnet level**
+- disassosiate the existing NSG first
+- create new NSG
+- go to the NSG and select SUBNET
+- slelect Associate
+- select the network and subnet as default
+- go to appvm and select NETWORKING
+- that new NSG is added
+- add a rule to allow port 80
+- 
