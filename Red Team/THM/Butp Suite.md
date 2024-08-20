@@ -20,3 +20,10 @@
 - issue activity
 - advisory
 
+
+### Intruder:
+- can be compared to ffuf, Wfuzz
+
+
+> magic function of CyberChef
+
