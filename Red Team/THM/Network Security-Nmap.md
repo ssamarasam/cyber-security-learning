@@ -147,3 +147,17 @@ tcp/udp - transport layer - use when icmp echo is blocked using a crafted packet
 - by default nmap will query the dns server
 - R to query the dns server even for offline hosts
 - --dns-servers DNS_SERVER   for specific DNS server
+
+
+
+- above scans helped identity what systems are Online and offline
+- now to explore what ports are open , listening and closed
+- 1. tcp connect port scan
+  2. tcp syn port scan
+  3. udp port scan
+ 
+- options to specify the ports, scan rate, number of parallel probes
+
+- PORTs are nothing but a network service
+
+- 
