@@ -160,4 +160,117 @@ tcp/udp - transport layer - use when icmp echo is blocked using a crafted packet
 
 - PORTs are nothing but a network service
 
+
+**TCP and UDP ports**
+
+- nmap port 6 states
+- 1. open
+  2. closed
+  3. filtered
+  4. unfiltered
+  5. open | filtered
+  6. closed | filtered
+ 
+- dns - udp port 53
+- ssh - tcp port 22
+
+**TCP Flags**
+TCP header:
+1. source and destination port number
+2. sequence number
+3. acknowledgement number
+4. - data offset
+   - reserved
+   - flags
+     - URG urgent flag
+     - ACK acknowledgement flag
+     - PSH push flag to specify pass the data to the application
+     - RST reset flag to reset the connection & data is sent to a host and no service on the receiving end to answer
+     - SYN  synchronize flag to initiate a tcp 3 way handshake
+     - FIN - the sender has no more data tpo send
+    
+   - WINDOW
+  
+5. checksum and urgent pointer
+6. options and padding
+7. data
+
+
+
+**TCP connect scan:**
+how tcp connection works
+1. SYN
+2. SYN/ACK when the port is open
+3. ACK is sent to complete the 3 way handshake
+
+4. note: we just need to know whether the tcp port i sopen or not, so no need to establish a tcp connection AFTER 3 WAY HANDSHAKE IS COMPLETE
+5. so, to ter the connection namp sends RST/ACK
+
+- **nmap -sT TARGET**
+  1. SYN
+  2. SYN/ACK
+  3. ACK
+  4. RST/ACk
+  5. TCP port is open
+ 
+- closed port will respond directly with RST/ACK
+
+- nmap -sT machine-ip
+- lists all the open ports
+- by default nmap scans for 1000 most common ports
+- use F to limit it to 100 most common ports
+- use r to scan the ports in consecutive order instead of random order
 - 
+  
+**TCP SYN scan**
+- option -sS
+- without completing the 3 way handshake to prevent logging of the scan
+- 1. SYN
+  2. SYN/ACK
+  3. RST  to tear the handshake
+ 
+- tcp syn scan is the default scan for priviledged user/root user
+- and a reliable choice
+- finds the open ports without making a handshake
+- sudo nmap -sS machine-ip
+
+- 143 - imap
+- 993 imaps
+- 995   pop3s | 110 pop3
+
+
+**UDP scan**
+- connectionless scan
+- if a udp packet is sent to a closed port, an ICMP port unreachable error(type3, code 3) will be returned
+- option **sU**
+- **nmap -sU TARGET**
+- udp ports that doesnt generate any response are OPEN
+- nmap -sU TARGET
+  1. UDP packet
+  2. ICMP type3, code 3
+ 
+- nmap -sU -F -v machine-ip
+
+**Fine tuning Scope and performance**
+- port list -p22,80
+- port range -p20-30
+- scan of all ports -p-  65535
+- most common 100 ports -F
+- most common 10 ports --top-ports 10
+- scan timing:
+  1. T0 - paranoid - slowest  (to avoid IDS alerts, it waits 5 mins before sening another probe)
+  2. t1 - sneak  (to avoid IDS alerts, it waits 5 mins before sening another probe) - often used in real engagements where stealth mode is important
+  3. T2 polite
+  4. T3 normal  (default)
+  5. T4 aggressive during CTF challenges
+  6. T5 -FASTEST INSANE
+ 
+  packet rate:
+  1. --min-rate 10 or --min-rate=10
+  2. --max-rate 10
+ 
+probe parallelization:
+1. --min-parallelism <numberprobes>
+2. --max-parallelism
+
+
