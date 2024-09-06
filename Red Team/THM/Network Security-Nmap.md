@@ -274,3 +274,54 @@ probe parallelization:
 2. --max-parallelism
 
 
+### Nmap advanced port scans:
+
+types:
+1. Null scan
+2. FIN scan
+3. Xmas scan
+4. Maimon scan
+5. ACK scan
+6. Window scan
+7. Custom scan
+
+- spoofing IP
+- spoofing MAC
+- Decoy scan
+- Fragmented packets
+- Idle/Zombie scan
+
+
+**TCP null scan, FIN scan, Xmas scan**
+
+Null scan:
+- does not set any flag
+- set all the six bits to zero
+- **option -sN**
+- a tcp packet with no flags will not trigger any response when it reaches open port
+- so, a lack of reply indicates that either the port is open or firewall is blocking the packet
+- **nmap -sN TARGET**
+- we can expect RST reponse when port is closed
+- lack of RST indicates ports are not closed or open or filtered
+  1. null
+  2. rst,ack
+  3. tcp port is closed
+ 
+- because nmap null scan relies on lack of response, it cannot indicate with certainity that ports are open. there is a possibility that ports are not responding due to a firewall rule
+
+FIN scan:
+- with FIN flag set
+- does not expect any response similar to null scan
+- expect RST for closed
+- some firewall may blcok RST also
+- **option -sF**
+- nmap -sF TARGET
+
+Xmas scan:
+- sets FIN, PSH, URG flags simultaneously
+- **option -sX**
+- if RST is received, port is closed, else open | Filtered
+- this scan is efficient when scanning a target behind a stateless firewall
+- a statless firewall / non-stateful firewall: will check fi the incoming packet has the SYN flag set to detect a connection attempt
+- using a flag combination that doenst not contain SYn flags makes it possible to decive the firewall and reach the system behind
+- a stateful firewall will block all these crafted packets
