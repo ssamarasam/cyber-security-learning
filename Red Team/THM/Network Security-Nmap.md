@@ -325,3 +325,42 @@ Xmas scan:
 - a statless firewall / non-stateful firewall: will check fi the incoming packet has the SYN flag set to detect a connection attempt
 - using a flag combination that doenst not contain SYn flags makes it possible to decive the firewall and reach the system behind
 - a stateful firewall will block all these crafted packets
+
+
+**TCP Mainmon scan**
+- FIN and ACK flags are set and tager should respond with RST
+- most modern systems and BSD derived systems drops the packet if the open ports exposing the open ports
+- **option -sM**
+- most target systems respond with RST regardless of tcp port is open or closed
+- we wont be able to discover the open ports
+- nmap -sM TARGET
+
+**TCP ACK, window and custom scan**
+
+**TCP ACK scan**
+- tcp packet with ACK flag set
+- useful when the target system is protected by firewall
+- the target would respond back with RST regardless of the state of the port
+- **option -sA**
+- nmap -sA TARGET
+  1. ACK
+  2. RST
+ 
+- TCP port is open or closed
+- this will resut in displaying the unblocked ports from firewall saying as unfiltered
+- so we can identify that the ports which are not blocked by firewall
+
+**Window scan**
+- same as tcp ack scan and useful for system protected by firewall - but that doenst mean a service is lsitening on that port
+- without firewall, it wont provide useful information
+- with firewall blocked system it is displaying closed ports (insight is firewall does not block these ports and closed status is not accurate)
+- **option -sW**
+
+note: ack and wondow scan are exposing the firewall rules, not the services
+
+**custom scan**
+- if you want to try with the new tcp flag combination use this
+- option --scanflags
+- for example if you wnat to try syn, rst, fin simultaneously, use --scanflags RSTSYNFIN
+- **nmap --scanflags custom-flags TARGET**
+- 
